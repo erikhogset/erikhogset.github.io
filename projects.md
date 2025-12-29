@@ -4,7 +4,7 @@
 
 ## Reactive Road Sign System (Senior Design)
 Mechanical retrofit system enabling standard road signs to deflect under extreme wind loads and self-reset.  
-[Read more →](road-sign.md)
+[Read more →](road-sign-system.md)
 
 ## Electromechanical Interactive Ouija Board
 Belt-driven electromechanical system integrating MATLAB control and AI-generated responses.  
