@@ -1,5 +1,4 @@
 [Home](index.md) | [Academic Focus](coursework.md) | [About](about.md) | [Resume](resume.pdf)
-
 # Projects
 
 ## Reactive Road Sign System (Senior Design)
