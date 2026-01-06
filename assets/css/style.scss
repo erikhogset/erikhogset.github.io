@@ -222,6 +222,7 @@ hr {
 /* =========================
    TOPBAR (Header Replacement)
    ========================= */
+/* ===== TOPBAR FIX ===== */
 .topbar {
   display: flex !important;
   justify-content: space-between !important;
@@ -234,63 +235,30 @@ hr {
   display: flex !important;
   flex-direction: column !important;
   gap: 0.15rem !important;
-}
-
-.brand {
-  font-weight: 800 !important;
-  font-size: 1.05rem !important;
-  color: var(--text-main) !important;
-  text-decoration: none !important;
-}
-
-.brand:hover {
-  color: var(--accent) !important;
-}
-
-.brand-sub {
-  color: var(--text-muted) !important;
-  font-size: 0.95rem !important;
+  flex: 0 0 auto !important;
 }
 
 .topbar-right {
   display: flex !important;
-  gap: 0.9rem !important;
+  gap: 0.75rem !important;
   align-items: center !important;
-  flex-wrap: wrap !important;
+  flex-wrap: nowrap !important;       /* key */
   justify-content: flex-end !important;
+  flex: 1 1 auto !important;
 }
 
 .toplink {
-  color: var(--text-main) !important;
-  text-decoration: none !important;
-  font-weight: 650 !important;
-  padding: 0.45rem 0.6rem !important;
-  border-radius: 10px !important;
-  border: 1px solid transparent !important;
+  white-space: nowrap !important;     /* key */
 }
 
-.toplink:hover {
-  background: rgba(17,17,17,0.04) !important;
-  border-color: rgba(17,17,17,0.10) !important;
-}
-
-.toplink-primary {
-  border-color: rgba(17,17,17,0.18) !important;
-}
-
-.topbar-divider {
-  height: 1px !important;
-  background: var(--border-light) !important;
-  margin: 0.25rem 0 2.25rem 0 !important;
-}
-
-/* Responsive topbar */
+/* When the screen is actually small, drop nav onto its own row cleanly */
 @media (max-width: 860px) {
   .topbar {
     flex-direction: column !important;
     align-items: flex-start !important;
   }
   .topbar-right {
+    flex-wrap: wrap !important;
     justify-content: flex-start !important;
   }
 }
