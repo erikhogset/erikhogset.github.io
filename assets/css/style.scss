@@ -41,7 +41,33 @@
 .hero .sub { margin: 0 0 1.4rem 0 !important; font-size: 1.05rem !important; line-height: 1.6 !important; max-width: 44rem !important; }
 
 /* Buttons */
-.cta-row { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-top: 0.4rem; }
-.btn { display: inline-block; padding: 0.55rem 0.9rem; border-radius: 10px; border: 1px solid rgba(0,0,0,0.15); text-decoration: none; font-weight: 600; }
-.btn-primary { border: none; background: #0b5fff; color: white !important; }
-.btn-ghost { background: white; }
+.cta-row a.btn {
+  font-family: inherit !important;
+  font-size: 1rem !important;
+  line-height: 1 !important;
+  font-weight: 600 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0.8rem 1.05rem !important;
+  border-radius: 12px !important;
+  text-decoration: none !important;
+  box-shadow: none !important;
+}
+.btn-primary {
+  background: #1f6feb !important;
+  color: #ffffff !important;
+  border: 1px solid #1f6feb !important;
+}
+.btn-ghost {
+  background: transparent !important;
+  color: #111827 !important;
+  border: 1px solid rgba(17,24,39,0.18) !important;
+}
+.cta-row a.btn:hover {
+  transform: translateY(-1px);
+}
+
+.page-header {
+  display: none !important;
+}
