@@ -27,7 +27,7 @@
   </div>
 
   <div class="hero-right">
-    <img class="profile-pic" src="images/profile.jpg" alt="Erik Hogset profile photo" />
+    <img class="profile-pic" src="images/profile.jpeg" alt="Erik Hogset profile photo" />
   </div>
 </div>
 
