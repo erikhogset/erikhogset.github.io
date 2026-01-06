@@ -42,7 +42,7 @@ h1, h2, h3, h4 {
 hr {
   border: none !important;
   border-top: 1px solid var(--border-light) !important;
-  margin: 2.2rem 0 2.4rem 0 !important;
+  margin: 1.6rem 0 2rem 0 !important;
 }
 
 /* Content width + breathing room */
@@ -63,7 +63,7 @@ hr {
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;
-  padding: 0.75rem 0 !important;
+  padding: 0.5rem 0 !important;
 }
 
 .topbar-left {
@@ -74,7 +74,7 @@ hr {
 
 .topbar-right {
   display: flex !important;
-  gap: 0.8rem !important;
+  gap: 0.7rem !important;
   align-items: center !important;
   white-space: nowrap !important;
 }
@@ -109,6 +109,13 @@ hr {
   }
 }
 
+.topbar .toplink-primary {
+  border: 1px solid rgba(185, 28, 28, 0.25) !important;
+  padding: 0.35rem 0.6rem !important;
+}
+.topbar .toplink-primary:hover {
+  background: rgba(185, 28, 28, 0.06) !important;
+}
 /* =========================
    HERO (Layout + Typography)
    ========================= */
@@ -161,7 +168,7 @@ hr {
   gap: 0.5rem !important;
   white-space: nowrap !important;
   font-size: 1.15rem !important;
-  font-weight: 650 !important;
+  font-weight: 550 !important;
   letter-spacing: 0.25px !important;
   color: var(--text-muted) !important;
   margin-bottom: 1rem !important;
@@ -212,8 +219,10 @@ hr {
 
 .cta-row a.btn {
   min-width: unset !important;
-  padding: 0.65rem 0.9rem !important;
+  padding: 0.78rem 1.05rem !important;
   font-size: 0.95rem !important;
+  min-width: 135px !important;
+
 }
 @media (max-width: 720px) {
   .cta-row {
