@@ -11,13 +11,18 @@
 /* Make the content area wider */
 .main-content { max-width: 1100px !important; }
 
+/* Space between hero and next section */
+.main-content hr {
+  margin: 2rem 0 2.2rem 0 !important;
+}
+
 /* HERO layout */
 .hero {
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
   gap: 3rem !important;
-  margin: 2.5rem 0 2rem 0 !important;
+  margin: 3.25rem 0 2.25rem 0 !important;
   flex-wrap: wrap !important;
 }
 
@@ -38,7 +43,8 @@
 /* Typography */
 .hero h1 { margin: 0 0 0.75rem 0 !important; font-size: 2.6rem !important; line-height: 1.1 !important; }
 .hero .headline { margin: 0 0 1.1rem 0 !important; font-size: 1.2rem !important; font-weight: 500 !important; opacity: 0.9 !important; }
-.hero .sub { margin: 0 0 1.4rem 0 !important; font-size: 1.05rem !important; line-height: 1.6 !important; max-width: 44rem !important; }
+.hero .sub { margin: 0 0 1.4rem 0 !important; font-size: 1.05rem !important; line-height: 1.6 !important; max-width: 44rem !important;  margin-bottom: 1.75rem !important;
+ }
 
 /* Buttons */
 .cta-row a.btn {
@@ -86,25 +92,20 @@ body {
   background: var(--bg) !important;
   color: var(--text-main) !important;
 }
-
 /* Hero text */
 .hero h1 {
   color: var(--text-main) !important;
 }
-
 .hero .headline {
   color: var(--text-muted) !important;
 }
-
 .hero .sub {
   color: var(--text-muted) !important;
 }
-
 /* Links */
 a {
   color: var(--accent) !important;
 }
-
 a:hover {
   color: var(--accent-hover) !important;
 }
@@ -115,28 +116,54 @@ a:hover {
   border: 1px solid var(--accent) !important;
   color: #ffffff !important;
 }
-
 .btn-primary:hover {
   background: var(--accent-hover) !important;
   border-color: var(--accent-hover) !important;
 }
-
 .btn-ghost {
   background: transparent !important;
   color: var(--text-main) !important;
   border: 1px solid var(--border-light) !important;
 }
-
 .btn-ghost:hover {
   border-color: var(--text-main) !important;
 }
-
 /* Header neutralization */
 .page-header {
   background: #1f2933 !important; /* dark gray */
   background-image: none !important;
 }
-
 .project-name {
   color: #ffffff !important;
+}
+/* Lock primary button colors in ALL states */
+.cta-row a.btn-primary,
+.cta-row a.btn-primary:visited {
+  background: var(--accent) !important;
+  border-color: var(--accent) !important;
+  color: #ffffff !important;
+}
+
+.cta-row a.btn-primary:hover,
+.cta-row a.btn-primary:focus {
+  background: var(--accent-hover) !important;
+  border-color: var(--accent-hover) !important;
+  color: #ffffff !important;           /* key line */
+  text-decoration: none !important;
+}
+.cta-row a.btn-ghost:hover {
+  background: rgba(17,17,17,0.04) !important;
+  text-decoration: none !important;
+}
+/* Make headings match your gray/red theme */
+h1, h2, h3, h4 {
+  color: var(--text-main) !important;
+}
+h2 {
+  letter-spacing: 0.2px;
+  margin-top: 2.2rem !important;
+}
+.cta-row {
+  gap: 0.75rem !important;
+  margin-top: 0.9rem !important;
 }
