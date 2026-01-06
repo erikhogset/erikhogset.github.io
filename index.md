@@ -1,8 +1,7 @@
-<div class="hero">
-  <div class="hero-left">
-    <div class="topbar">
+<!-- TOPBAR (full width of main-content) -->
+<div class="topbar">
   <div class="topbar-left">
-    <a class="brand" href="index.md">Erik Hogset</a>
+    <a class="brand" href="./">Erik Hogset</a>
     <span class="brand-sub">Mechanical Engineering • Boston University</span>
   </div>
 
@@ -10,27 +9,30 @@
     <a class="toplink" href="projects.md">Projects</a>
     <a class="toplink" href="coursework.md">Academic Focus</a>
     <a class="toplink" href="about.md">About</a>
-    <a class="toplink toplink-primary" href="resume.pdf">Resume</a>
+    <a class="toplink" href="resume.pdf">Resume</a>
   </div>
 </div>
 
-<div class="topbar-divider"></div>
+<hr />
 
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-left">
     <h1>I’m Erik.</h1>
 
-<div class="kicker">Manufacturing & Automation • Mechanical Design • Clean Energy Systems</div>
+    <div class="kicker">Manufacturing & Automation • Mechanical Design • Clean Energy Systems</div>
 
     <p class="sub">
       I design and build mechanical systems that are manufacturable, testable, and grounded in real-world constraints.
       Experience includes electromechanical prototyping, automation, and hands-on fabrication, with growing interests in clean energy.
     </p>
 
-<div class="tag-row">
-  <span class="tag">CNC + CAM</span>
-  <span class="tag">SolidWorks / Fusion</span>
-  <span class="tag">MATLAB / Python</span>
-  <span class="tag">Prototyping</span>
-</div>
+    <div class="tag-row">
+      <span class="tag">CNC + CAM</span>
+      <span class="tag">SolidWorks / Fusion</span>
+      <span class="tag">MATLAB / Python</span>
+      <span class="tag">Prototyping</span>
+    </div>
 
     <div class="cta-row">
       <a class="btn btn-primary" href="projects.md">View Projects</a>
@@ -51,8 +53,9 @@
   </div>
 </div>
 
----
+<hr />
 
+<!-- FEATURED -->
 <div class="featured">
   <h2>Featured</h2>
 
@@ -64,15 +67,15 @@
     <a class="read-more" href="road-sign-system.md">Read more →</a>
   </div>
 
-<div class="feat-item">
-  <div class="feat-title">Engineering Product Innovation Center (EPIC)</div>
-  <div class="feat-desc">
-    Laboratory Assistant supporting student and faculty engineering projects through
-    CNC machining, additive manufacturing (FFF & SLA), CAD-to-CAM workflows, and
-    hands-on prototyping in a high-traffic makerspace.
+  <div class="feat-item">
+    <div class="feat-title">Engineering Product Innovation Center (EPIC)</div>
+    <div class="feat-desc">
+      Laboratory Assistant supporting student and faculty engineering projects through
+      CNC machining, additive manufacturing (FFF &amp; SLA), CAD-to-CAM workflows, and
+      hands-on prototyping in a high-traffic makerspace.
+    </div>
+    <a class="read-more" href="about.md">Learn more →</a>
   </div>
-  <a class="read-more" href="about.md">Learn more →</a>
-</div>
 
   <div class="feat-item">
     <div class="feat-title">Electromechanical Ouija Board</div>
