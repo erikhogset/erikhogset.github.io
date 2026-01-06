@@ -27,7 +27,6 @@
       Experience includes electromechanical prototyping, automation, and hands-on fabrication, with growing interests in clean energy.
     </p>
 <div class="microlabel">Quick skills</div>
-<div class="tag-row">...</div>
     <div class="tag-row">
       <span class="tag">CNC + CAM</span>
       <span class="tag">SolidWorks / Fusion</span>
