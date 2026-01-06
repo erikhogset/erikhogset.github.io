@@ -74,7 +74,7 @@ hr {
 
 .topbar-right {
   display: flex !important;
-  gap: 0.9rem !important;
+  gap: 0.8rem !important;
   align-items: center !important;
   white-space: nowrap !important;
 }
@@ -87,13 +87,13 @@ hr {
 
 /* Links should be red */
 .topbar .toplink {
-  color: var(--accent) !important;
-  padding: 0.2rem 0.35rem !important;
-  border-radius: 8px !important;
+  font-size: 0.95rem !important;
+  font-weight: 650 !important;
+  padding: 0.35rem 0.45rem !important;
+  border-radius: 10px !important;
 }
 
 .topbar .toplink:hover {
-  color: var(--accent-hover) !important;
   background: rgba(185, 28, 28, 0.06) !important;
 }
 
@@ -129,14 +129,14 @@ hr {
 
 /* Avatar */
 .hero-right img.profile-pic {
-  width: 240px !important;
-  height: 240px !important;
+  width: 220px !important;
+  height: 220px !important;
   border-radius: 50% !important;
   object-fit: cover !important;
   display: block !important;
   max-width: none !important;
   border: 1px solid rgba(0,0,0,0.12) !important;
-  box-shadow: 0 10px 26px rgba(0,0,0,0.10) !important;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.10) !important;
 }
 
 @media (max-width: 860px) {
@@ -156,14 +156,14 @@ hr {
 
 /* “Manufacturing & Automation …” line */
 .kicker {
-   display: flex !important;
+  display: flex !important;
   flex-wrap: nowrap !important;
   gap: 0.5rem !important;
   white-space: nowrap !important;
   font-size: 1.15rem !important;
-  font-weight: 750 !important;
+  font-weight: 650 !important;
   letter-spacing: 0.25px !important;
-  color: var(--text-main) !important;
+  color: var(--text-muted) !important;
   margin-bottom: 1rem !important;
 }
 .kicker .dot {
@@ -185,7 +185,7 @@ hr {
   display: flex !important;
   flex-wrap: wrap !important;
   gap: 0.5rem !important;
-  margin: 0 0 1.4rem 0 !important; /* more space before buttons */
+  margin: 0 0 1.6rem 0 !important; /* more space before buttons */
 }
 
 .tag {
@@ -242,13 +242,13 @@ hr {
 .cta-row a.btn-ghost:visited {
   background: transparent !important;
   color: var(--text-main) !important;
-  border: 1px solid var(--border-light) !important;
+  border: 1px solid rgba(17,17,17,0.14) !important;
 }
 
 .cta-row a.btn-ghost:hover,
 .cta-row a.btn-ghost:focus {
-  background: rgba(17, 17, 17, 0.04) !important;
-  border-color: rgba(17, 17, 17, 0.25) !important;
+  background: rgba(17,17,17,0.04) !important;
+  border-color: rgba(17,17,17,0.22) !important;
   color: var(--text-main) !important;
   transform: translateY(-1px);
 }
@@ -315,4 +315,10 @@ hr {
 .brand-sub {
   font-size: 0.85rem !important;
   color: var(--text-muted) !important;
+}
+.microlabel {
+  font-size: 0.85rem !important;
+  color: var(--text-muted) !important;
+  margin: 0.9rem 0 0.55rem 0 !important;
+  font-weight: 650 !important;
 }
