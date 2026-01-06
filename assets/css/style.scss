@@ -311,4 +311,12 @@ hr {
   margin-top: 0.55rem !important;
   font-weight: 700 !important;
 }
-
+/* ===== HERO KICKER (the role line under “I’m Erik.”) ===== */
+.kicker {
+  margin: 0 0 1.0rem 0 !important;
+  font-size: 1.15rem !important;
+  font-weight: 750 !important;
+  letter-spacing: 0.2px !important;
+  color: var(--text-main) !important;     /* darker than body text */
+  opacity: 0.95 !important;
+}
