@@ -6,15 +6,11 @@
 
     <h1>I’m Erik.</h1>
 
-    <div class="headline">
-      Manufacturing · Automation · Mechanical Design
-    </div>
+    <div class="headline">Manufacturing · Automation · Mechanical Design</div>
 
     <p class="sub">
-      I’m a Mechanical Engineering student focused on designing systems that work in the real world —
-      manufacturable, testable, and grounded in physical constraints.
-      My experience spans electromechanical prototyping, automation, and hands-on fabrication,
-      with growing interests in clean energy and sustainability.
+      I design and build mechanical systems that are manufacturable, testable, and grounded in real-world constraints.
+      Experience includes electromechanical prototyping, automation, and hands-on fabrication, with growing interests in clean energy.
     </p>
 
     <div class="cta-row">
@@ -36,7 +32,10 @@
   </div>
 </div>
 
-<br><br>
+---
+
 ## Featured
-- **Reactive Road Sign System** — Senior Design capstone focused on extreme wind loads. [Read more →](road-sign-system.md)
-- **Electromechanical Ouija Board** — Belt-driven actuation + MATLAB control. *(writeup coming soon)*
+- **Reactive Road Sign System** — Senior Design capstone addressing extreme wind loads and deployable retrofit concepts.  
+  [Read more →](road-sign-system.md)
+
+- **Electromechanical Ouija Board** — Belt-driven actuation with MATLAB-based control. *(Write-up coming soon.)*
