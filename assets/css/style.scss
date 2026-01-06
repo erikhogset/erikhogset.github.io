@@ -2,52 +2,61 @@
 body { outline: 6px solid red; }
 @import "{{ site.theme }}";
 
-/* --- Hero layout --- */
+/* Make the content area wider */
+.main-content {
+  max-width: 1100px !important;
+}
+
+/* HERO */
 .hero {
-  max-width: 1100px;
-  margin: 3rem auto 2.5rem auto;
-  padding: 0 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 3rem;
-  flex-wrap: wrap;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 3rem !important;
+  margin: 2.5rem 0 2rem 0 !important;
+  flex-wrap: wrap !important;
 }
 
 .hero-left {
-  flex: 1 1 520px;
+  flex: 1 1 520px !important;
+  min-width: 320px !important;
 }
 
 .hero-right {
-  flex: 0 0 300px;
-  display: flex;
-  justify-content: center;
+  flex: 0 0 300px !important;
+  display: flex !important;
+  justify-content: center !important;
 }
 
+/* Make the image a circle and not huge */
 .profile-pic {
-  width: 260px;
-  height: 260px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 1px solid rgba(0,0,0,0.12);
+  width: 240px !important;
+  height: 240px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  display: block !important;
+  border: 1px solid rgba(0,0,0,0.12) !important;
 }
+
+/* Typography spacing */
 .hero h1 {
-  font-size: 2.6rem;
-  margin-bottom: 0.75rem;
+  margin: 0 0 0.75rem 0 !important;
+  font-size: 2.6rem !important;
+  line-height: 1.1 !important;
 }
 
 .hero .headline {
-  font-size: 1.25rem;
-  font-weight: 500;
-  margin-bottom: 1.25rem;
-  opacity: 0.9;
+  margin: 0 0 1.1rem 0 !important;
+  font-size: 1.2rem !important;
+  font-weight: 500 !important;
+  opacity: 0.9 !important;
 }
 
 .hero .sub {
-  font-size: 1.05rem;
-  line-height: 1.6;
-  max-width: 42rem;
-  margin-bottom: 1.75rem;
+  margin: 0 0 1.4rem 0 !important;
+  font-size: 1.05rem !important;
+  line-height: 1.6 !important;
+  max-width: 44rem !important;
 }
 /* Buttons */
 .cta-row { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-top: 0.4rem; }
