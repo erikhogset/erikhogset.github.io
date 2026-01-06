@@ -11,6 +11,7 @@
   --text-main: #111111;
   --text-muted: #4b5563;
   --border-light: #e5e7eb;
+
   --accent: #b91c1c;
   --accent-hover: #991b1b;
 }
@@ -25,6 +26,7 @@ body {
 
 a {
   color: var(--accent) !important;
+  text-decoration: none !important;
 }
 
 a:hover {
@@ -32,7 +34,7 @@ a:hover {
   text-decoration: none !important;
 }
 
-/* Cayman headings default to green — override */
+/* Cayman headings sometimes default green */
 h1, h2, h3, h4 {
   color: var(--text-main) !important;
 }
@@ -43,42 +45,74 @@ hr {
   margin: 2.2rem 0 2.4rem 0 !important;
 }
 
-/* Make content a little wider + add top padding */
+/* Content width + breathing room */
 .main-content {
   max-width: 1100px !important;
   padding-top: 2.5rem !important;
 }
 
-/* Hide Cayman header entirely (clean landing) */
+/* Hide Cayman banner header (you’re replacing it with your own topbar) */
 .page-header {
   display: none !important;
 }
-/* ===== TOPBAR COLOR FIX ===== */
 
-/* Brand (your name) should stay neutral */
-.topbar .brand {
-  color: var(--text-main) !important;
+/* =========================
+   TOPBAR (Header Replacement)
+   ========================= */
+.topbar {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 0.75rem 0 !important;
 }
 
+.topbar-left {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.15rem !important;
+}
+
+.topbar-right {
+  display: flex !important;
+  gap: 0.9rem !important;
+  align-items: center !important;
+  white-space: nowrap !important;
+}
+
+/* Brand should stay neutral (not red) */
+.topbar .brand,
 .topbar .brand:hover {
   color: var(--text-main) !important;
-  text-decoration: none !important;
 }
 
-/* Navigation links should be red */
+/* Links should be red */
 .topbar .toplink {
   color: var(--accent) !important;
+  padding: 0.2rem 0.35rem !important;
+  border-radius: 8px !important;
 }
 
 .topbar .toplink:hover {
   color: var(--accent-hover) !important;
-  background: rgba(185, 28, 28, 0.05) !important;
+  background: rgba(185, 28, 28, 0.06) !important;
 }
+
+@media (max-width: 900px) {
+  .topbar {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  .topbar-right {
+    margin-top: 0.5rem !important;
+    flex-wrap: wrap !important;
+    white-space: normal !important;
+  }
+}
+
 /* =========================
-   HERO LAYOUT (GRID)
+   HERO (Layout + Typography)
    ========================= */
 .hero {
-  margin-top: 1.25rem !important;
   display: grid !important;
   grid-template-columns: 1fr 280px !important;
   gap: 3rem !important;
@@ -86,9 +120,7 @@ hr {
   margin: 0.75rem 0 1.5rem 0 !important;
 }
 
-.hero-left {
-  min-width: 0 !important;
-}
+.hero-left { min-width: 0 !important; }
 
 .hero-right {
   display: flex !important;
@@ -103,11 +135,10 @@ hr {
   object-fit: cover !important;
   display: block !important;
   max-width: none !important;
-  border: 1px solid rgba(0, 0, 0, 0.12) !important;
+  border: 1px solid rgba(0,0,0,0.12) !important;
   box-shadow: 0 10px 26px rgba(0,0,0,0.10) !important;
 }
 
-/* Responsive: stack on small screens */
 @media (max-width: 860px) {
   .hero {
     grid-template-columns: 1fr !important;
@@ -117,14 +148,60 @@ hr {
   }
 }
 
+.hero h1 {
+  margin: 0 0 0.75rem 0 !important;
+  font-size: 2.6rem !important;
+  line-height: 1.1 !important;
+}
+
+/* “Manufacturing & Automation …” line */
+.kicker {
+  margin: 0 0 1.0rem 0 !important;
+  font-size: 1.15rem !important;
+  font-weight: 750 !important;
+  letter-spacing: 0.25px !important;
+  color: var(--text-main) !important;
+  opacity: 0.95 !important;
+}
+
+.hero .sub {
+  margin: 0 0 1.1rem 0 !important;
+  font-size: 1.05rem !important;
+  line-height: 1.6 !important;
+  color: var(--text-muted) !important;
+  max-width: 44rem !important;
+}
+
 /* =========================
-   BUTTONS
+   Skill Tags
+   ========================= */
+.tag-row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 0.5rem !important;
+  margin: 0 0 1.4rem 0 !important; /* more space before buttons */
+}
+
+.tag {
+  display: inline-block !important;
+  padding: 0.35rem 0.6rem !important;
+  border-radius: 999px !important;
+  border: 1px solid var(--border-light) !important;
+  color: var(--text-muted) !important;
+  font-size: 0.92rem !important;
+  font-weight: 600 !important;
+  background: rgba(17,17,17,0.02) !important;
+}
+
+/* =========================
+   CTA Buttons
    ========================= */
 .cta-row {
   display: flex !important;
-  gap: 0.75rem !important;
   flex-wrap: wrap !important;
-  margin-top: 0.35rem !important;
+  gap: 0.75rem !important;
+  align-items: center !important;
+  margin-top: 0.2rem !important;
   margin-bottom: 1.15rem !important;
 }
 
@@ -138,15 +215,15 @@ hr {
   align-items: center !important;
   justify-content: center !important;
 
-  padding: 0.85rem 1.1rem !important;
+  padding: 0.75rem 0.95rem !important;
   border-radius: 12px !important;
 
-  text-decoration: none !important;
+  min-width: 130px !important;
+  text-align: center !important;
+
   box-shadow: none !important;
   transform: translateY(0);
   transition: transform 120ms ease, background 120ms ease, border-color 120ms ease;
-  min-width: 120px !important;
-  text-align: center !important;
 }
 
 /* Primary */
@@ -181,14 +258,8 @@ hr {
   transform: translateY(-1px);
 }
 
-/* Make ghost buttons feel consistent width */
-.cta-row a.btn-ghost {
-  min-width: 120px !important;
-  text-align: center !important;
-}
-
 /* =========================
-   CONTACT LINE
+   Contact Line
    ========================= */
 .contact-line {
   margin-top: 0.35rem !important;
@@ -196,108 +267,12 @@ hr {
 }
 
 /* =========================
-   FEATURED SECTION
+   Featured Cards
    ========================= */
-.featured {
-  margin-top: 0.25rem !important;
-}
-
 .featured h2 {
   margin: 0 0 1.1rem 0 !important;
   font-size: 1.65rem !important;
-  letter-spacing: 0.2px;
-}
-
-.featured ul {
-  margin: 0 !important;
-  padding-left: 1.25rem !important;
-}
-
-.featured li {
-  margin-bottom: 1.25rem !important;
-}
-
-.featured .item-title {
-  font-weight: 750 !important;
-}
-
-.featured .item-desc {
-  color: var(--text-muted) !important;
-}
-
-.featured .read-more {
-  display: inline-block;
-  margin-top: 0.35rem;
-  font-weight: 650;
-}
-.cta-row {
-  display: flex !important;
-  gap: 0.75rem !important;
-  flex-wrap: wrap !important;
-  justify-content: flex-start !important;
-  align-items: center !important;
-  margin-top: 0.35rem !important;
-  margin-bottom: 1.15rem !important;
-}
-/* =========================
-   TOPBAR (Header Replacement)
-   ========================= */
-/* ===== TOPBAR FIX ===== */
-/* ===== TOPBAR LAYOUT ===== */
-.topbar {
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center !important;
-  padding: 0.75rem 0 !important;
-}
-
-.topbar-left {
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 0.15rem !important;
-}
-
-.topbar-right {
-  display: flex !important;
-  gap: 0.9rem !important;
-  align-items: center !important;
-  white-space: nowrap !important;   /* prevents wrapping */
-}
-
-@media (max-width: 900px) {
-  .topbar {
-    flex-direction: column !important;
-    align-items: flex-start !important;
-  }
-
-  .topbar-right {
-    margin-top: 0.5rem !important;
-    flex-wrap: wrap !important;
-  }
-}
-
-/* Quick skill tags */
-.tag-row {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  gap: 0.5rem !important;
-  margin: 0 0 1.1rem 0 !important;
-}
-
-.tag {
-  display: inline-block !important;
-  padding: 0.35rem 0.6rem !important;
-  border-radius: 999px !important;
-  border: 1px solid var(--border-light) !important;
-  color: var(--text-muted) !important;
-  font-size: 0.92rem !important;
-  font-weight: 600 !important;
-  background: rgba(17,17,17,0.02) !important;
-}
-
-/* Featured cards */
-.featured {
-  margin-top: 0.25rem !important;
+  letter-spacing: 0.2px !important;
 }
 
 .feat-item {
@@ -323,35 +298,4 @@ hr {
   display: inline-block !important;
   margin-top: 0.55rem !important;
   font-weight: 700 !important;
-}
-/* ===== HERO KICKER (the role line under “I’m Erik.”) ===== */
-.kicker {
-  margin: 0 0 1.0rem 0 !important;
-  font-size: 1.15rem !important;
-  font-weight: 750 !important;
-  letter-spacing: 0.2px !important;
-  color: var(--text-main) !important;     /* darker than body text */
-  opacity: 0.95 !important;
-}
-/* ===== CTA BUTTON ROW FIX ===== */
-.cta-row {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  gap: 0.75rem !important;
-  margin-top: 1.1rem !important;
-}
-
-.cta-row a.btn {
-  min-width: 130px !important;
-  padding: 0.7rem 0.95rem !important;
-}
-/* Space between skill tags and buttons */
-.tag-row {
-  margin-bottom: 1.4rem !important;
-}
-.kicker {
-  font-size: 1.15rem !important;
-  font-weight: 750 !important;
-  letter-spacing: 0.25px !important;
-  margin-bottom: 0.9rem !important;
 }
