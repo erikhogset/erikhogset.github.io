@@ -85,3 +85,18 @@ body { outline: 6px solid red; }
 .page-header { padding: 1.2rem 1rem; }
 .project-name { font-size: 1.4rem; }
 .project-tagline { display: none; } /* optional: hides the tagline under your name */
+
+/* Force the hero image to behave like an avatar (override Cayman defaults) */
+.hero-right img.profile-pic {
+  width: 240px !important;
+  height: 240px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  max-width: none !important;   /* important */
+  display: block !important;
+}
+
+/* If the image is still not circular, clamp any images inside hero */
+.hero img {
+  max-width: none !important;
+}
