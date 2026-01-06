@@ -3,15 +3,15 @@
 
 @import "{{ site.theme }}";
 
-body { outline: 6px solid red; }
+/* Make Cayman header less dominant */
+.page-header { padding: 1rem 1rem !important; }
+.project-name { font-size: 1.4rem !important; margin: 0.25rem 0 !important; }
+.project-tagline { display: none !important; }
 
 /* Make the content area wider */
-.main-content {
-  max-width: 1100px !important;
-}
-.hero { background: yellow !important; }
+.main-content { max-width: 1100px !important; }
 
-/* HERO */
+/* HERO layout */
 .hero {
   display: flex !important;
   align-items: center !important;
@@ -20,92 +20,28 @@ body { outline: 6px solid red; }
   margin: 2.5rem 0 2rem 0 !important;
   flex-wrap: wrap !important;
 }
-.hero {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-}
 
-.hero-left {
-  flex: 1 1 520px !important;
-  min-width: 320px !important;
-}
+.hero-left { flex: 1 1 520px !important; min-width: 320px !important; }
+.hero-right { flex: 0 0 300px !important; display: flex !important; justify-content: center !important; }
 
-.hero-right {
-  flex: 0 0 300px !important;
-  display: flex !important;
-  justify-content: center !important;
-}
-
-/* Make the image a circle and not huge */
-.profile-pic {
-  width: 240px !important;
-  height: 240px !important;
-  border-radius: 50% !important;
-  object-fit: cover !important;
-  display: block !important;
-  border: 1px solid rgba(0,0,0,0.12) !important;
-}
-
-/* Typography spacing */
-.hero h1 {
-  margin: 0 0 0.75rem 0 !important;
-  font-size: 2.6rem !important;
-  line-height: 1.1 !important;
-}
-
-.hero .headline {
-  margin: 0 0 1.1rem 0 !important;
-  font-size: 1.2rem !important;
-  font-weight: 500 !important;
-  opacity: 0.9 !important;
-}
-
-.hero .sub {
-  margin: 0 0 1.4rem 0 !important;
-  font-size: 1.05rem !important;
-  line-height: 1.6 !important;
-  max-width: 44rem !important;
-}
-/* Buttons */
-.cta-row { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-top: 0.4rem; }
-.btn { display: inline-block; padding: 0.55rem 0.9rem; border-radius: 10px; border: 1px solid rgba(0,0,0,0.15); text-decoration: none; font-weight: 600; }
-.btn-primary { border: none; background: #0b5fff; color: white !important; }
-.btn-ghost { background: white; }
-
-/* Profile image circle */
-.profile-pic { width: 220px; height: 220px; border-radius: 999px; object-fit: cover; border: 1px solid rgba(0,0,0,0.12); }
-
-/* Reduce Cayman header + make it feel like a normal site */
-.page-header {
-  padding: 1.0rem 1rem !important;
-}
-
-.project-name {
-  font-size: 1.4rem !important;
-  margin: 0.25rem 0 !important;
-}
-
-.project-tagline {
-  display: none !important;
-}
-
-/* Make Cayman header less dominant */
-.page-header { padding: 1.2rem 1rem; }
-.project-name { font-size: 1.4rem; }
-.project-tagline { display: none; } /* optional: hides the tagline under your name */
-
-/* Force the hero image to behave like an avatar (override Cayman defaults) */
+/* Force avatar sizing (override Cayman img defaults) */
 .hero-right img.profile-pic {
   width: 240px !important;
   height: 240px !important;
   border-radius: 50% !important;
   object-fit: cover !important;
-  max-width: none !important;   /* important */
+  max-width: none !important;
   display: block !important;
+  border: 1px solid rgba(0,0,0,0.12) !important;
 }
 
-/* If the image is still not circular, clamp any images inside hero */
-.hero img {
-  max-width: none !important;
-}
+/* Typography */
+.hero h1 { margin: 0 0 0.75rem 0 !important; font-size: 2.6rem !important; line-height: 1.1 !important; }
+.hero .headline { margin: 0 0 1.1rem 0 !important; font-size: 1.2rem !important; font-weight: 500 !important; opacity: 0.9 !important; }
+.hero .sub { margin: 0 0 1.4rem 0 !important; font-size: 1.05rem !important; line-height: 1.6 !important; max-width: 44rem !important; }
+
+/* Buttons */
+.cta-row { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-top: 0.4rem; }
+.btn { display: inline-block; padding: 0.55rem 0.9rem; border-radius: 10px; border: 1px solid rgba(0,0,0,0.15); text-decoration: none; font-weight: 600; }
+.btn-primary { border: none; background: #0b5fff; color: white !important; }
+.btn-ghost { background: white; }
