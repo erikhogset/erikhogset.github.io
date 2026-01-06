@@ -1,6 +1,6 @@
 <div class="hero">
   <div class="hero-left">
-    <div style="margin-bottom:0.6rem; opacity:0.85;">
+    <div class="hero-topline">
       <strong>Erik Hogset</strong> · Mechanical Engineering · Boston University
     </div>
 
@@ -20,7 +20,7 @@
       <a class="btn btn-ghost" href="about.md">About</a>
     </div>
 
-    <div style="margin-top:1.25rem; opacity:0.9;">
+    <div class="contact-line">
       <a href="mailto:erikh@bu.edu">erikh@bu.edu</a>
       &nbsp;•&nbsp;
       <a href="https://linkedin.com/in/erikhogset">LinkedIn</a>
@@ -34,8 +34,19 @@
 
 ---
 
-## Featured
-- **Reactive Road Sign System** — Senior Design capstone addressing extreme wind loads and deployable retrofit concepts.  
-  [Read more →](road-sign-system.md)
+<div class="featured">
+  <h2>Featured</h2>
 
-- **Electromechanical Ouija Board** — Belt-driven actuation with MATLAB-based control. *(Write-up coming soon.)*
+  <ul>
+    <li>
+      <span class="item-title">Reactive Road Sign System</span>
+      <span class="item-desc"> — Senior Design capstone addressing extreme wind loads and deployable retrofit concepts.</span><br/>
+      <a class="read-more" href="road-sign-system.md">Read more →</a>
+    </li>
+
+    <li>
+      <span class="item-title">Electromechanical Ouija Board</span>
+      <span class="item-desc"> — Belt-driven actuation with MATLAB-based control. <em>(Write-up coming soon.)</em></span>
+    </li>
+  </ul>
+</div>
