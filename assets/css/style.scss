@@ -70,4 +70,73 @@
 
 .page-header {
   display: none !important;
+}/* ===== Color System ===== */
+
+:root {
+  --bg: #ffffff;
+  --text-main: #111111;
+  --text-muted: #4b5563;
+  --border-light: #e5e7eb;
+  --accent: #b91c1c;
+  --accent-hover: #991b1b;
+}
+
+/* Base text */
+body {
+  background: var(--bg) !important;
+  color: var(--text-main) !important;
+}
+
+/* Hero text */
+.hero h1 {
+  color: var(--text-main) !important;
+}
+
+.hero .headline {
+  color: var(--text-muted) !important;
+}
+
+.hero .sub {
+  color: var(--text-muted) !important;
+}
+
+/* Links */
+a {
+  color: var(--accent) !important;
+}
+
+a:hover {
+  color: var(--accent-hover) !important;
+}
+
+/* Buttons */
+.btn-primary {
+  background: var(--accent) !important;
+  border: 1px solid var(--accent) !important;
+  color: #ffffff !important;
+}
+
+.btn-primary:hover {
+  background: var(--accent-hover) !important;
+  border-color: var(--accent-hover) !important;
+}
+
+.btn-ghost {
+  background: transparent !important;
+  color: var(--text-main) !important;
+  border: 1px solid var(--border-light) !important;
+}
+
+.btn-ghost:hover {
+  border-color: var(--text-main) !important;
+}
+
+/* Header neutralization */
+.page-header {
+  background: #1f2933 !important; /* dark gray */
+  background-image: none !important;
+}
+
+.project-name {
+  color: #ffffff !important;
 }
