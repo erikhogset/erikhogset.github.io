@@ -18,7 +18,7 @@
 
     <h1>I’m Erik.</h1>
 
-    <div class="headline">Manufacturing · Automation · Mechanical Design</div>
+<div class="kicker">Manufacturing & Automation • Mechanical Design • Clean Energy Systems</div>
 
     <p class="sub">
       I design and build mechanical systems that are manufacturable, testable, and grounded in real-world constraints.
