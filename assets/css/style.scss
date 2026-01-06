@@ -13,7 +13,7 @@
   --border-light: #e5e7eb;
   --accent: #b91c1c;
   --accent-hover: #991b1b;
-  --text-mid: #c2c2c2;
+  --text-mid: #d1d1d1;
 }
 
 /* =========================
@@ -170,7 +170,7 @@ hr {
   font-size: 1.15rem !important;
   font-weight: 700 !important;
   letter-spacing: 0.25px !important;
-  color: var(--text-muted) !important;
+  color: var(--text-mid) !important;
   margin-bottom: 1rem !important;
 }
 .kicker .dot {
