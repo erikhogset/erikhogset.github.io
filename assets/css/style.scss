@@ -58,6 +58,7 @@ hr {
    HERO LAYOUT (GRID)
    ========================= */
 .hero {
+  margin-top: 1.25rem !important;
   display: grid !important;
   grid-template-columns: 1fr 280px !important;
   gap: 3rem !important;
@@ -124,6 +125,8 @@ hr {
   box-shadow: none !important;
   transform: translateY(0);
   transition: transform 120ms ease, background 120ms ease, border-color 120ms ease;
+  min-width: 140px !important;
+  text-align: center !important;
 }
 
 /* Primary */
@@ -216,3 +219,128 @@ hr {
   margin-top: 0.35rem !important;
   margin-bottom: 1.15rem !important;
 }
+/* =========================
+   TOPBAR (Header Replacement)
+   ========================= */
+.topbar {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 1.25rem !important;
+  padding: 0.75rem 0 !important;
+}
+
+.topbar-left {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.15rem !important;
+}
+
+.brand {
+  font-weight: 800 !important;
+  font-size: 1.05rem !important;
+  color: var(--text-main) !important;
+  text-decoration: none !important;
+}
+
+.brand:hover {
+  color: var(--accent) !important;
+}
+
+.brand-sub {
+  color: var(--text-muted) !important;
+  font-size: 0.95rem !important;
+}
+
+.topbar-right {
+  display: flex !important;
+  gap: 0.9rem !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  justify-content: flex-end !important;
+}
+
+.toplink {
+  color: var(--text-main) !important;
+  text-decoration: none !important;
+  font-weight: 650 !important;
+  padding: 0.45rem 0.6rem !important;
+  border-radius: 10px !important;
+  border: 1px solid transparent !important;
+}
+
+.toplink:hover {
+  background: rgba(17,17,17,0.04) !important;
+  border-color: rgba(17,17,17,0.10) !important;
+}
+
+.toplink-primary {
+  border-color: rgba(17,17,17,0.18) !important;
+}
+
+.topbar-divider {
+  height: 1px !important;
+  background: var(--border-light) !important;
+  margin: 0.25rem 0 2.25rem 0 !important;
+}
+
+/* Responsive topbar */
+@media (max-width: 860px) {
+  .topbar {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  .topbar-right {
+    justify-content: flex-start !important;
+  }
+}
+
+/* Quick skill tags */
+.tag-row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 0.5rem !important;
+  margin: 0 0 1.1rem 0 !important;
+}
+
+.tag {
+  display: inline-block !important;
+  padding: 0.35rem 0.6rem !important;
+  border-radius: 999px !important;
+  border: 1px solid var(--border-light) !important;
+  color: var(--text-muted) !important;
+  font-size: 0.92rem !important;
+  font-weight: 600 !important;
+  background: rgba(17,17,17,0.02) !important;
+}
+
+/* Featured cards */
+.featured {
+  margin-top: 0.25rem !important;
+}
+
+.feat-item {
+  border: 1px solid var(--border-light) !important;
+  border-radius: 14px !important;
+  padding: 1.1rem 1.15rem !important;
+  margin-bottom: 1rem !important;
+  background: #ffffff !important;
+}
+
+.feat-title {
+  font-weight: 800 !important;
+  font-size: 1.05rem !important;
+  margin-bottom: 0.35rem !important;
+}
+
+.feat-desc {
+  color: var(--text-muted) !important;
+  line-height: 1.55 !important;
+}
+
+.read-more {
+  display: inline-block !important;
+  margin-top: 0.55rem !important;
+  font-weight: 700 !important;
+}
+
