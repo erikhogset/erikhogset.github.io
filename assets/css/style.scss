@@ -243,11 +243,11 @@ hr {
    TOPBAR (Header Replacement)
    ========================= */
 /* ===== TOPBAR FIX ===== */
+/* ===== TOPBAR LAYOUT ===== */
 .topbar {
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;
-  gap: 1.25rem !important;
   padding: 0.75rem 0 !important;
 }
 
@@ -255,31 +255,24 @@ hr {
   display: flex !important;
   flex-direction: column !important;
   gap: 0.15rem !important;
-  flex: 0 0 auto !important;
 }
 
 .topbar-right {
   display: flex !important;
-  gap: 0.75rem !important;
+  gap: 0.9rem !important;
   align-items: center !important;
-  flex-wrap: nowrap !important;       /* key */
-  justify-content: flex-end !important;
-  flex: 1 1 auto !important;
+  white-space: nowrap !important;   /* prevents wrapping */
 }
 
-.toplink {
-  white-space: nowrap !important;     /* key */
-}
-
-/* When the screen is actually small, drop nav onto its own row cleanly */
-@media (max-width: 860px) {
+@media (max-width: 900px) {
   .topbar {
     flex-direction: column !important;
     align-items: flex-start !important;
   }
+
   .topbar-right {
+    margin-top: 0.5rem !important;
     flex-wrap: wrap !important;
-    justify-content: flex-start !important;
   }
 }
 
@@ -339,4 +332,26 @@ hr {
   letter-spacing: 0.2px !important;
   color: var(--text-main) !important;     /* darker than body text */
   opacity: 0.95 !important;
+}
+/* ===== CTA BUTTON ROW FIX ===== */
+.cta-row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 0.75rem !important;
+  margin-top: 1.1rem !important;
+}
+
+.cta-row a.btn {
+  min-width: 130px !important;
+  padding: 0.7rem 0.95rem !important;
+}
+/* Space between skill tags and buttons */
+.tag-row {
+  margin-bottom: 1.4rem !important;
+}
+.kicker {
+  font-size: 1.15rem !important;
+  font-weight: 750 !important;
+  letter-spacing: 0.25px !important;
+  margin-bottom: 0.9rem !important;
 }
