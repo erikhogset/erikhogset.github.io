@@ -6,8 +6,8 @@
   </div>
 
   <div class="topbar-right">
-    <a class="toplink" href="projects.md">Projects</a>
-    <a class="toplink" href="coursework.md">Academic Focus</a>
+    <a class="toplink" href="projects.html">Projects</a>
+    <a class="toplink" href="coursework.html">Academic Focus</a>
     <a class="toplink" href="about.html">About</a>
     <a class="toplink" href="resume.pdf">Resume</a>
   </div>
@@ -67,7 +67,7 @@
       <div class="feat-desc">
         Senior Design capstone addressing extreme wind loads and deployable retrofit concepts.
       </div>
-      <a class="read-more" href="road-sign-system.md">Read more →</a>
+      <a class="read-more" href="road-sign-system.html">Read more →</a>
     </div>
 
     <a class="feat-image is-cad is-medium" href="road-sign-system.md">
@@ -101,7 +101,7 @@
       <div class="feat-desc">
         CAD-to-CAM + CNC prototyping in BU’s ADML, focused on manufacturable design and iterative testing.
       </div>
-      <a class="read-more" href="adml.md">Read more →</a>
+      <a class="read-more" href="adml.html">Read more →</a>
     </div>
 
     <a class="feat-image is-photo is-medium" href="adml.md">
