@@ -60,6 +60,7 @@
 <div class="featured">
   <h2>Featured</h2>
 
+  <!-- Road Sign (CAD hover swap; contained, small) -->
   <div class="feat-item">
     <div class="feat-title">Reactive Road Sign System</div>
     <div class="feat-desc">
@@ -68,40 +69,41 @@
 
     <a class="read-more" href="road-sign-system.md">Read more →</a>
 
-    <!-- Hover swap image (assembled -> exploded) -->
-    <a class="feat-image is-cad is-small" href="road-sign-system.md" aria-label="Open Reactive Road Sign System project">
+    <a class="feat-image is-cad is-medium" href="road-sign-system.md" aria-label="Open Reactive Road Sign System project">
       <img class="img-default" src="images/roadsignsystem_assembled.png" alt="Reactive Road Sign System CAD (assembled)" />
       <img class="img-hover" src="images/roadsignsystem_exploded.png" alt="Reactive Road Sign System CAD (exploded)" />
     </a>
   </div>
 
- <div class="feat-item feat-with-image">
-  <div class="feat-text">
-    <div class="feat-title">Engineering Product Innovation Center (EPIC)</div>
-    <div class="feat-desc">
-      Laboratory Assistant supporting student and faculty engineering projects through
-      CNC machining, additive manufacturing (FFF &amp; SLA), CAD-to-CAM workflows,
-      and hands-on prototyping in a high-traffic makerspace.
+  <!-- EPIC (photo; SMALL, like before) -->
+  <div class="feat-item feat-with-image">
+    <div class="feat-text">
+      <div class="feat-title">Engineering Product Innovation Center (EPIC)</div>
+      <div class="feat-desc">
+        Laboratory Assistant supporting student and faculty engineering projects through CNC machining,
+        additive manufacturing (FFF &amp; SLA), CAD-to-CAM workflows, and hands-on prototyping in a high-traffic makerspace.
+      </div>
+      <a class="read-more" href="about.md">Learn more →</a>
     </div>
-    <a class="read-more" href="about.md">Learn more →</a>
+
+    <a class="feat-image is-photo is-small" href="about.md" aria-label="Learn more about EPIC">
+      <img src="images/EPIC_shop.jpg" alt="Engineering Product Innovation Center machine shop" />
+    </a>
   </div>
 
-  <a class="feat-image is-photo is-small" href="about.md">
-    <img src="images/EPIC_shop.jpg"
-         alt="Engineering Product Innovation Center machine shop" />
-  </a>
-</div>
-<div class="feat-item feat-with-image">
-  <div class="feat-text">
-    <div class="feat-title">Automated Design &amp; Manufacturing Lab (ADML)</div>
-    <div class="feat-desc">
-      CAD-to-CAM + CNC prototyping in BU’s ADML, focused on manufacturable design and iterative testing.
+  <!-- ADML (photo hover swap; MEDIUM) -->
+  <div class="feat-item feat-with-image">
+    <div class="feat-text">
+      <div class="feat-title">Automated Design &amp; Manufacturing Lab (ADML)</div>
+      <div class="feat-desc">
+        CAD-to-CAM + CNC prototyping in BU’s ADML, focused on manufacturable design and iterative testing.
+      </div>
+      <a class="read-more" href="adml.md">Read more →</a>
     </div>
-    <a class="read-more" href="adml.md">Read more →</a>
-  </div>
 
-  <a class="feat-image is-photo is-medium" href="adml.md" aria-label="Read more about ADML project">
-    <img class="img-default" src="images/fishkit_closed.jpg" alt="Machined lid on modular kit (closed)" />
-    <img class="img-hover"   src="images/fishkit_open.jpg"   alt="Modular kit opened showing internal compartments" />
-  </a>
+    <a class="feat-image is-photo is-medium" href="adml.md" aria-label="Read more about ADML project">
+      <img class="img-default" src="images/fishkit_closed.jpg" alt="Machined lid on modular kit (closed)" />
+      <img class="img-hover" src="images/fishkit_open.jpg" alt="Modular kit opened showing internal compartments" />
+    </a>
+  </div>
 </div>
