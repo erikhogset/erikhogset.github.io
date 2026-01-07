@@ -15,10 +15,6 @@
   --accent-hover: #991b1b;
   --text-mid: #6e6e6e;
 }
-/* Size variants */
-.feat-image.is-small{ height: 150px; }
-.feat-image.is-medium{ height: 190px; }
-.feat-image.is-large{ height: 220px; }
 
 /* =========================
    Global / Theme Overrides
@@ -47,6 +43,7 @@ hr {
   margin: 1.6rem 0 2rem 0 !important;
 }
 
+/* Content width + breathing room */
 .main-content {
   max-width: 1100px !important;
   padding-top: 2.5rem !important;
@@ -85,9 +82,7 @@ hr {
   font-size: 1.05rem !important;
   color: var(--text-main) !important;
 }
-.brand:hover {
-  color: var(--text-main) !important;
-}
+.brand:hover { color: var(--text-main) !important; }
 
 .brand-sub {
   font-size: 0.85rem !important;
@@ -100,7 +95,6 @@ hr {
   padding: 0.35rem 0.45rem !important;
   border-radius: 10px !important;
 }
-
 .topbar .toplink:hover {
   background: rgba(185, 28, 28, 0.06) !important;
 }
@@ -238,6 +232,7 @@ hr {
 .cta-row a.btn:hover{
   transform: translateY(-1px) !important;
 }
+
 @media (max-width: 720px) {
   .cta-row { flex-wrap: wrap !important; }
 }
@@ -293,6 +288,20 @@ hr {
   background: #ffffff !important;
 }
 
+/* Two-column featured layout (text + image) */
+.feat-with-image{
+  display: grid !important;
+  grid-template-columns: 1fr 360px !important; /* image column */
+  gap: 1.25rem !important;
+  align-items: center !important;
+}
+
+@media (max-width: 860px){
+  .feat-with-image{
+    grid-template-columns: 1fr !important;
+  }
+}
+
 .feat-title {
   font-weight: 800 !important;
   font-size: 1.05rem !important;
@@ -310,57 +319,59 @@ hr {
   font-weight: 700 !important;
 }
 
-@media (max-width: 860px){
-  .feat-with-image{
-    grid-template-columns: 1fr;
-  }
-}
+/* =========================
+   Featured Image Frame + Hover Swap
+   ========================= */
 
-/* --- Featured image wrapper --- */
+/* Size variants (force these to win) */
+.feat-image.is-small { height: 150px !important; }
+.feat-image.is-medium { height: 190px !important; }
+.feat-image.is-large { height: 220px !important; }
+
 .feat-image{
-  position: relative;
-  display: block;
-  border-radius: 12px;
-  overflow: hidden;                 /* clips to rounded corners */
-  border: 1px solid var(--border-light);
-  background: #fff;
+  position: relative !important;
+  display: block !important;
+  width: 100% !important;
+
+  border-radius: 12px !important;
+  overflow: hidden !important;             /* THIS eliminates the rounded-corner whitespace issue */
+  border: 1px solid var(--border-light) !important;
+  background: #fff !important;
+
+  margin-top: 0.85rem !important;          /* consistent spacing under text/links */
 }
 
-/* Images fill that frame */
+/* Make images truly fill the frame */
 .feat-image img{
-  width: 100%;
-  height: 100%;
-  display: block;
-  transition: opacity 180ms ease, transform 180ms ease;
+  width: 100% !important;
+  height: 100% !important;
+  display: block !important;
+  transition: opacity 180ms ease, transform 180ms ease !important;
 }
 
-/* Default visible */
-.feat-image .img-default{ opacity: 1; }
-
-/* Hover image stacked on top */
+/* Default / hover stacking */
+.feat-image .img-default{ opacity: 1 !important; }
 .feat-image .img-hover{
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  pointer-events: none;            /* prevents hover weirdness */
+  position: absolute !important;
+  inset: 0 !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
 }
 
-/* Swap on hover */
-.feat-image:hover .img-default{ opacity: 0; }
-.feat-image:hover .img-hover{ opacity: 1; }
+.feat-image:hover .img-default{ opacity: 0 !important; }
+.feat-image:hover .img-hover{ opacity: 1 !important; }
 
-/* Slight zoom polish */
-.feat-image:hover img{ transform: scale(1.02); }
+.feat-image:hover img{ transform: scale(1.02) !important; }
 
-/* --- MODE 1: photos fill the frame --- */
+/* Photo mode: fill frame nicely */
 .feat-image.is-photo img{
-  object-fit: cover;
+  object-fit: cover !important;
 }
 
-/* --- MODE 2: CAD stays fully visible --- */
+/* CAD mode: keep fully visible (don’t crop) */
 .feat-image.is-cad{
-  background: #fff;                /* nice for transparent PNGs */
+  background: #fff !important;
 }
 .feat-image.is-cad img{
-  object-fit: contain;             /* do NOT crop CAD */
+  object-fit: contain !important;
 }
