@@ -8,7 +8,7 @@
   <div class="topbar-right">
     <a class="toplink" href="projects.md">Projects</a>
     <a class="toplink" href="coursework.md">Academic Focus</a>
-    <a class="toplink" href="about.md">About</a>
+    <a class="toplink" href="about.html">About</a>
     <a class="toplink" href="resume.pdf">Resume</a>
   </div>
 </div>
@@ -39,7 +39,7 @@
       <a class="btn btn-primary" href="projects.md">View Projects</a>
       <a class="btn btn-ghost" href="resume.pdf">Resume</a>
       <a class="btn btn-ghost" href="coursework.md">Academic Focus</a>
-      <a class="btn btn-ghost" href="about.md">About</a>
+      <a class="btn btn-ghost" href="about.html">About</a>
     </div>
 
     <div class="contact-line">
@@ -86,10 +86,10 @@
         Laboratory Assistant supporting student and faculty engineering projects through CNC machining,
         additive manufacturing (FFF &amp; SLA), CAD-to-CAM workflows, and hands-on prototyping.
       </div>
-      <a class="read-more" href="about.md">Learn more →</a>
+      <a class="read-more" href="about.html">Learn more →</a>
     </div>
 
-    <a class="feat-image is-photo is-small" href="about.md">
+    <a class="feat-image is-photo is-small" href="about.html">
       <img src="images/EPIC_shop.jpg" alt="EPIC machine shop" />
     </a>
   </div>
