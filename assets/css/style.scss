@@ -325,7 +325,6 @@ hr {
   display: block;
   border-radius: 12px;
   overflow: hidden;
-  padding: 0.35rem;              /* gives the “white space” frame look */
   background: #fff;
   border: 1px solid var(--border-light);
 }
@@ -333,7 +332,7 @@ hr {
 .feat-image img{
   width: 100%;
   max-height: 190px;
-  object-fit: contain;
+  object-fit: cover;
   display: block;
   transition: opacity 180ms ease, transform 180ms ease;
 }
