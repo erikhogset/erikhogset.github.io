@@ -62,13 +62,12 @@
 
   <!-- Road Sign (CAD hover swap; contained, small) -->
   <div class="feat-item feat-with-image">
+    <div class="feat-text">
     <div class="feat-title">Reactive Road Sign System</div>
     <div class="feat-desc">
       Senior Design capstone addressing extreme wind loads and deployable retrofit concepts.
     </div>
-
     <a class="read-more" href="road-sign-system.md">Read more →</a>
-
     <a class="feat-image is-cad is-medium" href="road-sign-system.md" aria-label="Open Reactive Road Sign System project">
       <img class="img-default" src="images/roadsignsystem_assembled.png" alt="Reactive Road Sign System CAD (assembled)" />
       <img class="img-hover" src="images/roadsignsystem_exploded.png" alt="Reactive Road Sign System CAD (exploded)" />
