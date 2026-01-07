@@ -209,20 +209,38 @@ hr {
 /* =========================
    CTA Buttons
    ========================= */
-.cta-row {
-  display: flex !important;
-  flex-wrap: nowrap !important;
-  gap: 0.75rem !important;
-  margin-top: 1.1rem !important;
-  margin-bottom: 1.15rem !important;
+.cta-row{
+  display:flex !important;
+  flex-wrap:wrap !important;
+  gap:0.85rem !important;
+  align-items:center !important;
+  margin-top: 1.0rem !important;
 }
 
-.cta-row a.btn {
-  min-width: unset !important;
-  padding: 0.78rem 1.05rem !important;
-  font-size: 0.95rem !important;
-  min-width: 135px !important;
+/* Make every button the same height + prevent wrapping */
+.cta-row a.btn{
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
 
+  height: 44px !important;          /* uniform height */
+  padding: 0 18px !important;       /* no vertical padding needed */
+  border-radius: 12px !important;
+
+  font-family: inherit !important;
+  font-size: 0.98rem !important;
+  font-weight: 650 !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;   /* THIS prevents “Academic Focus” wrapping */
+
+  min-width: 140px !important;      /* consistent size */
+  text-decoration:none !important;
+  box-shadow:none !important;
+
+  transition: transform 120ms ease, background 120ms ease, border-color 120ms ease;
+}
+.cta-row a.btn:hover{
+  transform: translateY(-1px) !important;
 }
 @media (max-width: 720px) {
   .cta-row {
@@ -232,34 +250,32 @@ hr {
 
 /* Primary */
 .cta-row a.btn-primary,
-.cta-row a.btn-primary:visited {
+.cta-row a.btn-primary:visited{
   background: var(--accent) !important;
   border: 1px solid var(--accent) !important;
-  color: #ffffff !important;
+  color: #fff !important;
 }
 
 .cta-row a.btn-primary:hover,
-.cta-row a.btn-primary:focus {
+.cta-row a.btn-primary:focus{
   background: var(--accent-hover) !important;
   border-color: var(--accent-hover) !important;
-  color: #ffffff !important;
-  transform: translateY(-1px);
+  color:#fff !important;
 }
 
 /* Ghost */
 .cta-row a.btn-ghost,
-.cta-row a.btn-ghost:visited {
-  background: transparent !important;
+.cta-row a.btn-ghost:visited{
+  background: #fff !important;
   color: var(--text-main) !important;
   border: 1px solid rgba(17,17,17,0.14) !important;
 }
 
 .cta-row a.btn-ghost:hover,
-.cta-row a.btn-ghost:focus {
-  background: rgba(17,17,17,0.04) !important;
-  border-color: rgba(17,17,17,0.22) !important;
+.cta-row a.btn-ghost:focus{
+  background: rgba(17,17,17,0.03) !important;
+  border-color: rgba(17,17,17,0.25) !important;
   color: var(--text-main) !important;
-  transform: translateY(-1px);
 }
 
 /* =========================
