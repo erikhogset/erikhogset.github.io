@@ -15,6 +15,10 @@
   --accent-hover: #991b1b;
   --text-mid: #6e6e6e;
 }
+/* Size variants */
+.feat-image.is-small{ height: 150px; }
+.feat-image.is-medium{ height: 190px; }
+.feat-image.is-large{ height: 220px; }
 
 /* =========================
    Global / Theme Overrides
@@ -320,11 +324,6 @@ hr {
   overflow: hidden;                 /* clips to rounded corners */
   border: 1px solid var(--border-light);
   background: #fff;
-}
-
-/* Base: make the link a fixed-size “frame” */
-.feat-image{
-  height: 190px;
 }
 
 /* Images fill that frame */
