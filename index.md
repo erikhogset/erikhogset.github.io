@@ -69,7 +69,7 @@
 
     <a class="read-more" href="road-sign-system.md">Read more →</a>
 
-    <a class="feat-image is-cad is-medium" href="road-sign-system.md" aria-label="Open Reactive Road Sign System project">
+    <a class="feat-image is-cad is-small" href="road-sign-system.md" aria-label="Open Reactive Road Sign System project">
       <img class="img-default" src="images/roadsignsystem_assembled.png" alt="Reactive Road Sign System CAD (assembled)" />
       <img class="img-hover" src="images/roadsignsystem_exploded.png" alt="Reactive Road Sign System CAD (exploded)" />
     </a>
