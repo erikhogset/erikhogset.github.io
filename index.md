@@ -36,9 +36,9 @@
     </div>
 
     <div class="cta-row">
-      <a class="btn btn-primary" href="projects.md">View Projects</a>
+      <a class="btn btn-primary" href="projects.html">View Projects</a>
       <a class="btn btn-ghost" href="resume.pdf">Resume</a>
-      <a class="btn btn-ghost" href="coursework.md">Academic Focus</a>
+      <a class="btn btn-ghost" href="coursework.html">Academic Focus</a>
       <a class="btn btn-ghost" href="about.html">About</a>
     </div>
 
