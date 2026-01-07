@@ -1,3 +1,20 @@
-[Home](index.md) | [Projects](projects.md) | [About](about.md) | [Resume](resume.pdf)
+---
+layout: default
+---
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="topbar-left">
+    <a class="brand" href="./">Erik Hogset</a>
+    <span class="brand-sub">Mechanical Engineering • Boston University</span>
+  </div>
 
-*information about coursework goes here*
+  <div class="topbar-right">
+    <a class="toplink" href="projects.html">Projects</a>
+    <a class="toplink" href="coursework.html">Academic Focus</a>
+    <a class="toplink" href="about.html">About</a>
+    <a class="toplink" href="resume.pdf">Resume</a>
+  </div>
+</div>
+
+<hr />
+<h1>Relevant Coursework</h1>
