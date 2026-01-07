@@ -34,12 +34,12 @@
       <span class="tag">Prototyping</span>
     </div>
 
-    <div class="cta-row">
-      <a class="btn btn-primary" href="projects.md">View Projects</a>
-      <a class="btn btn-ghost" href="resume.pdf">Resume</a>
-      <a class="btn btn-ghost" href="coursework.md">Academic Focus</a>
-      <a class="btn btn-ghost" href="about.md">About</a>
-    </div>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="projects.md">View Projects</a>
+    <a class="btn btn-ghost" href="resume.pdf">Resume</a>
+    <a class="btn btn-ghost" href="coursework.md">Academic Focus</a>
+    <a class="btn btn-ghost" href="about.md">About</a>
+  </div>
 
     <div class="contact-line">
       <a href="mailto:erikh@bu.edu">erikh@bu.edu</a>
