@@ -348,11 +348,16 @@ hr {
   margin: 0.9rem 0 0.55rem 0 !important;
   font-weight: 650 !important;
 }
-.tag-row{ margin-bottom: 1.25rem !important; }
+.tag-row{ margin-bottom: 1.6rem !important; }
 .hero .cta-row a.btn{
   box-sizing: border-box !important;
   padding-left: 28px !important;
   padding-right: 28px !important;
   min-width: 140px !important;  /* gives “Academic Focus” breathing room */
-
+}
+.hero .quick-skills-label {
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.75;
 }
