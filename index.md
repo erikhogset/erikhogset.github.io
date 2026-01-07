@@ -91,10 +91,17 @@
          alt="Engineering Product Innovation Center machine shop" />
   </a>
 </div>
-  <div class="feat-item">
-    <div class="feat-title">Electromechanical Ouija Board</div>
+<div class="feat-item feat-with-image">
+  <div class="feat-text">
+    <div class="feat-title">Automated Design &amp; Manufacturing Lab (ADML)</div>
     <div class="feat-desc">
-      Belt-driven actuation with MATLAB-based control. <em>(Write-up coming soon.)</em>
+      CAD-to-CAM + CNC prototyping in BU’s ADML, focused on manufacturable design and iterative testing.
     </div>
+    <a class="read-more" href="adml.md">Read more →</a>
   </div>
+
+  <a class="feat-image" href="adml.md" aria-label="Read more about ADML project">
+    <img class="img-default" src="images/fishkit_closed.jpg" alt="Machined lid on modular kit (closed)" />
+    <img class="img-hover"   src="images/fishkit_open.jpg"   alt="Modular kit opened showing internal compartments" />
+  </a>
 </div>
