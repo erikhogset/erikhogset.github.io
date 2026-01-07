@@ -14,4 +14,3 @@
 </div>
 
 <hr />
-*ABOUT INFO**
