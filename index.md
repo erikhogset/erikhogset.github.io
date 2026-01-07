@@ -87,7 +87,7 @@
   </div>
 
   <a class="feat-image" href="about.md">
-    <img src="images/epic_shop.jpg"
+    <img src="images/EPIC_shop.jpg"
          alt="Engineering Product Innovation Center machine shop" />
   </a>
 </div>
