@@ -306,50 +306,62 @@ hr {
   font-weight: 700 !important;
 }
 
-/* Featured layout with image */
-.feat-with-image{
-  display: grid;
-  grid-template-columns: 1fr 360px;
-  gap: 1.2rem;
-  align-items: center;
-}
-
 @media (max-width: 860px){
   .feat-with-image{
     grid-template-columns: 1fr;
   }
 }
 
+/* --- Featured image wrapper --- */
 .feat-image{
   position: relative;
   display: block;
   border-radius: 12px;
-  overflow: hidden;
-  background: #fff;
+  overflow: hidden;                 /* clips to rounded corners */
   border: 1px solid var(--border-light);
+  background: #fff;
 }
 
+/* Base: make the link a fixed-size “frame” */
+.feat-image{
+  height: 190px;
+}
+
+/* Images fill that frame */
 .feat-image img{
   width: 100%;
-  max-height: 190px;
-  object-fit: cover;
+  height: 100%;
   display: block;
   transition: opacity 180ms ease, transform 180ms ease;
 }
 
+/* Default visible */
 .feat-image .img-default{ opacity: 1; }
+
+/* Hover image stacked on top */
 .feat-image .img-hover{
   position: absolute;
-  top: 0.35rem;
-  left: 0.35rem;
-  right: 0.35rem;
-  bottom: 0.35rem;
+  inset: 0;
   opacity: 0;
+  pointer-events: none;            /* prevents hover weirdness */
 }
 
+/* Swap on hover */
 .feat-image:hover .img-default{ opacity: 0; }
 .feat-image:hover .img-hover{ opacity: 1; }
 
-.feat-image:hover img{
-  transform: scale(1.02);
+/* Slight zoom polish */
+.feat-image:hover img{ transform: scale(1.02); }
+
+/* --- MODE 1: photos fill the frame --- */
+.feat-image.is-photo img{
+  object-fit: cover;
+}
+
+/* --- MODE 2: CAD stays fully visible --- */
+.feat-image.is-cad{
+  background: #fff;                /* nice for transparent PNGs */
+}
+.feat-image.is-cad img{
+  object-fit: contain;             /* do NOT crop CAD */
 }
