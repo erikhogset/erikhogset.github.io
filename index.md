@@ -70,7 +70,7 @@
       <a class="read-more" href="road-sign-system.html">Read more →</a>
     </div>
 
-    <a class="feat-image is-cad is-medium" href="road-sign-system.md">
+    <a class="feat-image is-cad is-medium" href="road-sign-system.html">
       <img class="img-default" src="images/roadsignsystem_assembled.png"
            alt="Reactive Road Sign System CAD (assembled)" />
       <img class="img-hover" src="images/roadsignsystem_exploded.png"
@@ -104,7 +104,7 @@
       <a class="read-more" href="adml.html">Read more →</a>
     </div>
 
-    <a class="feat-image is-photo is-medium" href="adml.md">
+    <a class="feat-image is-photo is-medium" href="adml.html">
       <img class="img-default" src="images/fishkit_closed.jpg"
            alt="Machined lid on modular kit (closed)" />
       <img class="img-hover" src="images/fishkit_open.jpg"
