@@ -64,6 +64,10 @@
     <div class="feat-desc">
       Senior Design capstone addressing extreme wind loads and deployable retrofit concepts.
     </div>
+    <div class="feat-image">
+  <img src="images/roadsignsystem_assembled.png" class="img-default" />
+  <img src="images/roadsignsystem_exploded.png" class="img-hover" />
+</div>
     <a class="read-more" href="road-sign-system.md">Read more →</a>
   </div>
 
