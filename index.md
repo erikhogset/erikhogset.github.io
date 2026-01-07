@@ -70,8 +70,8 @@
 
     <!-- Hover swap image (assembled -> exploded) -->
     <a class="feat-image" href="road-sign-system.md" aria-label="Open Reactive Road Sign System project">
-      <img class="img-default" src="images/roadsignsystem_exploded.png" alt="Reactive Road Sign System CAD (assembled)" />
-      <img class="img-hover" src="images/roadsignsystem_assembled.png" alt="Reactive Road Sign System CAD (exploded)" />
+      <img class="img-default" src="images/roadsignsystem_assembled.png" alt="Reactive Road Sign System CAD (assembled)" />
+      <img class="img-hover" src="images/roadsignsystem_exploded.png" alt="Reactive Road Sign System CAD (exploded)" />
     </a>
   </div>
 
