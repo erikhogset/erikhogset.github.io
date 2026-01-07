@@ -75,16 +75,22 @@
     </a>
   </div>
 
-  <div class="feat-item">
+ <div class="feat-item feat-with-image">
+  <div class="feat-text">
     <div class="feat-title">Engineering Product Innovation Center (EPIC)</div>
     <div class="feat-desc">
       Laboratory Assistant supporting student and faculty engineering projects through
-      CNC machining, additive manufacturing (FFF &amp; SLA), CAD-to-CAM workflows, and
-      hands-on prototyping in a high-traffic makerspace.
+      CNC machining, additive manufacturing (FFF &amp; SLA), CAD-to-CAM workflows,
+      and hands-on prototyping in a high-traffic makerspace.
     </div>
     <a class="read-more" href="about.md">Learn more →</a>
   </div>
 
+  <a class="feat-image" href="about.md">
+    <img src="images/epic_shop.jpg"
+         alt="Engineering Product Innovation Center machine shop" />
+  </a>
+</div>
   <div class="feat-item">
     <div class="feat-title">Electromechanical Ouija Board</div>
     <div class="feat-desc">
