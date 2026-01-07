@@ -1,4 +1,4 @@
-<!-- TOPBAR (full width of main-content) -->
+<!-- TOPBAR -->
 <div class="topbar">
   <div class="topbar-left">
     <a class="brand" href="./">Erik Hogset</a>
@@ -20,13 +20,14 @@
   <div class="hero-left">
     <h1>I’m Erik.</h1>
 
-    <div class="kicker">Manufacturing & Automation • Mechanical Design • Clean Energy Systems</div>
+    <div class="kicker">Manufacturing &amp; Automation • Mechanical Design • Clean Energy Systems</div>
 
     <p class="sub">
       I design and build mechanical systems that are manufacturable, testable, and grounded in real-world constraints.
       Experience includes electromechanical prototyping, automation, and hands-on fabrication, with growing interests in clean energy.
     </p>
-<div class="microlabel">Quick skills</div>
+
+    <div class="microlabel">Quick skills</div>
     <div class="tag-row">
       <span class="tag">CNC + CAM</span>
       <span class="tag">SolidWorks / Fusion</span>
@@ -34,12 +35,12 @@
       <span class="tag">Prototyping</span>
     </div>
 
-  <div class="cta-row">
-    <a class="btn btn-primary" href="projects.md">View Projects</a>
-    <a class="btn btn-ghost" href="resume.pdf">Resume</a>
-    <a class="btn btn-ghost" href="coursework.md">Academic Focus</a>
-    <a class="btn btn-ghost" href="about.md">About</a>
-  </div>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="projects.md">View Projects</a>
+      <a class="btn btn-ghost" href="resume.pdf">Resume</a>
+      <a class="btn btn-ghost" href="coursework.md">Academic Focus</a>
+      <a class="btn btn-ghost" href="about.md">About</a>
+    </div>
 
     <div class="contact-line">
       <a href="mailto:erikh@bu.edu">erikh@bu.edu</a>
@@ -59,23 +60,20 @@
 <div class="featured">
   <h2>Featured</h2>
 
-<div class="feat-item feat-with-image">
-  <div class="feat-text">
+  <div class="feat-item">
     <div class="feat-title">Reactive Road Sign System</div>
     <div class="feat-desc">
       Senior Design capstone addressing extreme wind loads and deployable retrofit concepts.
     </div>
-    <a class="read-more" href="road-sign-system.md">Read more →</a>
-  </div>
 
-  <a class="feat-image" href="road-sign-system.md">
-    <img class="img-default" src="images/roadsign_assembled.png" alt="Reactive Road Sign System CAD" />
-    <img class="img-hover" src="images/roadsign_exploded.png" alt="Reactive Road Sign System Exploded CAD" />
-  </a>
-      alt="Reactive Road Sign System CAD"
-    />
-  </a>
-</div>
+    <a class="read-more" href="road-sign-system.md">Read more →</a>
+
+    <!-- Hover swap image (assembled -> exploded) -->
+    <a class="feat-image" href="road-sign-system.md" aria-label="Open Reactive Road Sign System project">
+      <img class="img-default" src="images/roadsign_assembled.png" alt="Reactive Road Sign System CAD (assembled)" />
+      <img class="img-hover" src="images/roadsign_exploded.png" alt="Reactive Road Sign System CAD (exploded)" />
+    </a>
+  </div>
 
   <div class="feat-item">
     <div class="feat-title">Engineering Product Innovation Center (EPIC)</div>
