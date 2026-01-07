@@ -70,8 +70,8 @@
 
   <a class="feat-image" href="road-sign-system.md">
     <img
-      src="images/roadsign_assembled.png"
-      data-hover="images/roadsign_exploded.png"
+      src="images/roadsignsystem_assembled.png"
+      data-hover="images/roadsignsystem_exploded.png"
       alt="Reactive Road Sign System CAD"
     />
   </a>
