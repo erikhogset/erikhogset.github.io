@@ -69,7 +69,7 @@
     <a class="read-more" href="road-sign-system.md">Read more →</a>
 
     <!-- Hover swap image (assembled -> exploded) -->
-    <a class="feat-image" href="road-sign-system.md" aria-label="Open Reactive Road Sign System project">
+    <a class="feat-image is-cad" href="road-sign-system.md" aria-label="Open Reactive Road Sign System project">
       <img class="img-default" src="images/roadsignsystem_assembled.png" alt="Reactive Road Sign System CAD (assembled)" />
       <img class="img-hover" src="images/roadsignsystem_exploded.png" alt="Reactive Road Sign System CAD (exploded)" />
     </a>
@@ -86,7 +86,7 @@
     <a class="read-more" href="about.md">Learn more →</a>
   </div>
 
-  <a class="feat-image" href="about.md">
+  <a class="feat-image is-photo" href="about.md">
     <img src="images/EPIC_shop.jpg"
          alt="Engineering Product Innovation Center machine shop" />
   </a>
@@ -100,7 +100,7 @@
     <a class="read-more" href="adml.md">Read more →</a>
   </div>
 
-  <a class="feat-image" href="adml.md" aria-label="Read more about ADML project">
+  <a class="feat-image is-photo" href="adml.md" aria-label="Read more about ADML project">
     <img class="img-default" src="images/fishkit_closed.jpg" alt="Machined lid on modular kit (closed)" />
     <img class="img-hover"   src="images/fishkit_open.jpg"   alt="Modular kit opened showing internal compartments" />
   </a>
