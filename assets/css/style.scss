@@ -361,30 +361,41 @@ hr {
   text-transform: uppercase;
   opacity: 0.75;
 }
-.feat-image {
-  position: relative;
-  width: 100%;
-  margin-bottom: 0.75rem;
+.feat-with-image {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 1.5rem;
+  align-items: center;
 }
 
 .feat-image img {
   width: 100%;
-  height: auto;
-  display: block;
+  max-height: 180px;
+  object-fit: contain;
+  transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
-.feat-image .img-hover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 200ms ease;
+.feat-image:hover img {
+  transform: scale(1.02);
 }
 
-.feat-image:hover .img-hover {
-  opacity: 1;
+/* image swap */
+.feat-image img:hover {
+  content: attr(data-hover);
 }
 
-.feat-image:hover .img-default {
-  opacity: 0;
+/* subtle card hover */
+.feat-item:hover {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+/* mobile */
+@media (max-width: 780px) {
+  .feat-with-image {
+    grid-template-columns: 1fr;
+  }
+
+  .feat-image img {
+    max-height: 220px;
+  }
 }
