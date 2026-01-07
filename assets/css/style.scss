@@ -229,7 +229,7 @@ hr {
 
   font-family: inherit !important;
   font-size: 0.98rem !important;
-  font-weight: 650 !important;
+  font-weight: 600 !important;
   line-height: 1 !important;
   white-space: nowrap !important;   /* THIS prevents “Academic Focus” wrapping */
 
@@ -349,3 +349,9 @@ hr {
   font-weight: 650 !important;
 }
 .tag-row{ margin-bottom: 1.25rem !important; }
+.hero .cta-row a.btn{
+  box-sizing: border-box !important;
+  padding-left: 26px !important;
+  padding-right: 26px !important;
+  min-width: 160px !important;  /* gives “Academic Focus” breathing room */
+}
