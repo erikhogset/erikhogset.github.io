@@ -361,3 +361,30 @@ hr {
   text-transform: uppercase;
   opacity: 0.75;
 }
+.feat-image {
+  position: relative;
+  width: 100%;
+  margin-bottom: 0.75rem;
+}
+
+.feat-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.feat-image .img-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 200ms ease;
+}
+
+.feat-image:hover .img-hover {
+  opacity: 1;
+}
+
+.feat-image:hover .img-default {
+  opacity: 0;
+}
