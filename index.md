@@ -61,7 +61,7 @@
   <h2>Featured</h2>
 
   <!-- Road Sign (CAD hover swap; contained, small) -->
-  <div class="feat-item">
+  <div class="feat-item feat-with-image">
     <div class="feat-title">Reactive Road Sign System</div>
     <div class="feat-desc">
       Senior Design capstone addressing extreme wind loads and deployable retrofit concepts.
