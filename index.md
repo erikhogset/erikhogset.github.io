@@ -69,9 +69,9 @@
   </div>
 
   <a class="feat-image" href="road-sign-system.md">
-    <img
-      src="images/roadsignsystem_assembled.png"
-      data-hover="images/roadsignsystem_exploded.png"
+    <img class="img-default" src="images/roadsign_assembled.png" alt="Reactive Road Sign System CAD" />
+    <img class="img-hover" src="images/roadsign_exploded.png" alt="Reactive Road Sign System Exploded CAD" />
+  </a>
       alt="Reactive Road Sign System CAD"
     />
   </a>
