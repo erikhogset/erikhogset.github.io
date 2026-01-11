@@ -452,9 +452,9 @@ hr {
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
-/* No-crop option for portrait/technical shots (snake) */
 .about-photos-top img.no-crop {
-  object-fit: contain;
-  background: #fff;              /* shows clean padding instead of cropping */
-  border: 1px solid var(--border-light);
+  object-fit: cover;              /* fill the frame */
+  object-position: 50% 35%;       /* shift crop upward so snake is centered */
+  background: none;
+  border: none;
 }
