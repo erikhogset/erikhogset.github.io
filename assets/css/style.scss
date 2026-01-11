@@ -431,3 +431,16 @@ hr {
 .about-collage img:hover {
   transform: scale(1.04);
 }
+
+.read-more {
+  margin-left: 6px;
+  font-weight: 500;
+  color: #c0392b;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.read-more:hover {
+  color: #922b21;
+  text-decoration: underline;
+}
