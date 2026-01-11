@@ -444,3 +444,17 @@ hr {
   color: #922b21;
   text-decoration: underline;
 }
+/* Default: fill frame (may crop) */
+.about-photos-top img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* No-crop option for portrait/technical shots (snake) */
+.about-photos-top img.no-crop {
+  object-fit: contain;
+  background: #fff;              /* shows clean padding instead of cropping */
+  border: 1px solid var(--border-light);
+}
