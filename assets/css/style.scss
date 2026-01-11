@@ -524,36 +524,10 @@ hr {
   color: var(--accent);
   font-weight: 700;
 }
-
-.course-block p{
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: var(--text-muted);
-}
-/* Coursework block titles */
-.coursework-card h3 {
-  font-size: 1.25rem;
-  font-weight: 800;
-  letter-spacing: -0.01em;
+.course-block h3 {
+  font-size: 1.15rem;
+  font-weight: 750;
+  letter-spacing: 0.2px;
+  margin-bottom: 14px;
   color: #111;
-  margin-bottom: 12px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid rgba(185, 28, 28, 0.15);
-}
-
-/* Optional: subtle accent bar on the left */
-.coursework-card {
-  position: relative;
-}
-
-.coursework-card::before {
-  content: "";
-  position: absolute;
-  top: 22px;
-  left: 0;
-  width: 4px;
-  height: 28px;
-  background: #b91c1c;
-  border-radius: 2px;
-  opacity: 0.85;
 }
