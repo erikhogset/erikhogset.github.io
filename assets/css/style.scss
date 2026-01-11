@@ -531,3 +531,18 @@ hr {
   margin-bottom: 14px;
   color: #111;
 }
+.applied {
+  margin-top: 10px;
+  font-size: 0.92rem;
+  color: #666;
+}
+
+.applied a {
+  font-weight: 600;
+  color: #b91c1c;
+  text-decoration: none;
+}
+
+.applied a:hover {
+  text-decoration: underline;
+}
