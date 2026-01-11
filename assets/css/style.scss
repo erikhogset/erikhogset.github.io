@@ -468,3 +468,22 @@ hr {
 .about-photo-card img.snake-photo{
   object-position: 50% 35%;         /* shift upward so snake is better centered */
 }
+.photo-frame {
+  width: 100%;
+  height: 260px;              /* Controls the card height */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;         /* Fills the card */
+  display: block;
+}
+
+/* Optional tuning for snake crop */
+.photo-frame img.snake {
+  object-position: 50% 35%;  /* moves crop upward so snake is centered */
+}
