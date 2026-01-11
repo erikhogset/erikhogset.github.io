@@ -1,13 +1,13 @@
 ---
 layout: default
 ---
+
 <!-- TOPBAR -->
 <div class="topbar">
   <div class="topbar-left">
     <a class="brand" href="./">Erik Hogset</a>
     <span class="brand-sub">Mechanical Engineering • Boston University</span>
   </div>
-
   <div class="topbar-right">
     <a class="toplink" href="projects.html">Projects</a>
     <a class="toplink" href="coursework.html">Academic Focus</a>
@@ -17,20 +17,70 @@ layout: default
 </div>
 
 <hr />
-<h1>Projects</h1>
 
-## Reactive Road Sign System (Senior Design)
-Mechanical retrofit system enabling standard road signs to deflect under extreme wind loads and self-reset.  
-[Read more →](road-sign-system.md)
+<div class="projects-wrapper">
+  <h1>Projects</h1>
+  <p class="projects-intro">
+    Selected work in mechanical design, manufacturing, and prototyping. Each project page includes the problem,
+    constraints, design decisions, and what I’d improve next.
+  </p>
 
-## Electromechanical Interactive Ouija Board
-Belt-driven electromechanical system integrating MATLAB control and AI-generated responses.  
-[Read more →](ouija-board.md)
+  <div class="projects-grid">
 
-## Compact Fishing Kit Product
-Manufacturable product design emphasizing compact packaging and assembly efficiency.  
-[Read more →](fishing-kit.md)
+    <!-- Project 1: Road sign -->
+    <article class="project-card">
+      <a class="project-card-link" href="road-sign-system.html">
+        <div class="project-media project-media--contain">
+          <img src="images/roadsignsystem_assembled.png" alt="Reactive Road Sign System CAD (assembled)" />
+        </div>
 
-## Adaptive LED Lamp
-User-adjustable lighting system controlling brightness and blue-light output.  
-[Read more →](led-lamp.md)
+        <div class="project-body">
+          <div class="project-topline">
+            <span class="project-tag">Senior Design</span>
+            <span class="project-meta">Wind loads • Mechanisms</span>
+          </div>
+
+          <h3 class="project-title">Reactive Road Sign System</h3>
+
+          <p class="project-desc">
+            Retrofit mechanism concept for U-channel roadside signs to deflect under extreme winds and recover.
+            Work includes joint concepting, risk-driven testing plans, and prototype manufacturability.
+          </p>
+
+          <div class="project-footer">
+            <span class="project-cta">View project →</span>
+          </div>
+        </div>
+      </a>
+    </article>
+
+    <!-- Project 2: ADML fish kit -->
+    <article class="project-card">
+      <a class="project-card-link" href="adml.html">
+        <div class="project-media project-media--cover">
+          <img class="img-default" src="images/fishkit_closed.jpg" alt="Compact kit (closed) with machined lid" />
+          <img class="img-hover" src="images/fishkit_open.jpg" alt="Compact kit opened showing internal compartments" />
+        </div>
+
+        <div class="project-body">
+          <div class="project-topline">
+            <span class="project-tag">ADML</span>
+            <span class="project-meta">CAD-to-CAM • CNC</span>
+          </div>
+
+          <h3 class="project-title">Compact Kit Prototype (ADML)</h3>
+
+          <p class="project-desc">
+            CAD-to-CAM workflow and CNC prototyping focused on manufacturable design, fit-up iterations,
+            and clean documentation from concept to finished parts.
+          </p>
+
+          <div class="project-footer">
+            <span class="project-cta">View project →</span>
+          </div>
+        </div>
+      </a>
+    </article>
+
+  </div>
+</div>
