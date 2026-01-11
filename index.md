@@ -89,7 +89,7 @@
       <a class="read-more" href="about.html">Learn more →</a>
     </div>
 
-    <a class="feat-image is-photo is-small" href="about.html">
+    <a class="feat-image is-photo is-small" href="epic.html">
       <img src="images/EPIC_shop.jpg" alt="EPIC machine shop" />
     </a>
   </div>
