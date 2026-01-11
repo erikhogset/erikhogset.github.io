@@ -86,7 +86,7 @@
         Laboratory Assistant supporting student and faculty engineering projects through CNC machining,
         additive manufacturing (FFF &amp; SLA), CAD-to-CAM workflows, and hands-on prototyping.
       </div>
-      <a class="read-more" href="about.html">Learn more →</a>
+      <a class="read-more" href="epic.html">Learn more →</a>
     </div>
 
     <a class="feat-image is-photo is-small" href="epic.html">
