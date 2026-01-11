@@ -602,3 +602,144 @@ hr {
 .course-block .applied a:hover {
   text-decoration: underline;
 }
+/* =========================
+   Projects Page
+   ========================= */
+.projects-wrapper{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px 60px 20px;
+}
+
+.projects-wrapper h1{
+  font-size: 2.6rem;
+  margin: 0 0 0.6rem 0;
+}
+
+.projects-intro{
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.65;
+  max-width: 52rem;
+  margin: 0 0 2.2rem 0;
+}
+
+.projects-grid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+@media (max-width: 900px){
+  .projects-grid{ grid-template-columns: 1fr; }
+}
+
+/* Card */
+.project-card{
+  border: 1px solid var(--border-light);
+  border-radius: 14px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+.project-card:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.08), 0 2px 6px rgba(0,0,0,0.04);
+  border-color: rgba(185, 28, 28, 0.35);
+}
+
+/* Make whole card clickable */
+.project-card-link{
+  display: grid;
+  grid-template-rows: 210px auto;
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+/* Media (supports hover swap) */
+.project-media{
+  position: relative;
+  width: 100%;
+  height: 210px;
+  background: #fff;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.project-media img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+/* image sizing modes */
+.project-media--cover img{ object-fit: cover; }
+.project-media--contain img{ object-fit: contain; padding: 10px; }
+
+/* hover zoom polish */
+.project-card:hover .project-media img{
+  transform: scale(1.02);
+}
+
+/* Hover swap (only activates if you have img-default + img-hover) */
+.project-media .img-default{ opacity: 1; }
+.project-media .img-hover{
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+.project-card:hover .project-media .img-default{ opacity: 0; }
+.project-card:hover .project-media .img-hover{ opacity: 1; }
+
+/* Body */
+.project-body{
+  padding: 1.15rem 1.2rem 1.25rem 1.2rem;
+}
+
+.project-topline{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  margin-bottom: 0.55rem;
+}
+
+.project-tag{
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent);
+  background: rgba(185, 28, 28, 0.07);
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+}
+
+.project-meta{
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.project-title{
+  font-size: 1.1rem;
+  font-weight: 850;
+  margin: 0 0 0.45rem 0;
+  letter-spacing: 0.2px;
+}
+
+.project-desc{
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+.project-footer{
+  margin-top: 0.9rem;
+}
+.project-cta{
+  font-weight: 700;
+  color: var(--accent);
+}
