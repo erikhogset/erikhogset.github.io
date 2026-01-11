@@ -549,3 +549,56 @@ hr {
 .applied a:hover {
   text-decoration: underline;
 }
+/* =========================
+   Coursework Card Hover + Depth
+   ========================= */
+
+.course-block {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: 14px;
+  padding: 1.6rem 1.6rem 1.7rem 1.6rem;
+
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease;
+}
+
+/* lift + glow on hover */
+.course-block:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 10px 22px rgba(0,0,0,0.08),
+    0 2px 6px rgba(0,0,0,0.04);
+  border-color: rgba(185, 28, 28, 0.35); /* subtle red hint */
+}
+
+/* title pop */
+.course-block h3 {
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  margin-bottom: 0.6rem;
+}
+
+/* keep list tight */
+.course-block ul {
+  padding-left: 1.1rem;
+  margin-bottom: 0.8rem;
+}
+
+/* soften paragraph text */
+.course-block p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* applied project links */
+.course-block .applied a {
+  font-weight: 600;
+  color: var(--accent);
+}
+.course-block .applied a:hover {
+  text-decoration: underline;
+}
