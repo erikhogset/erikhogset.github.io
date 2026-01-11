@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <!-- TOPBAR -->
 <div class="topbar">
   <div class="topbar-left">
@@ -17,40 +18,212 @@ layout: default
 </div>
 
 <hr />
-<h1>Reactive Road Sign System</h1>
 
-# Reactive Road Sign System
-*Senior Design I & II (ME460/461)*
+<div class="proj-wrapper">
 
-## Overview
-Briefly describe the real-world problem and why it matters. Keep this to 3–4 sentences.
+  <!-- HERO -->
+  <section class="proj-hero">
+    <div class="proj-hero-left">
+      <div class="proj-breadcrumb">
+        <a href="projects.html">Projects</a>
+        <span class="dot">•</span>
+        <span>Reactive Road Sign System</span>
+      </div>
 
-## Problem Statement
-What problem were you solving? Who does it affect? Under what conditions does it fail today?
+      <h1 class="proj-title">Reactive Road Sign System</h1>
 
-## Design Requirements & Constraints
-- Wind loading / environmental constraints  
-- Safety and failure requirements  
-- Compatibility with existing infrastructure  
-- Cost or manufacturability constraints  
+      <p class="proj-subtitle">
+        Senior Design capstone exploring a retrofit mechanism for roadside U-channel signs to deflect under extreme winds
+        and return to a safe, readable position.
+      </p>
 
-## Your Role
-Clearly state what **you personally** worked on:
-- Concept development
-- CAD and mechanical design
-- Analysis and testing
-- Prototyping
+      <div class="proj-tags">
+        <span class="tag">Mechanism design</span>
+        <span class="tag">Wind loads</span>
+        <span class="tag">Manufacturability</span>
+        <span class="tag">Testing plans</span>
+        <span class="tag">CAD</span>
+      </div>
 
-## Design Approach
-Describe:
-- Initial concepts you considered
-- Why they didn’t fully work
-- How the final concept improved on them
+      <div class="proj-meta">
+        <div><span class="k">Role:</span> Mechanical design + prototyping</div>
+        <div><span class="k">Tools:</span> CAD (SolidWorks/Fusion), basic FEA/hand calcs, shop prototyping</div>
+        <div><span class="k">Team:</span> Team 249 (Senior Design)</div>
+      </div>
+    </div>
 
-## Results & Outcomes
-- What was built
-- What was tested or analyzed
-- What worked / what you learned
+    <div class="proj-hero-right">
+      <!-- Clickable hero media; on hover: assembled -> exploded -->
+      <a class="proj-media proj-media--cad" href="images/roadsignsystem_assembled.png" aria-label="Open image">
+        <img class="img-default" src="images/roadsignsystem_assembled.png" alt="Reactive Road Sign System CAD (assembled)" />
+        <img class="img-hover" src="images/roadsignsystem_exploded.png" alt="Reactive Road Sign System CAD (exploded)" />
+      </a>
+      <div class="proj-media-caption">Hover to view exploded assembly</div>
+    </div>
+  </section>
 
-## Media
-(You’ll add images here next)
+  <hr />
+
+  <!-- QUICK OVERVIEW -->
+  <section class="proj-section">
+    <h2>Overview</h2>
+    <div class="proj-grid-2">
+      <div class="proj-card">
+        <h3>Problem</h3>
+        <p>
+          Standard roadside signs can fail under extreme winds. The goal was to explore a retrofit concept that allows controlled
+          deflection under high loading while maintaining durability and restoring the sign to a readable orientation.
+        </p>
+      </div>
+
+      <div class="proj-card">
+        <h3>Approach</h3>
+        <p>
+          We iterated on joint concepts and load paths, prioritized manufacturability, and built a test-driven plan (risk-first)
+          to validate the most failure-prone elements before over-investing in full prototypes.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESIGN REQUIREMENTS -->
+  <section class="proj-section">
+    <h2>Design requirements</h2>
+    <div class="proj-card">
+      <ul class="proj-bullets">
+        <li><strong>Retrofit:</strong> compatible with common U-channel signposts without replacing the entire system</li>
+        <li><strong>Controlled deflection:</strong> reduce peak loads by allowing motion rather than rigid failure</li>
+        <li><strong>Recoverability:</strong> return to a safe “readable” position after loading event</li>
+        <li><strong>Serviceability:</strong> realistic maintenance/inspection for DOT-style operations</li>
+        <li><strong>Manufacturable:</strong> parts that can be cut, machined, and assembled with typical shop processes</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONCEPTS -->
+  <section class="proj-section">
+    <h2>Concept development</h2>
+    <div class="proj-card">
+      <p>
+        We explored multiple mechanical approaches for allowing motion while maintaining alignment and robustness.
+        Key decision factors were load path clarity, corrosion tolerance, part count, and failure modes (pin shear, bending,
+        bearing wear, and fastener loosening).
+      </p>
+
+      <div class="proj-grid-2">
+        <div>
+          <h3>What we favored</h3>
+          <ul class="proj-bullets">
+            <li>Simple joints with predictable failure modes</li>
+            <li>Replaceable sacrificial elements (e.g., shear pins)</li>
+            <li>Geometry that minimizes unintentional binding</li>
+          </ul>
+        </div>
+        <div>
+          <h3>What we avoided</h3>
+          <ul class="proj-bullets">
+            <li>Over-complex resets requiring tight tolerances</li>
+            <li>Hard-to-inspect internal mechanisms</li>
+            <li>Concepts that shift loads into brittle fasteners</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANALYSIS + TEST PLAN -->
+  <section class="proj-section">
+    <h2>Analysis and testing plan</h2>
+    <div class="proj-card">
+      <p>
+        The validation strategy focused on de-risking the most uncertain elements first. Instead of “build everything and hope,”
+        we targeted specific failure modes with small, measurable tests.
+      </p>
+
+      <div class="proj-grid-2">
+        <div class="proj-mini">
+          <h3>Key risks</h3>
+          <ul class="proj-bullets">
+            <li>Pin shear / bearing deformation</li>
+            <li>Joint binding under off-axis loads</li>
+            <li>Wear + looseness over repeated cycles</li>
+            <li>Corrosion and outdoor durability</li>
+          </ul>
+        </div>
+
+        <div class="proj-mini">
+          <h3>Planned tests</h3>
+          <ul class="proj-bullets">
+            <li>Static overload to identify first-yield component</li>
+            <li>Cycle testing for looseness / wear progression</li>
+            <li>Simple environmental exposure screening</li>
+            <li>Repeatable “reset” validation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MANUFACTURING -->
+  <section class="proj-section">
+    <h2>Manufacturing considerations</h2>
+    <div class="proj-card">
+      <p>
+        The concept was developed with shop realities in mind: cuttable profiles, machinable bores, accessible fasteners,
+        and modular subassemblies. The goal was to make iteration fast and reduce tolerance stack-up issues.
+      </p>
+
+      <div class="proj-grid-2">
+        <div class="proj-mini">
+          <h3>Processes</h3>
+          <ul class="proj-bullets">
+            <li>Waterjet/laser cut plates</li>
+            <li>Drilled/reamed pin holes</li>
+            <li>Off-the-shelf fasteners + bushings where possible</li>
+          </ul>
+        </div>
+        <div class="proj-mini">
+          <h3>Design for assembly</h3>
+          <ul class="proj-bullets">
+            <li>Minimize unique hardware</li>
+            <li>Access for tools in-field</li>
+            <li>Replaceable wear components</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTS / STATUS -->
+  <section class="proj-section">
+    <h2>Current status</h2>
+    <div class="proj-card">
+      <ul class="proj-bullets">
+        <li><strong>CAD:</strong> assembled + exploded layouts completed</li>
+        <li><strong>Validation:</strong> test plan established to de-risk key failure modes</li>
+        <li><strong>Next:</strong> finalize a single “best” joint geometry, build a minimal test article, and run overload + cycle tests</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="proj-section">
+    <h2>Gallery</h2>
+    <div class="proj-gallery">
+      <a class="proj-gallery-item" href="images/roadsignsystem_assembled.png">
+        <img src="images/roadsignsystem_assembled.png" alt="Assembled CAD" />
+        <div class="cap">Assembled CAD</div>
+      </a>
+
+      <a class="proj-gallery-item" href="images/roadsignsystem_exploded.png">
+        <img src="images/roadsignsystem_exploded.png" alt="Exploded CAD" />
+        <div class="cap">Exploded CAD</div>
+      </a>
+    </div>
+  </section>
+
+  <div class="proj-back">
+    <a href="projects.html">← Back to Projects</a>
+  </div>
+
+</div>
