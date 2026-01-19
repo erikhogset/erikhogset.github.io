@@ -1141,3 +1141,33 @@ hr {
 .project-media--quad .media-hover {
   transition: opacity 0.25s ease;
 }
+/* Additive page: side-by-side media */
+.media-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.25rem;
+  align-items: start;
+  margin: 2rem 0;
+}
+
+.media-main img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.media-side video {
+  width: 100%;
+  max-width: 260px;
+  border-radius: 8px;
+}
+
+/* Mobile fallback */
+@media (max-width: 768px) {
+  .media-row {
+    grid-template-columns: 1fr;
+  }
+
+  .media-side video {
+    max-width: 100%;
+  }
+}
