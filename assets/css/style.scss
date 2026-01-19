@@ -1298,3 +1298,64 @@ hr {
     grid-template-columns: 1fr;
   }
 }
+/* =========================
+   Additive page only
+   ========================= */
+.additive-page {
+  .media-row {
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    gap: 16px;
+    align-items: start;
+    margin-top: 12px;
+  }
+
+  .media-main img,
+  .media-main video {
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+    display: block;
+  }
+
+  /* Keeps video from feeling huge */
+  .media-main video {
+    max-height: 520px;
+    object-fit: cover;
+  }
+
+  .media-side {
+    display: grid;
+    gap: 12px;
+  }
+
+  .media-side img {
+    width: 100%;
+    height: 150px;         /* makes them taller/more intentional */
+    object-fit: cover;     /* crops nicely */
+    border-radius: 14px;
+    display: block;
+  }
+
+  /* Make the section after media feel “designed” */
+  .after-media {
+    margin-top: 18px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(0,0,0,0.08);
+  }
+
+  /* Better mobile behavior */
+  @media (max-width: 900px) {
+    .media-row {
+      grid-template-columns: 1fr;
+    }
+
+    .media-side img {
+      height: 180px;
+    }
+
+    .media-main video {
+      max-height: 420px;
+    }
+  }
+}
