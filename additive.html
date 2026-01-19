@@ -183,73 +183,90 @@ layout: default
     </div>
   </div>
 
-  <!-- ===================== -->
-  <!-- Project 3: Mass–Performance Structure (FFF) -->
-  <!-- ===================== -->
-  <div class="card media-card">
-    <h2>Mass–Performance Structure — FFF Design, Print & Compression Test</h2>
+<!-- ===================== -->
+<!-- Project 3: Mass–Performance Structure (Fusion Generative Design) -->
+<!-- ===================== -->
+<div class="card media-card">
+  <h2>Mass–Performance Structure — Fusion Generative Design, FFF Print & Compression Test</h2>
 
-    <p class="muted">
-      Designed and printed a lightweight structure to meet the course compression requirement and verified performance
-      under load. Printed in <strong>PETG</strong> and withstood <strong>2000 N</strong>.
-    </p>
+  <p class="muted">
+    Compression structure developed by defining a full allowable <em>design space</em> between constrained faces,
+    then using <strong>Autodesk Fusion 360 Generative Design</strong> to remove material while preserving load paths.
+    The resulting geometry was manufactured via FFF in <strong>PETG</strong> and validated under compressive loading,
+    successfully withstanding <strong>2000&nbsp;N</strong>.
+  </p>
 
-    <div class="mp-media">
-      <figure class="mp-hero">
-        <img src="images/additive_3print.jpeg" alt="Mass-performance structure final print" />
-        <figcaption>Final PETG structure (pre-test).</figcaption>
+  <!-- Media layout -->
+  <div class="media-row">
+    <!-- Left: final printed part -->
+    <div class="media-main">
+      <img
+        class="media-hero"
+        src="images/additive_3print.jpeg"
+        alt="Final PETG structure printed from Fusion Generative Design result"
+      />
+      <p class="media-caption muted">
+        Final PETG print produced from the Fusion Generative Design result.
+      </p>
+    </div>
+
+    <!-- Right: generative workflow images -->
+    <div class="media-side media-side--tall">
+      <!-- Starting volume -->
+      <figure class="media-fig">
+        <img src="images/additive_3cada.png" alt="Fusion Generative starting design space, top isometric view" />
+        <figcaption class="media-label">
+          Starting design space — top isometric view
+        </figcaption>
       </figure>
 
-      <div class="mp-stack">
-        <!-- Replace filenames below with your real ones -->
-        <figure class="mini-fig">
-          <img src="images/additive_3cad.png" alt="Mass-performance structure CAD concept" />
-          <figcaption>CAD concept</figcaption>
-        </figure>
+      <figure class="media-fig">
+        <img src="images/additive_3cadb.png" alt="Fusion Generative starting design space, bottom isometric view" />
+        <figcaption class="media-label">
+          Starting design space — bottom isometric view
+        </figcaption>
+      </figure>
 
-        <figure class="mini-fig">
-          <img src="images/additive_3test.jpeg" alt="Compression test setup / during test" />
-          <figcaption>Compression test</figcaption>
-        </figure>
+      <!-- Optimized mesh -->
+      <figure class="media-fig">
+        <img src="images/additive_3cadc.png" alt="Fusion Generative optimized mesh result, top isometric view" />
+        <figcaption class="media-label">
+          Generative result — optimized mesh (top isometric)
+        </figcaption>
+      </figure>
 
-        <figure class="mini-fig">
-          <img src="images/additive_3detail.jpeg" alt="Structure detail region" />
-          <figcaption>Detail</figcaption>
-        </figure>
-      </div>
-    </div>
-
-    <div class="notes-block">
-      <div class="notes-header">
-        <h3 class="h3">Technical notes</h3>
-        <p class="muted">Structural choices, print decisions, and test result.</p>
-      </div>
-
-      <div class="notes-grid">
-        <div class="notes-card">
-          <h4 class="notes-title">What I focused on</h4>
-          <ul class="list">
-            <li>Meeting top/bottom contact geometry while resisting buckling</li>
-            <li>Layer direction choices for compressive strength and stability</li>
-            <li>Balancing mass vs stiffness (material where it matters)</li>
-          </ul>
-        </div>
-
-        <div class="notes-card">
-          <h4 class="notes-title">Outcome</h4>
-          <p>
-            Passed the compression target at 2 kN in PETG while staying above the height threshold during loading.
-          </p>
-
-          <div class="badge-row">
-            <span class="additive-badge">PETG</span>
-            <span class="additive-badge">2 kN</span>
-            <span class="additive-badge">Compression test</span>
-          </div>
-        </div>
-      </div>
+      <figure class="media-fig">
+        <img src="images/additive_3cadd.png" alt="Fusion Generative optimized mesh result, bottom isometric view" />
+        <figcaption class="media-label">
+          Generative result — optimized mesh (bottom isometric)
+        </figcaption>
+      </figure>
     </div>
   </div>
+
+  <!-- Notes -->
+  <div class="grid-2 grid-2--afterMedia">
+    <div class="card card--sub">
+      <h3 class="h3">What I focused on</h3>
+      <ul class="list">
+        <li>Defining an appropriate design space spanning the constrained faces</li>
+        <li>Applying compression loads and boundary conditions in Fusion Generative</li>
+        <li>Interpreting mesh-based generative output for manufacturability</li>
+        <li>Orienting print layers to support compressive load paths</li>
+      </ul>
+    </div>
+
+    <div class="card card--sub">
+      <h3 class="h3">Outcome</h3>
+      <p>
+        The generative design process produced a lightweight structure that preserved
+        primary load paths while eliminating nonessential material. The final PETG print
+        met the course compression requirement and successfully sustained a 2&nbsp;kN load
+        without structural failure.
+      </p>
+    </div>
+  </div>
+</div>
 
   <!-- ===================== -->
   <!-- Project 4: Anemometer + Weather Vane (FFF) -->
