@@ -44,7 +44,7 @@ layout: default
     <h2>Flying Sea Turtle — FFF Print & Assembly</h2>
 
     <p class="muted">
-      Multi-part articulated print produced on an Ender-series FFF printer, focusing on print setup,
+      Multi-part print produced on a Creality Ender-3 FFF printer, focusing on print setup,
       tolerancing, and post-print assembly rather than original part design.
     </p>
 
@@ -54,7 +54,7 @@ layout: default
       <a href="https://amaochan.work/" target="_blank" rel="noopener">
         amaochan.work
       </a>
-      — original STL design. My contribution focused on fabrication, tuning, and successful operation.
+      — original STL design. My contribution focused on fabrication, printer tuning, and successful operation.
     </p>
 
  <!-- Flying Sea Turtle: video main + stacked images -->
@@ -76,12 +76,12 @@ layout: default
 
   <img
     src="images/additive_1printing.jpeg"
-    alt="Flying sea turtle printing on Ender FFF printer"
+    alt="Flying sea turtle printing on Ender-3 FFF printer"
   />
 
   <img
     src="images/additive_1printer.jpeg"
-    alt="Ender-series FFF printer used for flying sea turtle print"
+    alt="Ender-3 FFF printer and printed parts"
   />
 </div>
 </div>
@@ -120,198 +120,149 @@ layout: default
     </div>
   </div>
 </div>
-  <!-- ===================== -->
-  <!-- Project 2: Klein Bottle -->
-  <!-- ===================== -->
+ <!-- ===================== -->
+<!-- Project 2: Klein Bottle (SLA) -->
+<!-- ===================== -->
+<div class="card media-card">
+  <h2>Klein Bottle — SLA Design & Print</h2>
 
-  <div class="card media-card">
-    <h2>Klein Bottle — SLA Design & Print</h2>
+  <p class="muted">
+    SLA-printed Klein bottle designed to fit within the ME557 size constraints and highlight a “can’t machine this”
+    internal geometry. Printed in <strong>Formlabs Draft Grey Resin</strong>.
+  </p>
 
-    <p class="muted">
-      SLA print designed to fit within a 4 × 4 × 4 cm volume and emphasize geometry that would be difficult to
-      produce with conventional subtractive methods.  [oai_citation:0‡ME 557 - Project 2 - SLA Design.pdf](sediment://file_00000000375c71fda19c51e31f22b6d4)
-    </p>
-
-    <p class="muted">
-      <strong>Material:</strong> Formlabs Draft Grey Resin (Form 3/3+).
-    </p>
-
-    <div class="media-row">
-      <!-- Main media -->
-      <div class="media-main">
-        <img
-          src="images/RENAME_ME_additive_2_main.jpeg"
-          alt="Klein bottle SLA print (final)"
-        />
-      </div>
-
-      <!-- Side media (stacked) -->
-      <div class="media-side">
-        <img
-          src="images/additive_2printb.jpeg"
-          alt="Klein bottle CAD / render"
-          class="media-sub"
-        />
-        <img
-          src="images/RENAME_ME_additive_2_detail.jpeg"
-          alt="Klein bottle detail photo"
-          class="media-sub"
-        />
-        <img
-          src="images/RENAME_ME_additive_2_inprinter.jpeg"
-          alt="Klein bottle on SLA build platform"
-          class="media-sub"
-        />
-      </div>
+  <div class="media-row media-row--tightVideo">
+    <!-- Main media (pick your favorite hero: usually print B with light) -->
+    <div class="media-main">
+      <img
+        class="media-hero"
+        src="images/additive_2printb.jpeg"
+        alt="Klein bottle SLA print with light showing internal feature"
+      />
+      <p class="media-caption muted">Light-through photo to reveal the internal feature.</p>
     </div>
 
-    <div class="after-media grid-2">
-      <div>
-        <h3 class="h3">What I focused on</h3>
-        <ul class="list">
-          <li>Designing within the 4 × 4 × 4 cm constraint while keeping the geometry readable  [oai_citation:1‡ME 557 - Project 2 - SLA Design.pdf](sediment://file_00000000375c71fda19c51e31f22b6d4)</li>
-          <li>Wall thickness + drainage/cleaning considerations for resin prints</li>
-          <li>Orientation/support decisions to balance surface finish and support scarring</li>
-          <li>Post-processing: wash, cure, and cleanup for clarity and edge definition</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 class="h3">Outcome</h3>
-        <p>
-          Completed a clean Draft Grey resin print with smooth surfaces and clear geometry,
-          demonstrating SLA’s ability to capture fine curvature and complex internal paths.
-        </p>
-      </div>
+    <!-- Side stack (CAD + other print) -->
+    <div class="media-side media-side--tall">
+      <img src="images/additive_2cada.png" alt="Klein bottle CAD view A" />
+      <img src="images/additive_2cadb.png" alt="Klein bottle CAD view B" />
+      <img src="images/additive_2printa.jpeg" alt="Klein bottle SLA print (standard lighting)" />
     </div>
   </div>
 
-  <!-- ===================== -->
-  <!-- Project 3: 2 kN Structure -->
-  <!-- ===================== -->
-
-  <div class="card media-card">
-    <h2>2 kN Structural Print — Mass vs Performance</h2>
-
-    <p class="muted">
-      Designed and printed a structure to withstand a 2 kN compressive load while remaining above 50 mm tall during the test.  [oai_citation:2‡ME 557. Project 3 - Instructions.pdf](sediment://file_000000003be871f8bcd3b3d03c2d89c4)
-    </p>
-
-    <p class="muted">
-      <strong>Material:</strong> PETG (FFF). <strong>Result:</strong> Withstood 2000 N.
-    </p>
-
-    <div class="media-row">
-      <!-- Main media -->
-      <div class="media-main">
-        <img
-          src="images/RENAME_ME_additive_3_main.jpeg"
-          alt="2 kN structure (final print)"
-        />
-      </div>
-
-      <!-- Side media (stacked) -->
-      <div class="media-side">
-        <img
-          src="images/RENAME_ME_additive_3_cad1.png"
-          alt="2 kN structure CAD (annulus contact)"
-          class="media-sub"
-        />
-        <img
-          src="images/RENAME_ME_additive_3_cad2.png"
-          alt="2 kN structure CAD (section / constraints)"
-          class="media-sub"
-        />
-        <img
-          src="images/RENAME_ME_additive_3_test.jpeg"
-          alt="2 kN structure test setup / load frame"
-          class="media-sub"
-        />
-      </div>
+  <div class="grid-2 grid-2--afterMedia">
+    <div class="card card--sub">
+      <h3 class="h3">What I focused on</h3>
+      <ul class="list">
+        <li>Geometry planning to make the internal channel visible in the print</li>
+        <li>Support strategy and surface finish (minimize scarring on key surfaces)</li>
+        <li>Post-processing: wash/cure and cleanup without damaging thin sections</li>
+      </ul>
     </div>
 
-    <div class="after-media grid-2">
-      <div>
-        <h3 class="h3">What I focused on</h3>
-        <ul class="list">
-          <li>Meeting the required contact geometry: 25 mm top circle and 25–50 mm bottom annulus </li>
-          <li>Stiffness vs mass tradeoff (shape efficiency + PETG print parameters)</li>
-          <li>Print orientation / perimeters / infill strategy for compressive stability</li>
-          <li>Avoiding buckling and local crushing under platen contact</li>
-        </ul>
-      </div>
+    <div class="card card--sub">
+      <h3 class="h3">Outcome</h3>
+      <p>
+        Successful SLA print with internal feature clearly visible using backlighting, plus solid exterior finish
+        after cleanup and post-cure.
+      </p>
+    </div>
+  </div>
+</div>
 
-      <div>
-        <h3 class="h3">Outcome</h3>
-        <p>
-          Produced a PETG specimen that passed the 2 kN compression requirement,
-          maintaining height above the 50 mm threshold during loading.  [oai_citation:3‡ME 557. Project 3 - Instructions.pdf](sediment://file_000000003be871f8bcd3b3d03c2d89c4)
-        </p>
-      </div>
+<!-- ===================== -->
+<!-- Project 3: Mass–Performance Structure (FFF) -->
+<!-- ===================== -->
+<div class="card media-card">
+  <h2>Mass–Performance Structure — FFF Design, Print & Compression Test</h2>
+
+  <p class="muted">
+    Designed and printed a lightweight structure to meet the course compression requirement and verified performance
+    under load. Printed in <strong>PETG</strong> and withstood <strong>2000 N</strong>.
+  </p>
+
+  <div class="media-row media-row--tightVideo">
+    <div class="media-main">
+      <img
+        class="media-hero"
+        src="images/additive_3print.jpeg"
+        alt="Mass-performance structure final print"
+      />
+      <p class="media-caption muted">Final PETG structure (pre-test).</p>
+    </div>
+
+    <div class="media-side media-side--tall">
+      <!-- Replace these 3 with your actual filenames -->
+      <img src="images/additive_3cad.png" alt="Mass-performance structure CAD concept" />
+      <img src="images/additive_3test.jpeg" alt="Compression test setup / during test" />
+      <img src="images/additive_3detail.jpeg" alt="Structure detail (top/bottom contact region)" />
     </div>
   </div>
 
-  <!-- ===================== -->
-  <!-- Project 4: Anemometer -->
-  <!-- ===================== -->
-
-  <div class="card media-card">
-    <h2>Anemometer + Weather Vane — FFF Design & Print</h2>
-
-    <p class="muted">
-      Designed and built a functioning anemometer with a directional vane and speed indication, incorporating a bearing into the assembly.  [oai_citation:4‡ME 557. Project 4 – Instructions.pdf](sediment://file_00000000cbd871fdbca625dde4de67e4)
-    </p>
-
-    <p class="muted">
-      <strong>Material:</strong> Bambu PLA (FFF). <strong>Bearing:</strong> 22 mm OD × 8 mm ID × 7 mm thick.  [oai_citation:5‡ME 557. Project 4 – Instructions.pdf](sediment://file_00000000cbd871fdbca625dde4de67e4)
-    </p>
-
-    <div class="media-row">
-      <!-- Main media (video recommended here) -->
-      <div class="media-main">
-        <video controls playsinline preload="metadata">
-          <source src="images/RENAME_ME_additive_4_demo.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-
-      <!-- Side media (stacked) -->
-      <div class="media-side">
-        <img
-          src="images/RENAME_ME_additive_4_main.jpeg"
-          alt="Anemometer assembled (final)"
-          class="media-sub"
-        />
-        <img
-          src="images/RENAME_ME_additive_4_detail.jpeg"
-          alt="Bearing integration detail"
-          class="media-sub"
-        />
-        <img
-          src="images/RENAME_ME_additive_4_cad.png"
-          alt="Anemometer CAD"
-          class="media-sub"
-        />
-      </div>
+  <div class="grid-2 grid-2--afterMedia">
+    <div class="card card--sub">
+      <h3 class="h3">What I focused on</h3>
+      <ul class="list">
+        <li>Meeting top/bottom contact geometry while resisting buckling</li>
+        <li>Layer direction choices for compressive strength and stability</li>
+        <li>Balancing mass vs stiffness (material where it matters)</li>
+      </ul>
     </div>
 
-    <div class="after-media grid-2">
-      <div>
-        <h3 class="h3">What I focused on</h3>
-        <ul class="list">
-          <li>Bearing integration + fits so the rotor spins freely without wobble  [oai_citation:6‡ME 557. Project 4 – Instructions.pdf](sediment://file_00000000cbd871fdbca625dde4de67e4)</li>
-          <li>Balancing rotating mass + cup geometry for consistent spin response</li>
-          <li>Reducing friction and improving alignment (shaft/bearing stackup)</li>
-          <li>Printability: supports, strength at hub features, and assembly tolerances</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 class="h3">Outcome</h3>
-        <p>
-          Completed a functional PLA prototype that indicates wind direction via the vane
-          and gives a visible speed cue through rotor spin rate.  [oai_citation:7‡ME 557. Project 4 – Instructions.pdf](sediment://file_00000000cbd871fdbca625dde4de67e4)
-        </p>
-      </div>
+    <div class="card card--sub">
+      <h3 class="h3">Outcome</h3>
+      <p>
+        Passed the compression target at 2 kN in PETG while staying above the height threshold during loading.
+      </p>
     </div>
   </div>
+</div>
+
+<!-- ===================== -->
+<!-- Project 4: Anemometer + Weather Vane (FFF) -->
+<!-- ===================== -->
+<div class="card media-card">
+  <h2>Anemometer + Weather Vane — FFF Design & Print</h2>
+
+  <p class="muted">
+    Functioning desktop anemometer and vane assembly printed in <strong>Bambu PLA</strong>, designed around the
+    required bearing integration and stable base.
+  </p>
+
+  <div class="media-row">
+    <!-- Main media: use your video here -->
+    <div class="media-main">
+      <video class="media-video" controls playsinline preload="metadata">
+        <source src="images/additive_4.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <p class="media-caption muted">Functional demo (direction + speed indication).</p>
+    </div>
+
+    <div class="media-side media-side--tall">
+      <!-- Replace these with your real filenames -->
+      <img src="images/additive_4print.jpeg" alt="Anemometer assembled (photo)" />
+      <img src="images/additive_4cad.jpeg" alt="Anemometer CAD (bearing + shaft layout)" />
+      <img src="images/additive_4bearing.jpeg" alt="Bearing integration close-up" />
+    </div>
+  </div>
+
+  <div class="grid-2 grid-2--afterMedia">
+    <div class="card card--sub">
+      <h3 class="h3">What I focused on</h3>
+      <ul class="list">
+        <li>Bearing integration and fit (alignment + low friction rotation)</li>
+        <li>Stable base and balanced rotating geometry</li>
+        <li>Print strategy to reduce wobble and improve smooth spin</li>
+      </ul>
+    </div>
+
+    <div class="card card--sub">
+      <h3 class="h3">Outcome</h3>
+      <p>
+        Fully functioning anemometer/vane: vane indicates incoming wind direction, and cup assembly provides speed
+        indication through rotation rate.
+      </p>
+    </div>
+  </div>
+</div>
