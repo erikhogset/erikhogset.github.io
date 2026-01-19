@@ -1105,3 +1105,31 @@ hr {
     background: rgba(17,17,17,0.03);
     border-color: rgba(17,17,17,0.25);
   }
+
+/* 2-up media layout inside the project card */
+.project-media--quad {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+/* Make all 4 imgs fill their cell nicely */
+.project-media--quad img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Hover swap logic: show two by default, two on hover */
+.project-media--quad .img-hover {
+  display: none;
+}
+
+.project-card:hover .project-media--quad .img-default {
+  display: none;
+}
+
+.project-card:hover .project-media--quad .img-hover {
+  display: block;
+}
