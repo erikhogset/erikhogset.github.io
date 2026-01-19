@@ -1106,30 +1106,38 @@ hr {
     border-color: rgba(17,17,17,0.25);
   }
 
-/* 2-up media layout inside the project card */
 .project-media--quad {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  position: relative;
 }
 
-/* Make all 4 imgs fill their cell nicely */
+.project-media--quad .media-default,
+.project-media--quad .media-hover {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.project-media--quad .media-hover {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.project-card:hover .media-hover {
+  opacity: 1;
+}
+
+.project-card:hover .media-default {
+  opacity: 0;
+}
+
 .project-media--quad img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 12px;
 }
-
-/* Hover swap logic: show two by default, two on hover */
-.project-media--quad .img-hover {
-  display: none;
-}
-
-.project-card:hover .project-media--quad .img-default {
-  display: none;
-}
-
-.project-card:hover .project-media--quad .img-hover {
-  display: block;
+.project-media--quad .media-default,
+.project-media--quad .media-hover {
+  transition: opacity 0.25s ease;
 }
