@@ -1171,315 +1171,203 @@ hr {
     max-width: 100%;
   }
 }
-/* Additive page: turtle media layout */
-.additive-turtle-media {
-  display: grid;
-  grid-template-columns: 1.8fr 1.2fr; /* video big, images smaller */
-  gap: 1.25rem;
-  align-items: start;
-  margin-top: 1rem;
-}
+/* =========================================================
+   Additive page (scoped) — layouts + consistent media/notes
+   ========================================================= */
 
-/* Make turtle video smaller */
-.additive-turtle-video video {
-  width: 85%;          /* was 100% */
-  max-width: 520px;    /* hard cap so it never dominates */
-  margin: 0 auto;      /* center it */
-  display: block;
-}
-
-/* stacked images */
-.additive-turtle-images {
-  display: flex;
-  flex-direction: column;
-  gap: 0.9rem;
-}
-
-/* crop images so they stay compact */
-.additive-turtle-images img {
-  width: 100%;
-  height: 240px;          /* controls “smallness” */
-  object-fit: cover;      /* crop if needed */
-  object-position: center;
-  display: block;
-  border-radius: 14px;
-}
-
-/* mobile: stack video then images */
-@media (max-width: 800px) {
-  .additive-turtle-media {
-    grid-template-columns: 1fr;
-  }
-
-  .additive-turtle-images img {
-    height: 200px;
-  }
-}
-/* ===== Additive: Notes section (scoped) ===== */
-.additive-notes {
-  margin-top: 18px;
-  padding-top: 14px;
-  border-top: 1px solid #eee;
-}
-
-.additive-notes-head {
-  margin-bottom: 12px;
-}
-
-.additive-notes-title {
-  margin: 0;
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-}
-
-.additive-notes-sub {
-  margin: 6px 0 0 0;
-  color: #666;
-  font-size: 14px;
-  line-height: 1.4;
-}
-
-.additive-notes-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-}
-
-.additive-note-card {
-  border: 1px solid #eee;
-  border-radius: 14px;
-  padding: 14px 14px 12px 14px;
-  background: #fafafa;
-}
-
-.additive-note-label {
-  margin: 0 0 10px 0;
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.additive-note-list {
-  margin: 0;
-  padding-left: 18px;
-  color: #222;
-  font-size: 14px;
-  line-height: 1.45;
-}
-
-.additive-note-text {
-  margin: 0 0 10px 0;
-  color: #222;
-  font-size: 14px;
-  line-height: 1.45;
-}
-
-.additive-note-badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 8px;
-}
-
-.additive-badge {
-  display: inline-flex;
-  align-items: center;
-  padding: 5px 10px;
-  border-radius: 999px;
-  border: 1px solid #e6e6e6;
-  background: #fff;
-  font-size: 12px;
-  color: #444;
-}
-
-/* Responsive */
-@media (max-width: 860px) {
-  .additive-notes-grid {
-    grid-template-columns: 1fr;
-  }
-}
-/* =========================
-   Additive page only
-   ========================= */
 .additive-page {
-  .media-row {
+  /* media captions + figure reset */
+  figure { margin: 0; }
+  figcaption {
+    margin-top: 6px;
+    font-size: 0.82rem;
+    color: rgba(0,0,0,0.62);
+    line-height: 1.2;
+  }
+
+  .media-video {
+    width: 100%;
+    border-radius: 14px;
+    display: block;
+  }
+
+  .media-caption {
+    margin: 8px 0 0 0;
+  }
+
+  /* small badges row */
+  .badge-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .additive-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 999px;
+    border: 1px solid #e6e6e6;
+    background: #fff;
+    font-size: 12px;
+    color: #444;
+  }
+
+  /* ----------------------------
+     Notes block (your preferred)
+     ---------------------------- */
+  .notes-block {
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(0,0,0,0.08);
+  }
+
+  .notes-header { margin-bottom: 10px; }
+
+  .notes-grid {
     display: grid;
-    grid-template-columns: 1.25fr 0.75fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  .notes-card {
+    padding: 14px;
+    background: #fafafa;
+    border-radius: 14px;
+    border: 1px solid rgba(0,0,0,0.06);
+  }
+
+  .notes-title {
+    margin: 0 0 8px 0;
+    font-size: 0.95rem;
+    font-weight: 800;
+  }
+
+  /* -----------------------------------------
+     Reusable right-side image stack (3 items)
+     ----------------------------------------- */
+  .mini-fig img {
+    width: 100%;
+    height: 132px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+  }
+
+  /* Turtle layout: video + 3 stacked images */
+  .turtle-media {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
     gap: 16px;
     align-items: start;
     margin-top: 12px;
   }
 
-  .media-main img,
-  .media-main video {
-    width: 100%;
-    height: auto;
-    border-radius: 14px;
-    display: block;
-  }
-
-  /* Keeps video from feeling huge */
-  .media-main video {
+  .turtle-video .media-video {
     max-height: 520px;
     object-fit: cover;
   }
 
-  .media-side {
+  .turtle-stack {
     display: grid;
     gap: 12px;
   }
 
-  .media-side img {
+  /* Klein layout: hero + CAD/print stack */
+  .klein-media {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 18px;
+    align-items: start;
+    margin-top: 14px;
+  }
+
+  .klein-hero img {
     width: 100%;
-    height: 150px;         /* makes them taller/more intentional */
-    object-fit: cover;     /* crops nicely */
+    height: 420px;
+    object-fit: cover;
     border-radius: 14px;
     display: block;
   }
 
-  /* Make the section after media feel “designed” */
-  .after-media {
-    margin-top: 18px;
-    padding-top: 14px;
-    border-top: 1px solid rgba(0,0,0,0.08);
+  .klein-stack {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 12px;
   }
 
-  /* Better mobile behavior */
+  /* CAD tiles: keep readable */
+  .klein-tile img {
+    width: 100%;
+    height: 128px;
+    object-fit: contain;
+    background: #f6f6f6;
+    border-radius: 12px;
+    display: block;
+    padding: 8px;
+  }
+
+  /* Project 3: hero + stack */
+  .mp-media {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 16px;
+    align-items: start;
+    margin-top: 12px;
+  }
+
+  .mp-hero img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 14px;
+    display: block;
+  }
+
+  .mp-stack {
+    display: grid;
+    gap: 12px;
+  }
+
+  /* Project 4: video + stack */
+  .anemo-media {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    gap: 16px;
+    align-items: start;
+    margin-top: 12px;
+  }
+
+  .anemo-video .media-video {
+    max-height: 520px;
+    object-fit: cover;
+  }
+
+  .anemo-stack {
+    display: grid;
+    gap: 12px;
+  }
+
+  /* -----------------
+     Responsive layout
+     ----------------- */
   @media (max-width: 900px) {
-    .media-row {
+    .notes-grid { grid-template-columns: 1fr; }
+
+    .turtle-media,
+    .klein-media,
+    .mp-media,
+    .anemo-media {
       grid-template-columns: 1fr;
     }
 
-    .media-side img {
-      height: 180px;
+    .klein-hero img,
+    .mp-hero img {
+      height: 320px;
     }
 
-    .media-main video {
-      max-height: 420px;
-    }
-  }
-}
-/* --- Project 2 balance tweaks --- */
-.media-row--balanced .media-main {
-  flex: 1.3; /* make left less dominant */
-}
-
-.media-row--balanced .media-side {
-  flex: 1;
-}
-
-.media-hero--sm {
-  height: 340px;      /* smaller than your default hero */
-  object-fit: cover;
-}
-
-/* Make right-side stack feel aligned and intentional */
-.media-side--tall img {
-  height: 110px;      /* slightly taller = feels “equal weight” */
-  object-fit: cover;
-}
-
-/* Labels under right stack images */
-.media-fig {
-  margin: 0;
-}
-
-.media-label {
-  margin-top: 6px;
-  font-size: 0.82rem;
-  color: rgba(0,0,0,0.6);
-  line-height: 1.2;
-}
-
-/* --- Match the "technical notes" styling you like --- */
-.notes-block {
-  margin-top: 14px;
-}
-
-.notes-header {
-  margin-bottom: 10px;
-}
-
-.notes-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
-}
-
-.notes-card {
-  padding: 14px;
-  background: #fafafa;
-  border-radius: 14px;
-  border: 1px solid rgba(0,0,0,0.06);
-}
-
-.notes-title {
-  margin: 0 0 8px 0;
-  font-size: 0.95rem;
-}
-
-/* Mobile */
-@media (max-width: 900px) {
-  .media-hero--sm { height: 300px; }
-  .media-side--tall img { height: 140px; }
-  .notes-grid { grid-template-columns: 1fr; }
-}
-/* --- Klein Bottle layout (Project 2) --- */
-.additive-page .klein-media {
-  display: grid;
-  grid-template-columns: 1.6fr 1fr; /* hero larger, stack smaller */
-  gap: 18px;
-  align-items: start;
-  margin-top: 14px;
-}
-
-.additive-page .klein-hero,
-.additive-page .klein-tile {
-  margin: 0; /* kill default figure margin */
-}
-
-.additive-page .klein-hero img {
-  width: 100%;
-  height: 420px;          /* sets a strong hero presence */
-  object-fit: cover;      /* crop nicely */
-  border-radius: 14px;
-  display: block;
-}
-
-.additive-page .klein-stack {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  gap: 12px;
-}
-
-.additive-page .klein-tile img {
-  width: 100%;
-  height: 128px;          /* makes all three consistent */
-  object-fit: contain;    /* CAD stays readable */
-  background: #f6f6f6;    /* gives CAD contrast */
-  border-radius: 12px;
-  display: block;
-  padding: 8px;           /* breathing room for CAD */
-}
-
-/* captions */
-.additive-page .klein-hero figcaption,
-.additive-page .klein-tile figcaption {
-  font-size: 0.82rem;
-  color: rgba(0,0,0,0.62);
-  margin-top: 6px;
-  line-height: 1.2;
-}
-
-/* Mobile: stack everything */
-@media (max-width: 900px) {
-  .additive-page .klein-media {
-    grid-template-columns: 1fr;
-  }
-  .additive-page .klein-hero img {
-    height: 320px;
-  }
-  .additive-page .klein-tile img {
-    height: 150px;
+    .mini-fig img { height: 160px; }
+    .klein-tile img { height: 150px; }
   }
 }
