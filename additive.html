@@ -131,39 +131,56 @@ layout: default
     internal geometry. Printed in <strong>Formlabs Draft Grey Resin</strong>.
   </p>
 
-  <div class="media-row media-row--tightVideo">
-    <!-- Main media (pick your favorite hero: usually print B with light) -->
-    <div class="media-main">
-      <img
-        class="media-hero"
-        src="images/additive_2printb.jpeg"
-        alt="Klein bottle SLA print with light showing internal feature"
-      />
-      <p class="media-caption muted">Light-through photo to reveal the internal feature.</p>
-    </div>
-
-    <!-- Side stack (CAD + other print) -->
-    <div class="media-side media-side--tall">
-      <img src="images/additive_2cada.png" alt="Klein bottle CAD view A" />
-      <img src="images/additive_2cadb.png" alt="Klein bottle CAD view B" />
-      <img src="images/additive_2printa.jpeg" alt="Klein bottle SLA print (standard lighting)" />
-    </div>
+<div class="media-row media-row--balanced">
+  <!-- Main media (smaller + consistent) -->
+  <div class="media-main">
+    <img
+      class="media-hero media-hero--sm"
+      src="images/additive_2printb.jpeg"
+      alt="Klein bottle SLA print with light showing internal feature"
+    />
+    <p class="media-caption muted">Light-through photo to reveal the internal feature.</p>
   </div>
 
-  <div class="grid-2 grid-2--afterMedia">
-    <div class="card card--sub">
-      <h3 class="h3">What I focused on</h3>
+  <!-- Side stack (3 items with labels) -->
+  <div class="media-side media-side--tall media-side--labels">
+    <figure class="media-fig">
+      <img src="images/additive_2cada.png" alt="Klein bottle CAD view showing internal path highlight" />
+      <figcaption class="media-label">CAD — internal channel highlighted</figcaption>
+    </figure>
+
+    <figure class="media-fig">
+      <img src="images/additive_2cadb.png" alt="Klein bottle CAD alternate view" />
+      <figcaption class="media-label">CAD — alternate view</figcaption>
+    </figure>
+
+    <figure class="media-fig">
+      <img src="images/additive_2printa.jpeg" alt="Klein bottle SLA print (standard lighting)" />
+      <figcaption class="media-label">Print — standard lighting</figcaption>
+    </figure>
+  </div>
+</div>
+
+ <div class="notes-block">
+  <div class="notes-header">
+    <h3 class="h3">Technical notes</h3>
+    <p class="muted">Design intent, print strategy, and post-processing decisions.</p>
+  </div>
+
+  <div class="notes-grid">
+    <div class="notes-card">
+      <h4 class="notes-title">What I focused on</h4>
       <ul class="list">
-        <li>Geometry planning to make the internal channel visible in the print</li>
+        <li>Geometry planning to make the internal feature visible in the print</li>
         <li>Support strategy and surface finish (minimize scarring on key surfaces)</li>
         <li>Post-processing: wash/cure and cleanup without damaging thin sections</li>
       </ul>
     </div>
 
-    <div class="card card--sub">
-      <h3 class="h3">Outcome</h3>
+    <div class="notes-card">
+      <h4 class="notes-title">Outcome</h4>
       <p>
-        Successful SLA print with internal feature clearly visible using backlighting, plus solid exterior finish
+        Successful SLA print with the internal channel clearly visible using backlighting, plus a solid exterior finish
         after cleanup and post-cure.
       </p>
     </div>
