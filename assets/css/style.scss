@@ -1369,3 +1369,57 @@ hr {
     .klein-tile img { height: 150px; }
   }
 }
+/* ===== Project 3: Generative layout ===== */
+.gen-media {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 18px;
+  align-items: start;
+  margin: 16px 0;
+}
+
+/* Main printed part */
+.gen-main img {
+  width: 100%;
+  border-radius: 14px;
+  display: block;
+}
+
+/* 2×2 grid on the right */
+.gen-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.gen-grid figure {
+  margin: 0;
+}
+
+.gen-grid img {
+  width: 100%;
+  height: 140px;
+  object-fit: contain;
+  background: #f6f6f6;
+  border-radius: 12px;
+  padding: 8px;
+  display: block;
+}
+
+.gen-grid figcaption {
+  margin-top: 6px;
+  font-size: 0.8rem;
+  color: rgba(0,0,0,0.6);
+  line-height: 1.25;
+}
+
+/* Mobile: stack */
+@media (max-width: 900px) {
+  .gen-media {
+    grid-template-columns: 1fr;
+  }
+
+  .gen-grid img {
+    height: 160px;
+  }
+}
