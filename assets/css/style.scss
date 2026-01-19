@@ -1171,3 +1171,46 @@ hr {
     max-width: 100%;
   }
 }
+/* Additive page: turtle media layout */
+.additive-turtle-media {
+  display: grid;
+  grid-template-columns: 2.2fr 1fr; /* video big, images smaller */
+  gap: 1.25rem;
+  align-items: start;
+  margin-top: 1rem;
+}
+
+.additive-turtle-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 14px;
+}
+
+/* stacked images */
+.additive-turtle-images {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+/* crop images so they stay compact */
+.additive-turtle-images img {
+  width: 100%;
+  height: 180px;          /* controls “smallness” */
+  object-fit: cover;      /* crop if needed */
+  object-position: center;
+  display: block;
+  border-radius: 14px;
+}
+
+/* mobile: stack video then images */
+@media (max-width: 800px) {
+  .additive-turtle-media {
+    grid-template-columns: 1fr;
+  }
+
+  .additive-turtle-images img {
+    height: 200px;
+  }
+}
