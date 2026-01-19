@@ -19,7 +19,7 @@ layout: default
 
 <hr />
 
-<div class="project-wrapper">
+<div class="project-wrapper additive-page">
 
   <!-- Page Header -->
   <div class="project-header">
@@ -39,7 +39,6 @@ layout: default
   <!-- ===================== -->
   <!-- Project 1: Sea Turtle -->
   <!-- ===================== -->
-
   <div class="card media-card">
     <h2>Flying Sea Turtle — FFF Print & Assembly</h2>
 
@@ -48,238 +47,280 @@ layout: default
       tolerancing, and post-print assembly rather than original part design.
     </p>
 
-    <!-- Credit -->
     <p class="muted">
       <strong>Design credit:</strong>
-      <a href="https://amaochan.work/" target="_blank" rel="noopener">
-        amaochan.work
-      </a>
+      <a href="https://amaochan.work/" target="_blank" rel="noopener">amaochan.work</a>
       — original STL design. My contribution focused on fabrication, printer tuning, and successful operation.
     </p>
 
- <!-- Flying Sea Turtle: video main + stacked images -->
-<div class="additive-turtle-media">
-  <!-- Main video -->
-  <div class="additive-turtle-video">
-    <video controls playsinline preload="metadata" muted>
-      <source src="images/additive_1.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-  </div>
+    <div class="turtle-media">
+      <div class="turtle-video">
+        <video class="media-video" controls playsinline preload="metadata" muted>
+          <source src="images/additive_1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <p class="media-caption muted">Motion demo (assembled articulation).</p>
+      </div>
 
-  <!-- Side images (stacked + cropped) -->
- <div class="additive-turtle-images">
-  <img
-    src="images/additive_1print.jpg"
-    alt="Flying sea turtle FFF print (assembled)"
-  />
+      <div class="turtle-stack">
+        <figure class="mini-fig">
+          <img src="images/additive_1print.jpg" alt="Flying sea turtle FFF print (assembled)" />
+          <figcaption>Assembled print</figcaption>
+        </figure>
 
-  <img
-    src="images/additive_1printing.jpeg"
-    alt="Flying sea turtle printing on Ender-3 FFF printer"
-  />
+        <figure class="mini-fig">
+          <img src="images/additive_1printing.jpeg" alt="Flying sea turtle printing on Ender-3 FFF printer" />
+          <figcaption>Printing (Ender-3)</figcaption>
+        </figure>
 
-  <img
-    src="images/additive_1printer.jpeg"
-    alt="Ender-3 FFF printer and printed parts"
-  />
-</div>
-</div>
-    
-<div class="additive-notes">
-  <div class="additive-notes-head">
-    <h3 class="additive-notes-title">Technical notes</h3>
-    <p class="additive-notes-sub">
-      What I tuned on the Ender + what changed print-to-print.
-    </p>
-  </div>
-
-  <div class="additive-notes-grid">
-    <div class="additive-note-card">
-      <h4 class="additive-note-label">What I focused on</h4>
-      <ul class="additive-note-list">
-        <li>Print orientation and layer direction for joint strength</li>
-        <li>Support strategy and surface finish tradeoffs</li>
-        <li>Post-print cleanup and assembly sequencing</li>
-        <li>Tolerance behavior of moving printed joints</li>
-      </ul>
+        <figure class="mini-fig">
+          <img src="images/additive_1printer.jpeg" alt="Ender-3 printer and printed parts" />
+          <figcaption>Printer setup</figcaption>
+        </figure>
+      </div>
     </div>
 
-    <div class="additive-note-card">
-      <h4 class="additive-note-label">Outcome</h4>
-      <p class="additive-note-text">
-        Successfully printed and assembled the mechanism with smooth wing motion,
-        demonstrating reliable articulation on a consumer-grade FFF printer without redesigning the STL.
-      </p>
+    <div class="notes-block">
+      <div class="notes-header">
+        <h3 class="h3">Technical notes</h3>
+        <p class="muted">What I tuned on the Ender + what changed print-to-print.</p>
+      </div>
 
-      <div class="additive-note-badges">
-        <span class="additive-badge">Ender FFF</span>
-        <span class="additive-badge">Assembly</span>
-        <span class="additive-badge">Print tuning</span>
+      <div class="notes-grid">
+        <div class="notes-card">
+          <h4 class="notes-title">What I focused on</h4>
+          <ul class="list">
+            <li>Print orientation and layer direction for joint strength</li>
+            <li>Support strategy and surface finish tradeoffs</li>
+            <li>Post-print cleanup and assembly sequencing</li>
+            <li>Tolerance behavior of moving printed joints</li>
+          </ul>
+        </div>
+
+        <div class="notes-card">
+          <h4 class="notes-title">Outcome</h4>
+          <p>
+            Successfully printed and assembled the mechanism with smooth wing motion, demonstrating reliable
+            articulation on a consumer-grade FFF printer without redesigning the STL.
+          </p>
+
+          <div class="badge-row">
+            <span class="additive-badge">Ender FFF</span>
+            <span class="additive-badge">Assembly</span>
+            <span class="additive-badge">Print tuning</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
+
+  <!-- ===================== -->
+  <!-- Project 2: Klein Bottle (SLA) -->
+  <!-- ===================== -->
+  <div class="card media-card">
+    <h2>Klein Bottle — SLA Design & Print</h2>
+
+    <p class="muted">
+      SLA-printed Klein bottle designed to fit within the ME557 size constraints and highlight an internal geometry
+      not possible with subtractive manufacturing. Printed in <strong>Formlabs Draft Grey Resin</strong> using a
+      <strong>Formlabs Form 3</strong>.
+    </p>
+
+    <div class="klein-media">
+      <figure class="klein-hero">
+        <img src="images/additive_2printb.jpeg" alt="Klein bottle print with backlight revealing internal channel" />
+        <figcaption>Backlit photo to reveal the internal channel.</figcaption>
+      </figure>
+
+      <div class="klein-stack">
+        <figure class="klein-tile">
+          <img src="images/additive_2cada.png" alt="CAD view highlighting internal channel" />
+          <figcaption>CAD — internal channel highlighted</figcaption>
+        </figure>
+
+        <figure class="klein-tile">
+          <img src="images/additive_2cadb.png" alt="CAD alternate view of Klein bottle" />
+          <figcaption>CAD — alternate view</figcaption>
+        </figure>
+
+        <figure class="klein-tile">
+          <img src="images/additive_2printa.jpeg" alt="Printed Klein bottle in standard lighting" />
+          <figcaption>Print — standard lighting</figcaption>
+        </figure>
+      </div>
     </div>
 
- <!-- ===================== -->
-<!-- Project 2: Klein Bottle (SLA) -->
-<!-- ===================== -->
-<div class="card media-card">
-  <h2>Klein Bottle — SLA Design & Print</h2>
+    <div class="notes-block">
+      <div class="notes-header">
+        <h3 class="h3">Technical notes</h3>
+        <p class="muted">Design intent, print strategy, and post-processing decisions.</p>
+      </div>
 
-  <p class="muted">
-    SLA-printed Klein bottle designed to fit within the ME557 size constraints and highlight an internal geometry 
-    not possible with subtractive manufacturing. Printed in <strong>Formlabs Draft Grey Resin</strong> using a <strong>Formlabs Form3</strong> printer.
-  </p>
+      <div class="notes-grid">
+        <div class="notes-card">
+          <h4 class="notes-title">What I focused on</h4>
+          <ul class="list">
+            <li>Geometry planning so the internal feature is visible (backlighting)</li>
+            <li>Support strategy and surface finish (minimize scarring on key surfaces)</li>
+            <li>Post-processing: wash/cure and cleanup without damaging thin sections</li>
+          </ul>
+        </div>
 
-<div class="klein-media">
-  <!-- Left: hero image -->
-  <figure class="klein-hero">
-    <img src="images/additive_2printb.jpeg" alt="Klein bottle print with backlight revealing internal channel" />
-    <figcaption>Light-through photo to reveal the internal feature.</figcaption>
-  </figure>
+        <div class="notes-card">
+          <h4 class="notes-title">Outcome</h4>
+          <p>
+            Successful SLA print with the internal channel clearly visible using backlighting, plus a solid exterior finish
+            after cleanup and post-cure.
+          </p>
 
-  <!-- Right: stacked mini images -->
-  <div class="klein-stack">
-    <figure class="klein-tile">
-      <img src="images/additive_2cada.png" alt="CAD view highlighting internal channel" />
-      <figcaption>CAD — internal channel highlighted</figcaption>
-    </figure>
-
-    <figure class="klein-tile">
-      <img src="images/additive_2cadb.png" alt="CAD alternate view" />
-      <figcaption>CAD — alternate view</figcaption>
-    </figure>
-
-    <figure class="klein-tile">
-      <img src="images/additive_2printa.jpeg" alt="Printed Klein bottle in standard lighting" />
-      <figcaption>Print — standard lighting</figcaption>
-    </figure>
-  </div>
-</div>
-
- <div class="notes-block">
-  <div class="notes-header">
-    <h3 class="h3">Technical notes</h3>
-    <p class="muted">Design intent, print strategy, and post-processing decisions.</p>
-  </div>
-
-  <div class="notes-grid">
-    <div class="notes-card">
-      <h4 class="notes-title">What I focused on</h4>
-      <ul class="list">
-        <li>Geometry planning to make the internal feature visible in the print</li>
-        <li>Support strategy and surface finish (minimize scarring on key surfaces)</li>
-        <li>Post-processing: wash/cure and cleanup without damaging thin sections</li>
-      </ul>
-    </div>
-
-    <div class="notes-card">
-      <h4 class="notes-title">Outcome</h4>
-      <p>
-        Successful SLA print with the internal channel clearly visible using backlighting, plus a solid exterior finish
-        after cleanup and post-cure.
-      </p>
-    </div>
-  </div>
-</div>
-</div>
-
-<!-- ===================== -->
-<!-- Project 3: Mass–Performance Structure (FFF) -->
-<!-- ===================== -->
-<div class="card media-card">
-  <h2>Mass–Performance Structure — FFF Design, Print & Compression Test</h2>
-
-  <p class="muted">
-    Designed and printed a lightweight structure to meet the course compression requirement and verified performance
-    under load. Printed in <strong>PETG</strong> and withstood <strong>2000 N</strong>.
-  </p>
-
-  <div class="media-row media-row--tightVideo">
-    <div class="media-main">
-      <img
-        class="media-hero"
-        src="images/additive_3print.jpeg"
-        alt="Mass-performance structure final print"
-      />
-      <p class="media-caption muted">Final PETG structure (pre-test).</p>
-    </div>
-
-    <div class="media-side media-side--tall">
-      <!-- Replace these 3 with your actual filenames -->
-      <img src="images/additive_3cad.png" alt="Mass-performance structure CAD concept" />
-      <img src="images/additive_3test.jpeg" alt="Compression test setup / during test" />
-      <img src="images/additive_3detail.jpeg" alt="Structure detail (top/bottom contact region)" />
+          <div class="badge-row">
+            <span class="additive-badge">SLA</span>
+            <span class="additive-badge">Draft Grey</span>
+            <span class="additive-badge">Form 3</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="grid-2 grid-2--afterMedia">
-    <div class="card card--sub">
-      <h3 class="h3">What I focused on</h3>
-      <ul class="list">
-        <li>Meeting top/bottom contact geometry while resisting buckling</li>
-        <li>Layer direction choices for compressive strength and stability</li>
-        <li>Balancing mass vs stiffness (material where it matters)</li>
-      </ul>
+  <!-- ===================== -->
+  <!-- Project 3: Mass–Performance Structure (FFF) -->
+  <!-- ===================== -->
+  <div class="card media-card">
+    <h2>Mass–Performance Structure — FFF Design, Print & Compression Test</h2>
+
+    <p class="muted">
+      Designed and printed a lightweight structure to meet the course compression requirement and verified performance
+      under load. Printed in <strong>PETG</strong> and withstood <strong>2000 N</strong>.
+    </p>
+
+    <div class="mp-media">
+      <figure class="mp-hero">
+        <img src="images/additive_3print.jpeg" alt="Mass-performance structure final print" />
+        <figcaption>Final PETG structure (pre-test).</figcaption>
+      </figure>
+
+      <div class="mp-stack">
+        <!-- Replace filenames below with your real ones -->
+        <figure class="mini-fig">
+          <img src="images/additive_3cad.png" alt="Mass-performance structure CAD concept" />
+          <figcaption>CAD concept</figcaption>
+        </figure>
+
+        <figure class="mini-fig">
+          <img src="images/additive_3test.jpeg" alt="Compression test setup / during test" />
+          <figcaption>Compression test</figcaption>
+        </figure>
+
+        <figure class="mini-fig">
+          <img src="images/additive_3detail.jpeg" alt="Structure detail region" />
+          <figcaption>Detail</figcaption>
+        </figure>
+      </div>
     </div>
 
-    <div class="card card--sub">
-      <h3 class="h3">Outcome</h3>
-      <p>
-        Passed the compression target at 2 kN in PETG while staying above the height threshold during loading.
-      </p>
+    <div class="notes-block">
+      <div class="notes-header">
+        <h3 class="h3">Technical notes</h3>
+        <p class="muted">Structural choices, print decisions, and test result.</p>
+      </div>
+
+      <div class="notes-grid">
+        <div class="notes-card">
+          <h4 class="notes-title">What I focused on</h4>
+          <ul class="list">
+            <li>Meeting top/bottom contact geometry while resisting buckling</li>
+            <li>Layer direction choices for compressive strength and stability</li>
+            <li>Balancing mass vs stiffness (material where it matters)</li>
+          </ul>
+        </div>
+
+        <div class="notes-card">
+          <h4 class="notes-title">Outcome</h4>
+          <p>
+            Passed the compression target at 2 kN in PETG while staying above the height threshold during loading.
+          </p>
+
+          <div class="badge-row">
+            <span class="additive-badge">PETG</span>
+            <span class="additive-badge">2 kN</span>
+            <span class="additive-badge">Compression test</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-</div>
 
-<!-- ===================== -->
-<!-- Project 4: Anemometer + Weather Vane (FFF) -->
-<!-- ===================== -->
-<div class="card media-card">
-  <h2>Anemometer + Weather Vane — FFF Design & Print</h2>
+  <!-- ===================== -->
+  <!-- Project 4: Anemometer + Weather Vane (FFF) -->
+  <!-- ===================== -->
+  <div class="card media-card">
+    <h2>Anemometer + Weather Vane — FFF Design & Print</h2>
 
-  <p class="muted">
-    Functioning desktop anemometer and vane assembly printed in <strong>Bambu PLA</strong>, designed around the
-    required bearing integration and stable base.
-  </p>
+    <p class="muted">
+      Functioning desktop anemometer and vane assembly printed in <strong>Bambu PLA</strong>, designed around bearing
+      integration and a stable base.
+    </p>
 
-  <div class="media-row">
-    <!-- Main media: use your video here -->
-    <div class="media-main">
-      <video class="media-video" controls playsinline preload="metadata">
-        <source src="images/additive_4.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <p class="media-caption muted">Functional demo (direction + speed indication).</p>
+    <div class="anemo-media">
+      <div class="anemo-video">
+        <video class="media-video" controls playsinline preload="metadata">
+          <source src="images/additive_4.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <p class="media-caption muted">Functional demo (direction + speed indication).</p>
+      </div>
+
+      <div class="anemo-stack">
+        <!-- Replace filenames below with your real ones -->
+        <figure class="mini-fig">
+          <img src="images/additive_4print.jpeg" alt="Anemometer assembled (photo)" />
+          <figcaption>Assembled print</figcaption>
+        </figure>
+
+        <figure class="mini-fig">
+          <img src="images/additive_4cad.jpeg" alt="Anemometer CAD (bearing + shaft layout)" />
+          <figcaption>CAD layout</figcaption>
+        </figure>
+
+        <figure class="mini-fig">
+          <img src="images/additive_4bearing.jpeg" alt="Bearing integration close-up" />
+          <figcaption>Bearing integration</figcaption>
+        </figure>
+      </div>
     </div>
 
-    <div class="media-side media-side--tall">
-      <!-- Replace these with your real filenames -->
-      <img src="images/additive_4print.jpeg" alt="Anemometer assembled (photo)" />
-      <img src="images/additive_4cad.jpeg" alt="Anemometer CAD (bearing + shaft layout)" />
-      <img src="images/additive_4bearing.jpeg" alt="Bearing integration close-up" />
+    <div class="notes-block">
+      <div class="notes-header">
+        <h3 class="h3">Technical notes</h3>
+        <p class="muted">Bearing fit, balance, and print strategy for smooth rotation.</p>
+      </div>
+
+      <div class="notes-grid">
+        <div class="notes-card">
+          <h4 class="notes-title">What I focused on</h4>
+          <ul class="list">
+            <li>Bearing integration and fit (alignment + low-friction rotation)</li>
+            <li>Stable base and balanced rotating geometry</li>
+            <li>Print strategy to reduce wobble and improve smooth spin</li>
+          </ul>
+        </div>
+
+        <div class="notes-card">
+          <h4 class="notes-title">Outcome</h4>
+          <p>
+            Fully functioning anemometer/vane: vane indicates incoming wind direction, and the cup assembly provides
+            speed indication through rotation rate.
+          </p>
+
+          <div class="badge-row">
+            <span class="additive-badge">Bambu PLA</span>
+            <span class="additive-badge">Bearings</span>
+            <span class="additive-badge">FFF</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="grid-2 grid-2--afterMedia">
-    <div class="card card--sub">
-      <h3 class="h3">What I focused on</h3>
-      <ul class="list">
-        <li>Bearing integration and fit (alignment + low friction rotation)</li>
-        <li>Stable base and balanced rotating geometry</li>
-        <li>Print strategy to reduce wobble and improve smooth spin</li>
-      </ul>
-    </div>
-
-    <div class="card card--sub">
-      <h3 class="h3">Outcome</h3>
-      <p>
-        Fully functioning anemometer/vane: vane indicates incoming wind direction, and cup assembly provides speed
-        indication through rotation rate.
-      </p>
-    </div>
-  </div>
 </div>
