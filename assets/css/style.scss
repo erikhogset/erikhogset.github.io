@@ -1174,7 +1174,7 @@ hr {
 /* Additive page: turtle media layout */
 .additive-turtle-media {
   display: grid;
-  grid-template-columns: 2.2fr 1fr; /* video big, images smaller */
+  grid-template-columns: 1.8fr 1.2fr; /* video big, images smaller */
   gap: 1.25rem;
   align-items: start;
   margin-top: 1rem;
