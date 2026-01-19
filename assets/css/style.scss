@@ -1424,3 +1424,62 @@ hr {
   .media-side--tall img { height: 140px; }
   .notes-grid { grid-template-columns: 1fr; }
 }
+/* --- Klein Bottle layout (Project 2) --- */
+.additive-page .klein-media {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr; /* hero larger, stack smaller */
+  gap: 18px;
+  align-items: start;
+  margin-top: 14px;
+}
+
+.additive-page .klein-hero,
+.additive-page .klein-tile {
+  margin: 0; /* kill default figure margin */
+}
+
+.additive-page .klein-hero img {
+  width: 100%;
+  height: 420px;          /* sets a strong hero presence */
+  object-fit: cover;      /* crop nicely */
+  border-radius: 14px;
+  display: block;
+}
+
+.additive-page .klein-stack {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.additive-page .klein-tile img {
+  width: 100%;
+  height: 128px;          /* makes all three consistent */
+  object-fit: contain;    /* CAD stays readable */
+  background: #f6f6f6;    /* gives CAD contrast */
+  border-radius: 12px;
+  display: block;
+  padding: 8px;           /* breathing room for CAD */
+}
+
+/* captions */
+.additive-page .klein-hero figcaption,
+.additive-page .klein-tile figcaption {
+  font-size: 0.82rem;
+  color: rgba(0,0,0,0.62);
+  margin-top: 6px;
+  line-height: 1.2;
+}
+
+/* Mobile: stack everything */
+@media (max-width: 900px) {
+  .additive-page .klein-media {
+    grid-template-columns: 1fr;
+  }
+  .additive-page .klein-hero img {
+    height: 320px;
+  }
+  .additive-page .klein-tile img {
+    height: 150px;
+  }
+}
