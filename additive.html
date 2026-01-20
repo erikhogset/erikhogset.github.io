@@ -262,86 +262,74 @@ layout: default
 <!-- ===================== -->
 <!-- Project 4: Anemometer + Weather Vane (FFF) -->
 <!-- ===================== -->
-<div class="card media-card">
+<div class="card media-card additive-anemometer">
+
   <h2>Anemometer + Weather Vane — FFF Design & Print</h2>
 
   <p class="muted">
-    Desktop anemometer + vane assembly printed in <strong>Bambu PLA</strong>. Focused on stable rotation,
-    bearing integration, and a clean fit-up for low-friction motion.
+    Functional desktop anemometer and vane assembly printed in <strong>Bambu PLA</strong>.
+    Design emphasizes bearing integration, press-fit tolerances, and stable rotation
+    for low-speed airflow response.
   </p>
 
-  <!-- Main video + stacked images (reuse your turtle layout classes) -->
-  <div class="additive-turtle-media">
-    <!-- Main: video -->
-    <div class="additive-turtle-video">
+  <!-- Media layout -->
+  <div class="anemo-media">
+    <!-- Main video -->
+    <div class="anemo-video">
       <video controls playsinline preload="metadata">
         <source src="images/additive_4.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <p class="muted" style="margin: 8px 0 0 0;">Functional demo (cup rotation + vane response).</p>
+      <p class="media-caption muted">
+        Wind tunnel test demonstrating vane alignment and rotor response under airflow.
+      </p>
     </div>
 
-    <!-- Side: images (stacked) -->
-    <div class="additive-turtle-images">
-      <figure style="margin:0;">
-        <img
-          src="images/additive_4print.jpeg"
-          alt="Assembled anemometer and weather vane (printed parts)"
-        />
-        <figcaption class="muted" style="margin-top:6px; font-size:0.85rem;">
-          Assembled print — full mechanism.
-        </figcaption>
+    <!-- Side images -->
+    <div class="anemo-images">
+      <figure>
+        <img src="images/additive_4print.jpeg" alt="Assembled anemometer and vane" />
+        <figcaption>Assembled print — full mechanism</figcaption>
       </figure>
 
-      <figure style="margin:0;">
-        <img
-          src="images/additive_4cad.png"
-          alt="CAD assembly of the anemometer and weather vane"
-        />
-        <figcaption class="muted" style="margin-top:6px; font-size:0.85rem;">
-          CAD — overall assembly layout and interfaces.
-        </figcaption>
+      <figure>
+        <img src="images/additive_4cad.png" alt="Anemometer CAD assembly" />
+        <figcaption>CAD assembly — bearing and shaft layout</figcaption>
       </figure>
 
-      <figure style="margin:0;">
-        <img
-          src="images/additive_4rotor.png"
-          alt="Rotor detail showing press-fit bearing pocket"
-        />
-        <figcaption class="muted" style="margin-top:6px; font-size:0.85rem;">
-          Rotor detail — bearing is <strong>press-fit</strong> into the rotor (middle rotor shown).
-          A second rotor + bearing sits above for the upper stage.
+      <figure>
+        <img src="images/additive_4rotor.png" alt="Rotor press-fit bearing detail" />
+        <figcaption>
+          Rotor detail — press-fit bearing seated between stacked rotors
         </figcaption>
       </figure>
     </div>
   </div>
 
+  <!-- Notes -->
   <div class="notes-block">
-    <div class="notes-header">
-      <h3 class="h3">Technical notes</h3>
-      <p class="muted">Key design decisions around rotation quality, stability, and print strategy.</p>
-    </div>
-
     <div class="notes-grid">
       <div class="notes-card">
-        <h4 class="notes-title">What I focused on</h4>
+        <h3 class="notes-title">What I focused on</h3>
         <ul class="list">
-          <li>Bearing seat geometry for a repeatable press-fit</li>
-          <li>Shaft alignment and stack-up tolerances across the rotor stages</li>
-          <li>Balanced rotating geometry to reduce wobble</li>
-          <li>Print orientation to keep bearing bores clean and round</li>
+          <li>Press-fit tolerances for bearing integration</li>
+          <li>Low-friction rotation and shaft alignment</li>
+          <li>Balancing rotating mass for smooth response</li>
+          <li>Print orientation to reduce wobble and friction</li>
         </ul>
       </div>
 
       <div class="notes-card">
-        <h4 class="notes-title">Outcome</h4>
+        <h3 class="notes-title">Outcome</h3>
         <p>
-          The assembly spins smoothly with a stable base. The press-fit bearing approach produced a clean,
-          low-friction interface without adhesives, and the stacked rotor layout supported consistent rotation.
+          Fully functional anemometer and weather vane. The vane reliably aligns with
+          incoming airflow, and the rotor assembly spins smoothly under wind tunnel
+          testing with minimal friction.
         </p>
       </div>
     </div>
   </div>
+
 </div>
 
 </div>
