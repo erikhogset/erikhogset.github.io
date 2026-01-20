@@ -1366,7 +1366,7 @@ hr {
   width: 100%;
   height: 180px;
   object-fit: contain; /* IMPORTANT: no cropping */
-  background: #f6f6f6; /* helps CAD + light prints */
+  background: transparent; /* helps CAD + light prints */
   border-radius: 12px;
   padding: 10px;
   display: block;
@@ -1475,9 +1475,9 @@ hr {
   width: 100%;
   height: 140px;
   object-fit: contain;
-  background: #f6f6f6;
+  background: transparent;
   border-radius: 12px;
-  padding: 8px;
+  padding: 0;
   display: block;
 }
 
