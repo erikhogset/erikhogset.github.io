@@ -23,8 +23,9 @@
     <div class="kicker">Manufacturing &amp; Automation • Mechanical Design • Clean Energy Systems</div>
 
     <p class="sub">
-      I design and build mechanical systems that are manufacturable, testable, and grounded in real-world constraints.
-      Experience includes electromechanical prototyping, automation, and hands-on fabrication, with growing interests in clean energy.
+     I'm a mechanical engineer who designs and builds systems, with experience in electromechanical 
+     prototyping, automated manufacturing, and hands-on fabrication. I'm expecially interested in 
+     clean energy and sustainable engineering. 
     </p>
 
     <div class="microlabel">Quick skills</div>
