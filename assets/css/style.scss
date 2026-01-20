@@ -1507,3 +1507,7 @@ hr {
 .additive-page figcaption {
   margin-top: 4px;   /* was ~8px */
 }
+/* Rounded variant for specific Klein images */
+.klein-tile.rounded img {
+  border-radius: 18px;
+}
