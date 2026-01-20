@@ -24,7 +24,7 @@
 
     <p class="sub">
      I'm a mechanical engineer who designs and builds systems, with experience in electromechanical 
-     prototyping, automated manufacturing, and hands-on fabrication. I'm expecially interested in 
+     prototyping, automated manufacturing, and hands-on fabrication. I'm particularly interested in 
      clean energy and sustainable engineering. 
     </p>
 
