@@ -259,77 +259,79 @@ layout: default
   </div>
 </div>
 
-  <!-- ===================== -->
-  <!-- Project 4: Anemometer + Weather Vane (FFF) -->
-  <!-- ===================== -->
-  <div class="card media-card">
-    <h2>Anemometer + Weather Vane — FFF Design & Print</h2>
+<!-- ===================== -->
+<!-- Project 4: Anemometer + Weather Vane (FFF) -->
+<!-- ===================== -->
+<div class="card media-card">
+  <h2>Anemometer + Weather Vane — FFF Design & Print</h2>
 
-    <p class="muted">
-      Functioning desktop anemometer and vane assembly printed in <strong>Bambu PLA</strong>, designed around bearing
-      integration and a stable base.
-    </p>
+  <p class="muted">
+    Desktop anemometer + vane assembly printed in <strong>Bambu PLA</strong>. The design focuses on
+    stable rotation and reliable bearing integration for low-friction motion.
+  </p>
 
-    <div class="anemo-media">
-      <div class="anemo-video">
-        <video class="media-video" controls playsinline preload="metadata">
-          <source src="images/additive_4.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <p class="media-caption muted">Functional demo (direction + speed indication).</p>
-      </div>
+  <!-- Media: main assembled photo + CAD + rotor bearing detail -->
+  <div class="klein-media">
+    <!-- Left: hero -->
+    <figure class="klein-hero">
+      <img
+        src="images/additive_4print.jpeg"
+        alt="Assembled anemometer and weather vane (printed parts)"
+      />
+      <figcaption>Assembled print (cups + vane) showing the full mechanism.</figcaption>
+    </figure>
 
-      <div class="anemo-stack">
-        <!-- Replace filenames below with your real ones -->
-        <figure class="mini-fig">
-          <img src="images/additive_4print.jpeg" alt="Anemometer assembled (photo)" />
-          <figcaption>Assembled print</figcaption>
-        </figure>
+    <!-- Right: stacked supporting images -->
+    <div class="klein-stack">
+      <figure class="klein-tile">
+        <img
+          src="images/additive_4cad.png"
+          alt="CAD assembly of the anemometer and weather vane"
+        />
+        <figcaption>CAD — overall assembly layout and interfaces.</figcaption>
+      </figure>
 
-        <figure class="mini-fig">
-          <img src="images/additive_4cad.jpeg" alt="Anemometer CAD (bearing + shaft layout)" />
-          <figcaption>CAD layout</figcaption>
-        </figure>
+      <figure class="klein-tile">
+        <img
+          src="images/additive_4rotor.png"
+          alt="Rotor detail showing press-fit bearing pocket"
+        />
+        <figcaption>
+          Rotor detail — bearing is <strong>press-fit</strong> into the rotor (middle rotor shown here).
+          A second rotor + bearing sits above for the upper stage.
+        </figcaption>
+      </figure>
+    </div>
+  </div>
 
-        <figure class="mini-fig">
-          <img src="images/additive_4bearing.jpeg" alt="Bearing integration close-up" />
-          <figcaption>Bearing integration</figcaption>
-        </figure>
-      </div>
+  <div class="notes-block">
+    <div class="notes-header">
+      <h3 class="h3">Technical notes</h3>
+      <p class="muted">Key design decisions around rotation quality, stability, and print strategy.</p>
     </div>
 
-    <div class="notes-block">
-      <div class="notes-header">
-        <h3 class="h3">Technical notes</h3>
-        <p class="muted">Bearing fit, balance, and print strategy for smooth rotation.</p>
+    <div class="notes-grid">
+      <div class="notes-card">
+        <h4 class="notes-title">What I focused on</h4>
+        <ul class="list">
+          <li>Bearing seat geometry for a repeatable press-fit</li>
+          <li>Shaft alignment and stack-up tolerances across rotors</li>
+          <li>Balancing rotating elements to reduce wobble</li>
+          <li>Print orientation choices to keep bearing bores clean</li>
+        </ul>
       </div>
 
-      <div class="notes-grid">
-        <div class="notes-card">
-          <h4 class="notes-title">What I focused on</h4>
-          <ul class="list">
-            <li>Bearing integration and fit (alignment + low-friction rotation)</li>
-            <li>Stable base and balanced rotating geometry</li>
-            <li>Print strategy to reduce wobble and improve smooth spin</li>
-          </ul>
-        </div>
-
-        <div class="notes-card">
-          <h4 class="notes-title">Outcome</h4>
-          <p>
-            Fully functioning anemometer/vane: vane indicates incoming wind direction, and the cup assembly provides
-            speed indication through rotation rate.
-          </p>
-
-          <div class="badge-row">
-            <span class="additive-badge">Bambu PLA</span>
-            <span class="additive-badge">Bearings</span>
-            <span class="additive-badge">FFF</span>
-          </div>
-        </div>
+      <div class="notes-card">
+        <h4 class="notes-title">Outcome</h4>
+        <p>
+          The assembly spins smoothly with a stable base. The press-fit bearing approach produced
+          a clean, low-friction interface without adhesives, and the stacked rotor layout supported
+          consistent rotation.
+        </p>
       </div>
     </div>
   </div>
+</div>
 
 </div>
   <!-- Footer CTA -->
