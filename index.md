@@ -9,7 +9,7 @@
     <a class="toplink" href="projects.html">Projects</a>
     <a class="toplink" href="coursework.html">Academic Focus</a>
     <a class="toplink" href="about.html">About</a>
-    <a class="toplink" href="resume.pdf">Resume</a>
+    <a class="toplink" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
   </div>
 </div>
 
@@ -39,7 +39,7 @@
       <a class="btn btn-primary" href="projects.html">View Projects</a>
       <a class="btn btn-ghost" href="coursework.html">Academic Focus</a>
       <a class="btn btn-ghost" href="about.html">About</a>
-      <a class="btn btn-ghost" href="resume.pdf">Resume</a>
+      <a class="btn btn-ghost" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
     </div>
 
     <div class="contact-line">
