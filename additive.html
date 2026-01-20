@@ -266,38 +266,50 @@ layout: default
   <h2>Anemometer + Weather Vane — FFF Design & Print</h2>
 
   <p class="muted">
-    Desktop anemometer + vane assembly printed in <strong>Bambu PLA</strong>. The design focuses on
-    stable rotation and reliable bearing integration for low-friction motion.
+    Desktop anemometer + vane assembly printed in <strong>Bambu PLA</strong>. Focused on stable rotation,
+    bearing integration, and a clean fit-up for low-friction motion.
   </p>
 
-  <!-- Media: main assembled photo + CAD + rotor bearing detail -->
-  <div class="klein-media">
-    <!-- Left: hero -->
-    <figure class="klein-hero">
-      <img
-        src="images/additive_4print.jpeg"
-        alt="Assembled anemometer and weather vane (printed parts)"
-      />
-      <figcaption>Assembled print (cups + vane) showing the full mechanism.</figcaption>
-    </figure>
+  <!-- Main video + stacked images (reuse your turtle layout classes) -->
+  <div class="additive-turtle-media">
+    <!-- Main: video -->
+    <div class="additive-turtle-video">
+      <video controls playsinline preload="metadata">
+        <source src="images/additive_4.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <p class="muted" style="margin: 8px 0 0 0;">Functional demo (cup rotation + vane response).</p>
+    </div>
 
-    <!-- Right: stacked supporting images -->
-    <div class="klein-stack">
-      <figure class="klein-tile">
+    <!-- Side: images (stacked) -->
+    <div class="additive-turtle-images">
+      <figure style="margin:0;">
+        <img
+          src="images/additive_4print.jpeg"
+          alt="Assembled anemometer and weather vane (printed parts)"
+        />
+        <figcaption class="muted" style="margin-top:6px; font-size:0.85rem;">
+          Assembled print — full mechanism.
+        </figcaption>
+      </figure>
+
+      <figure style="margin:0;">
         <img
           src="images/additive_4cad.png"
           alt="CAD assembly of the anemometer and weather vane"
         />
-        <figcaption>CAD — overall assembly layout and interfaces.</figcaption>
+        <figcaption class="muted" style="margin-top:6px; font-size:0.85rem;">
+          CAD — overall assembly layout and interfaces.
+        </figcaption>
       </figure>
 
-      <figure class="klein-tile">
+      <figure style="margin:0;">
         <img
           src="images/additive_4rotor.png"
           alt="Rotor detail showing press-fit bearing pocket"
         />
-        <figcaption>
-          Rotor detail — bearing is <strong>press-fit</strong> into the rotor (middle rotor shown here).
+        <figcaption class="muted" style="margin-top:6px; font-size:0.85rem;">
+          Rotor detail — bearing is <strong>press-fit</strong> into the rotor (middle rotor shown).
           A second rotor + bearing sits above for the upper stage.
         </figcaption>
       </figure>
@@ -315,18 +327,17 @@ layout: default
         <h4 class="notes-title">What I focused on</h4>
         <ul class="list">
           <li>Bearing seat geometry for a repeatable press-fit</li>
-          <li>Shaft alignment and stack-up tolerances across rotors</li>
-          <li>Balancing rotating elements to reduce wobble</li>
-          <li>Print orientation choices to keep bearing bores clean</li>
+          <li>Shaft alignment and stack-up tolerances across the rotor stages</li>
+          <li>Balanced rotating geometry to reduce wobble</li>
+          <li>Print orientation to keep bearing bores clean and round</li>
         </ul>
       </div>
 
       <div class="notes-card">
         <h4 class="notes-title">Outcome</h4>
         <p>
-          The assembly spins smoothly with a stable base. The press-fit bearing approach produced
-          a clean, low-friction interface without adhesives, and the stacked rotor layout supported
-          consistent rotation.
+          The assembly spins smoothly with a stable base. The press-fit bearing approach produced a clean,
+          low-friction interface without adhesives, and the stacked rotor layout supported consistent rotation.
         </p>
       </div>
     </div>
