@@ -1,13 +1,13 @@
 ---
 layout: default
+title: Compact Fishing Kit
 ---
-<!-- TOPBAR -->
+
 <div class="topbar">
   <div class="topbar-left">
     <a class="brand" href="./">Erik Hogset</a>
     <span class="brand-sub">Mechanical Engineering • Boston University</span>
   </div>
-
   <div class="topbar-right">
     <a class="toplink" href="projects.html">Projects</a>
     <a class="toplink" href="coursework.html">Academic Focus</a>
@@ -17,6 +17,179 @@ layout: default
 </div>
 
 <hr />
-<h1>Reactive Road Sign System</h1>
 
-# Reactive Road Sign System
+<div class="project-wrapper fishing-page">
+
+  <div class="project-header">
+    <p class="proj-breadcrumb">
+      <a href="projects.html">Projects</a>
+      <span class="dot">•</span>
+      Manufacturing / Automation
+    </p>
+
+    <h1>Compact Fishing Kit</h1>
+
+    <p class="project-subtitle">
+      A compact, pocket-sized fishing kit developed for ME345 Automation & Manufacturing Methods.
+      This project combined product design, CAM planning, ADML routing, and automated manufacturing
+      system analysis to produce a functional two-part kit consisting of a machined body and lid.
+    </p>
+
+    <div class="project-meta">
+      <span class="pill">ME345</span>
+      <span class="pill">ADML</span>
+      <span class="pill">CNC Machining</span>
+      <span class="pill">Automation</span>
+      <span class="pill">Manufacturing Strategy</span>
+    </div>
+  </div>
+
+  <!-- OVERVIEW -->
+  <section class="card">
+    <h2>Project Overview</h2>
+    <p class="muted">
+      Our team designed a compact fishing kit intended to improve portability, organization, and safety
+      compared to bulkier or poorly compartmentalized alternatives. The final product consists of a main body
+      and lid, with dedicated regions for fishing essentials and design details that improve usability.
+    </p>
+
+    <div class="fishing-hero-grid">
+      <figure class="photo">
+        <img src="assets/fishing-kit/final-product-1.jpg" alt="Compact fishing kit assembled and open">
+        <figcaption>Final prototype with body, lid, and stored fishing components.</figcaption>
+      </figure>
+
+      <figure class="photo">
+        <img src="assets/fishing-kit/final-product-2.jpg" alt="Compact fishing kit in use">
+        <figcaption>Product view showing the compact form factor and storage layout.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- DESIGN -->
+  <section class="card">
+    <h2>Product Design</h2>
+
+    <div class="grid-2">
+      <div>
+        <p class="muted">
+          The kit was designed as a two-part assembly consisting of a machined main body and lid. Functional
+          features included separate regions for hooks and sinkers, a perimeter groove for fishing line, and
+          assist tabs to make opening and closing easier.
+        </p>
+
+        <ul class="list">
+          <li>Two-part design: body + lid</li>
+          <li>Dedicated hook and sinker storage</li>
+          <li>Perimeter line groove</li>
+          <li>Assist tabs for opening and closing</li>
+          <li>Designed around ADML machining and assembly constraints</li>
+        </ul>
+      </div>
+
+      <div class="fishing-design-grid">
+        <figure class="photo">
+          <img src="assets/fishing-kit/body-cad.jpg" alt="Fishing kit body CAD">
+          <figcaption>Body CAD showing storage features and assembly geometry.</figcaption>
+        </figure>
+
+        <figure class="photo">
+          <img src="assets/fishing-kit/lid-cad.jpg" alt="Fishing kit lid CAD">
+          <figcaption>Lid CAD with engraved fish graphic and locating holes.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- MANUFACTURING -->
+  <section class="card">
+    <h2>Manufacturing Strategy</h2>
+    <p class="muted">
+      The body and lid were machined as separate parts and planned to fit within the ADML workflow.
+      The body emphasized pocketing, contouring, T-slot machining, and chamfering, while the lid
+      required hole machining, chamfering, and engraving operations.
+    </p>
+
+    <div class="fishing-manufacturing-grid">
+      <figure class="photo">
+        <img src="assets/fishing-kit/body-strategy.png" alt="Manufacturing strategy for body">
+        <figcaption>Body process plan including pocketing, contouring, groove creation, and chamfering.</figcaption>
+      </figure>
+
+      <figure class="photo">
+        <img src="assets/fishing-kit/lid-strategy.png" alt="Manufacturing strategy for lid">
+        <figcaption>Lid process plan including drilling/contouring, chamfering, and fish engraving.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ADML ROUTING -->
+  <section class="card">
+    <h2>ADML Routing & System Plan</h2>
+
+    <div class="grid-2">
+      <div>
+        <p class="muted">
+          A major part of this project was planning how the product would move through the ADML system.
+          The routing strategy coordinated pallets, AGVs, machining at Stations 3 and 4, inventory transfer,
+          and final assembly at Station 1.
+        </p>
+
+        <ul class="list">
+          <li>Parallel routing for lid and body operations</li>
+          <li>Material transport using AGVs and pallet buffers</li>
+          <li>Intermediate inventory handling before assembly</li>
+          <li>Final assembly performed after both machined components were complete</li>
+        </ul>
+      </div>
+
+      <figure class="photo">
+        <img src="assets/fishing-kit/adml-layout.png" alt="ADML manufacturing routing layout">
+        <figcaption>ADML layout showing routing between stations, buffers, AGVs, and assembly.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- VIDEO -->
+ <section class="card media-card">
+  <h2>Final Assembly Video</h2>
+  <p class="muted">
+    This video shows the completed manufacturing and assembly outcome for the compact fishing kit project,
+    including the final assembly of four finished products.
+  </p>
+
+  <div class="video-frame">
+    <video controls preload="metadata" poster="assets/fishing-kit/assembly-poster.jpg">
+      <source src="assets/fishing-kit/final-assembly.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+
+  <!-- TAKEAWAYS -->
+  <section class="card">
+    <h2>Key Takeaways</h2>
+
+    <div class="notes-grid">
+      <div class="notes-card">
+        <h3 class="notes-title">Design</h3>
+        <p class="muted">
+          This project strengthened my ability to design around both product function and manufacturing
+          constraints, especially when features had to work within tooling, tolerance, and assembly limits.
+        </p>
+      </div>
+
+      <div class="notes-card">
+        <h3 class="notes-title">Manufacturing Systems</h3>
+        <p class="muted">
+          I gained experience translating a part design into a complete production workflow involving CAM,
+          routing logic, machine allocation, and assembly sequencing inside an automated lab environment.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="project-footer">
+    <a class="btn btn-ghost" href="projects.html">← Back to Projects</a>
+  </div>
+</div>
