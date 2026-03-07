@@ -1,1 +1,184 @@
+---
+layout: default
+---
 
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="topbar-left">
+    <a class="brand" href="./">Erik Hogset</a>
+    <span class="brand-sub">Mechanical Engineering • Boston University</span>
+  </div>
+
+  <div class="topbar-right">
+    <a class="toplink" href="projects.html">Projects</a>
+    <a class="toplink" href="coursework.html">Academic Focus</a>
+    <a class="toplink" href="about.html">About</a>
+    <a class="toplink" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+  </div>
+</div>
+
+<hr />
+
+<div class="project-wrapper">
+
+<!-- Breadcrumb -->
+<p class="proj-breadcrumb">
+  <a href="projects.html">Projects</a>
+  <span class="dot">•</span>
+  Electromechanical Design
+</p>
+
+<!-- Header -->
+<div class="project-header">
+  <h1>Sensor-Driven Smart Lamp</h1>
+
+  <p class="project-subtitle">
+    A motion-responsive lamp prototype integrating sensors, microcontroller control,
+    and a motorized rotating head.
+  </p>
+
+  <div class="project-meta">
+    <span class="pill">Electromechanical Design</span>
+    <span class="pill">Sensors</span>
+    <span class="pill">Controls</span>
+    <span class="pill">Prototyping</span>
+  </div>
+</div>
+
+<!-- HERO VIDEO -->
+<div class="card media-card">
+  <h2>Prototype Demonstration</h2>
+
+  <div class="video-frame">
+    <video controls playsinline preload="metadata">
+      <source src="images/lamp.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <p class="media-caption muted">
+    Demonstration of the sensor-driven lamp prototype. Hand proximity is detected
+    using an ultrasonic sensor, triggering a motorized rotation of the lamp head
+    through a microcontroller-controlled actuation system.
+  </p>
+</div>
+
+<!-- PROJECT OVERVIEW -->
+<div class="card">
+  <h2>Project Overview</h2>
+
+  <p class="muted">
+    This project explored the integration of sensing, actuation, and mechanical
+    design to create an interactive lighting system. The lamp responds to user
+    motion detected by a proximity sensor, automatically rotating the lamp head
+    toward the detected direction.
+  </p>
+
+  <p class="muted">
+    The system combines mechanical design of the rotating head assembly with
+    electronic control using a microcontroller, enabling the lamp to respond
+    dynamically to environmental input.
+  </p>
+</div>
+
+<!-- DESIGN -->
+<div class="card">
+  <h2>Mechanical Design</h2>
+
+  <div class="photo-grid">
+
+    <figure class="photo">
+      <img src="images/lamp_design_1.jpg" alt="Lamp CAD design">
+      <figcaption>Lamp head and base mechanical design.</figcaption>
+    </figure>
+
+    <figure class="photo">
+      <img src="images/lamp_design_2.jpg" alt="Lamp mechanism">
+      <figcaption>Rotating head mechanism and mounting structure.</figcaption>
+    </figure>
+
+  </div>
+</div>
+
+<!-- ELECTRONICS -->
+<div class="card">
+  <h2>Electronics & Sensors</h2>
+
+  <div class="grid-2">
+
+    <div>
+      <h3 class="h3">Hardware</h3>
+
+      <ul class="list">
+        <li>Ultrasonic proximity sensor</li>
+        <li>Microcontroller control system</li>
+        <li>Stepper / servo motor for rotation</li>
+        <li>Motor driver electronics</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="h3">System Behavior</h3>
+
+      <ul class="list">
+        <li>Detect user motion near the lamp</li>
+        <li>Translate sensor reading into control signal</li>
+        <li>Rotate lamp head toward detected direction</li>
+        <li>Return to idle position when no motion detected</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<!-- PROTOTYPE DEVELOPMENT -->
+<div class="card">
+  <h2>Prototype Development</h2>
+
+  <div class="photo-grid">
+
+    <figure class="photo">
+      <img src="images/lamp_proto_1.jpg" alt="Early prototype">
+      <figcaption>Early prototype using 3D-printed housing.</figcaption>
+    </figure>
+
+    <figure class="photo">
+      <img src="images/lamp_proto_2.jpg" alt="Electronics setup">
+      <figcaption>Sensor and electronics integration during testing.</figcaption>
+    </figure>
+
+  </div>
+</div>
+
+<!-- TAKEAWAYS -->
+<div class="card">
+  <h2>Key Takeaways</h2>
+
+  <div class="grid-2">
+
+    <div>
+      <h3 class="h3">Electromechanical Integration</h3>
+      <p class="muted">
+        This project required coordinating mechanical design, sensors,
+        and embedded control systems to create an interactive physical device.
+      </p>
+    </div>
+
+    <div>
+      <h3 class="h3">Rapid Prototyping</h3>
+      <p class="muted">
+        Iterative prototyping allowed mechanical and electrical components
+        to be refined simultaneously while testing sensor response and
+        motion behavior.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="project-footer">
+  <a class="btn btn-ghost" href="projects.html">← Back to Projects</a>
+</div>
+
+</div>
