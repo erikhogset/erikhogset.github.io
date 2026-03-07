@@ -1634,3 +1634,23 @@ figure.photo figcaption {
     max-height: 420px;
   }
 }
+.routing-img {
+  width: 100%;
+  height: 420px;
+  object-fit: contain;
+  object-position: top center;
+
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+
+  display: block;
+  padding: 12px;
+}
+
+@media (max-width: 900px) {
+  .routing-img {
+    height: auto;
+    max-height: 500px;
+  }
+}
