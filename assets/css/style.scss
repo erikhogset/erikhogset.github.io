@@ -549,9 +549,7 @@ hr {
 .applied a:hover {
   text-decoration: underline;
 }
-/* =========================
-   Coursework Card Hover + Depth
-   ========================= */
+
 
 /* =========================
    Academic Focus Page
@@ -609,6 +607,24 @@ hr {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 28px;
   align-items: stretch;
+}
+.coursework-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  align-items: stretch;
+}
+
+@media (max-width: 1100px){
+  .coursework-grid{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px){
+  .coursework-grid{
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Cards */
