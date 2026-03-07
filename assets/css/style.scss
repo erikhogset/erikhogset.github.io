@@ -1567,12 +1567,6 @@ figure.photo figcaption {
   aspect-ratio: 4 / 3;
 }
 
-.fishing-manufacturing-grid {
-  margin-top: 14px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-}
 
 .fishing-page .photo img {
   background: #fff;
@@ -1609,5 +1603,33 @@ figure.photo figcaption {
   .fishing-manufacturing-grid,
   .fishing-page .notes-grid {
     grid-template-columns: 1fr;
+  }
+}
+.strategy-figure {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.strategy-figure .strategy-img {
+  width: 100%;
+  height: 335px;
+  object-fit: contain;
+  object-position: center top;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  display: block;
+  padding: 12px;
+}
+
+.strategy-figure figcaption {
+  margin-top: 10px;
+}
+
+@media (max-width: 900px) {
+  .strategy-figure .strategy-img {
+    height: auto;
+    max-height: 420px;
   }
 }
