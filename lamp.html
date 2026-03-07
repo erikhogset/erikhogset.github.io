@@ -19,166 +19,217 @@ layout: default
 
 <hr />
 
-<div class="project-wrapper">
+<div class="project-wrapper lamp-page">
 
-<!-- Breadcrumb -->
-<p class="proj-breadcrumb">
-  <a href="projects.html">Projects</a>
-  <span class="dot">•</span>
-  Product Design / Sensing
-</p>
-
-<!-- Header -->
-<div class="project-header">
-  <h1>Sensor-Driven Smart Lamp</h1>
-
-  <p class="project-subtitle">
-    A motion-responsive lamp prototype integrating sensors, microcontroller control,
-    and a motorized rotating head.
+  <!-- Breadcrumb -->
+  <p class="proj-breadcrumb">
+    <a href="projects.html">Projects</a>
+    <span class="dot">•</span>
+    Product Design / Sensing
   </p>
 
-  <div class="project-meta">
-    <span class="pill">Electromechanical Design</span>
-    <span class="pill">Sensors</span>
-    <span class="pill">Controls</span>
-    <span class="pill">Prototyping</span>
-  </div>
-</div>
+  <!-- Header -->
+  <div class="project-header">
+    <h1>Smart Desk Lamp</h1>
+    <p class="project-subtitle">
+      A sensor-driven desk lamp prototype designed to improve accessibility, adjust brightness automatically,
+      and reduce blue-light exposure over the course of the day.
+    </p>
 
-<!-- HERO VIDEO -->
-<div class="card media-card">
-  <h2>Prototype Demonstration</h2>
-
-  <div class="video-frame">
-    <video controls playsinline preload="metadata">
-      <source src="images/lamp.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+    <div class="project-meta">
+      <span class="pill">Product Design</span>
+      <span class="pill">Sensors</span>
+      <span class="pill">Microcontrollers</span>
+      <span class="pill">Prototyping</span>
+    </div>
   </div>
 
-  <p class="media-caption muted">
-    Demonstration of the sensor-driven lamp prototype. Hand proximity is detected
-    using an ultrasonic sensor, triggering a motorized rotation of the lamp head
-    through a microcontroller-controlled actuation system.
-  </p>
-</div>
+  <!-- Demo -->
+  <div class="card media-card">
+    <h2>Prototype Demonstration</h2>
 
-<!-- PROJECT OVERVIEW -->
-<div class="card">
-  <h2>Project Overview</h2>
-
-  <p class="muted">
-    This project explored the integration of sensing, actuation, and mechanical
-    design to create an interactive lighting system. The lamp responds to user
-    motion detected by a proximity sensor, automatically rotating the lamp head
-    toward the detected direction.
-  </p>
-
-  <p class="muted">
-    The system combines mechanical design of the rotating head assembly with
-    electronic control using a microcontroller, enabling the lamp to respond
-    dynamically to environmental input.
-  </p>
-</div>
-
-<!-- DESIGN -->
-<div class="card">
-  <h2>Mechanical Design</h2>
-
-  <div class="photo-grid">
-
-    <figure class="photo">
-      <img src="images/lamp_design_1.jpg" alt="Lamp CAD design">
-      <figcaption>Lamp head and base mechanical design.</figcaption>
-    </figure>
-
-    <figure class="photo">
-      <img src="images/lamp_design_2.jpg" alt="Lamp mechanism">
-      <figcaption>Rotating head mechanism and mounting structure.</figcaption>
-    </figure>
-
-  </div>
-</div>
-
-<!-- ELECTRONICS -->
-<div class="card">
-  <h2>Electronics & Sensors</h2>
-
-  <div class="grid-2">
-
-    <div>
-      <h3 class="h3">Hardware</h3>
-
-      <ul class="list">
-        <li>Ultrasonic proximity sensor</li>
-        <li>Microcontroller control system</li>
-        <li>Stepper / servo motor for rotation</li>
-        <li>Motor driver electronics</li>
-      </ul>
+    <div class="lamp-video-wrap">
+      <div class="lamp-video-frame">
+        <video controls playsinline preload="metadata">
+          <source src="images/lamp.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
     </div>
 
-    <div>
-      <h3 class="h3">System Behavior</h3>
-
-      <ul class="list">
-        <li>Detect user motion near the lamp</li>
-        <li>Translate sensor reading into control signal</li>
-        <li>Rotate lamp head toward detected direction</li>
-        <li>Return to idle position when no motion detected</li>
-      </ul>
-    </div>
-
+    <p class="media-caption muted">
+      Demonstration of the final smart lamp prototype. A hand wave over the ultrasonic sensor cycles the lamp
+      through brightness modes, while the overall light output and blue-light content are adjusted using sensor
+      input and time-based control logic.
+    </p>
   </div>
-</div>
 
-<!-- PROTOTYPE DEVELOPMENT -->
-<div class="card">
-  <h2>Prototype Development</h2>
+  <!-- Overview -->
+  <div class="card">
+    <h2>Project Overview</h2>
+    <p class="muted">
+      This project focused on creating a desk lamp that was both more accessible and more responsive to its
+      environment than a standard lamp. The final system combined a motion-based user interface, automatic
+      brightness control, time-dependent color adjustment, and a mechanically adjustable lamp head.
+    </p>
 
-  <div class="photo-grid">
-
-    <figure class="photo">
-      <img src="images/lamp_proto_1.jpg" alt="Early prototype">
-      <figcaption>Early prototype using 3D-printed housing.</figcaption>
-    </figure>
-
-    <figure class="photo">
-      <img src="images/lamp_proto_2.jpg" alt="Electronics setup">
-      <figcaption>Sensor and electronics integration during testing.</figcaption>
-    </figure>
-
+    <p class="muted">
+      Rather than relying on small switches or manual brightness settings alone, the lamp was designed so a user
+      could wave a hand over the motion sensor to change operating mode. This made the product easier to use for
+      people with limited dexterity while also introducing adaptive light behavior.
+    </p>
   </div>
-</div>
 
-<!-- TAKEAWAYS -->
-<div class="card">
-  <h2>Key Takeaways</h2>
+  <!-- What it does -->
+  <div class="card">
+    <h2>What the Lamp Does</h2>
 
-  <div class="grid-2">
+    <div class="grid-2">
+      <div>
+        <h3 class="h3">User Interaction</h3>
+        <ul class="list">
+          <li>Hand motion over the ultrasonic sensor changes lamp mode</li>
+          <li>Modes cycle through dim, normal, bright, automatic, and off</li>
+          <li>Designed to be usable with limited dexterity</li>
+          <li>Lamp head can be repositioned with light force</li>
+        </ul>
+      </div>
 
-    <div>
-      <h3 class="h3">Electromechanical Integration</h3>
-      <p class="muted">
-        This project required coordinating mechanical design, sensors,
-        and embedded control systems to create an interactive physical device.
-      </p>
+      <div>
+        <h3 class="h3">Adaptive Lighting</h3>
+        <ul class="list">
+          <li>Ambient light sensor adjusts brightness automatically in auto mode</li>
+          <li>Real-time clock changes blue-light percentage based on time of day</li>
+          <li>Brighter, cooler light during the day</li>
+          <li>Reduced blue-light output during evening and night</li>
+        </ul>
+      </div>
     </div>
-
-    <div>
-      <h3 class="h3">Rapid Prototyping</h3>
-      <p class="muted">
-        Iterative prototyping allowed mechanical and electrical components
-        to be refined simultaneously while testing sensor response and
-        motion behavior.
-      </p>
-    </div>
-
   </div>
-</div>
 
-<!-- FOOTER -->
-<div class="project-footer">
-  <a class="btn btn-ghost" href="projects.html">← Back to Projects</a>
-</div>
+  <!-- System logic -->
+  <div class="card">
+    <h2>Sensing & Control Logic</h2>
+
+    <div class="grid-2">
+      <div>
+        <h3 class="h3">Sensors</h3>
+        <ul class="list">
+          <li>Ultrasonic sensor for motion-based input</li>
+          <li>Ambient light sensor for room brightness detection</li>
+          <li>Real-time clock for time-of-day lighting changes</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="h3">Control Behavior</h3>
+        <ul class="list">
+          <li>Wave input advances the lamp through brightness states</li>
+          <li>Automatic mode maps room lux to dim, normal, or bright output</li>
+          <li>RGB LED output is adjusted to reduce blue-light exposure at night</li>
+          <li>Microcontroller coordinates all sensing and output behavior</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mechanical / product design -->
+  <div class="card">
+    <h2>Mechanical & Product Design</h2>
+
+    <p class="muted">
+      The lamp was designed as a functional desktop product rather than only an electronics demo. The form
+      integrated a stable base, vertical support structure, adjustable head, and internal routing for wires
+      and components. The head adjustment mechanism was developed to hold position while still requiring only
+      a small amount of force to move.
+    </p>
+
+    <div class="photo-grid">
+      <figure class="photo">
+        <img src="images/lamp_final_1.jpg" alt="Final smart lamp prototype">
+        <figcaption>Final lamp prototype with integrated housing and adjustable head.</figcaption>
+      </figure>
+
+      <figure class="photo">
+        <img src="images/lamp_final_2.jpg" alt="Lamp prototype side view">
+        <figcaption>Final assembled product showing the overall form and lamp-head positioning.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <!-- Prototype development -->
+  <div class="card">
+    <h2>Prototype Development</h2>
+
+    <div class="photo-grid">
+      <figure class="photo">
+        <img src="images/lamp_proto_1.jpg" alt="Early lamp prototype">
+        <figcaption>Earlier prototype iteration using a 3D-printed body and partial system integration.</figcaption>
+      </figure>
+
+      <figure class="photo">
+        <img src="images/lamp_proto_2.jpg" alt="Lamp electronics and sensor testing">
+        <figcaption>Testing and refinement of sensing, wiring, and control behavior during development.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <!-- Technical summary -->
+  <div class="card">
+    <h2>Technical Summary</h2>
+
+    <div class="grid-2">
+      <div>
+        <h3 class="h3">Hardware</h3>
+        <ul class="list">
+          <li>10W RGB LED</li>
+          <li>Ultrasonic motion sensor</li>
+          <li>Ambient light sensor</li>
+          <li>Real-time clock</li>
+          <li>Microcontroller-based control system</li>
+          <li>Adjustable mechanical lamp head</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="h3">Performance Goals</h3>
+        <ul class="list">
+          <li>Illuminate a desk-sized workspace</li>
+          <li>Support multiple brightness settings</li>
+          <li>Reduce blue-light output at night</li>
+          <li>Improve ease of use for people with limited mobility</li>
+          <li>Allow manual adjustment of lamp orientation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Takeaways -->
+  <div class="card">
+    <h2>Key Takeaways</h2>
+
+    <div class="grid-2">
+      <div>
+        <h3 class="h3">User-Centered Design</h3>
+        <p class="muted">
+          This project pushed me to think about accessibility and product interaction more intentionally by
+          designing around limited dexterity, lighting comfort, and ease of adjustment.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="h3">Integrated Prototyping</h3>
+        <p class="muted">
+          I gained experience combining physical product design with sensing and control logic, while iterating
+          on both the mechanical form and the behavior of the final system.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="project-footer">
+    <a class="btn btn-ghost" href="projects.html">← Back to Projects</a>
+  </div>
 
 </div>
