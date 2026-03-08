@@ -3,135 +3,394 @@ layout: default
 title: Reactive Road Sign System
 ---
 
-<section class="project-header">
-  <h1>Reactive Road Sign System</h1>
-  <p class="project-subtitle">
-    Senior Design Project — Mechanical Retrofit for Hurricane-Resistant Road Signs
+<div class="topbar">
+  <div class="topbar-left">
+    <a class="brand" href="./">Erik Hogset</a>
+    <span class="brand-sub">Mechanical Engineering • Boston University</span>
+  </div>
+
+  <div class="topbar-right">
+    <a class="toplink" href="projects.html">Projects</a>
+    <a class="toplink" href="coursework.html">Academic Focus</a>
+    <a class="toplink" href="about.html">About</a>
+    <a class="toplink" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+  </div>
+</div>
+
+<hr />
+
+<div class="project-wrapper roadsign-page">
+
+  <p class="proj-breadcrumb">
+    <a href="projects.html">Projects</a>
+    <span class="dot">•</span>
+    Senior Design / Mechanical Systems
   </p>
-</section>
 
-<section class="project-overview">
+  <div class="project-header">
+    <h1>Reactive Road Sign System</h1>
+    <p class="project-subtitle">
+      An in-progress senior design retrofit mechanism designed to reduce wind-induced damage
+      to roadside sign infrastructure through controlled rotation and sacrificial breakaway.
+    </p>
 
-<h2>Project Overview</h2>
+    <div class="project-meta">
+      <span class="pill">Senior Design</span>
+      <span class="pill">Structural Analysis</span>
+      <span class="pill">Mechanism Design</span>
+      <span class="pill">FEA</span>
+      <span class="pill">Retrofit System</span>
+    </div>
+  </div>
 
-<p>
-The <strong>Reactive Road Sign</strong> project is a mechanical retrofit device designed to reduce structural damage to roadside signs during extreme wind events such as hurricanes. Conventional road signs are rigidly mounted, which allows aerodynamic loads to transfer directly into the post and foundation. Under severe wind loading, this frequently leads to permanent deformation or complete structural failure of the signpost.
-</p>
+  <!-- STATUS -->
+  <section class="card">
+    <h2>Project Status</h2>
 
-<p>
-This project introduces a passive mechanical system that redirects wind loads through a controlled response mechanism. Under moderate winds, the sign is able to rotate slightly to align with wind direction, reducing aerodynamic loading. Under extreme wind conditions, a sacrificial breakaway pin fractures in a controlled manner, allowing the sign to fold downward and preventing damage to the post or foundation. After the storm event, the system can be restored by simply replacing the breakaway pin rather than replacing the entire sign structure.
-</p>
+    <p class="muted">
+      This project is currently <strong>in progress</strong> and is at the
+      <strong>Critical Design Review</strong> stage. The current design includes the full
+      system architecture, analytical modeling, component selection, CAD development,
+      and preliminary finite element analysis. Prototype fabrication and experimental
+      validation are the next major steps.
+    </p>
 
-<p>
-The system is designed as an inline retrofit kit that integrates directly into existing roadside infrastructure. Installation requires cutting the signpost and inserting the device between the upper and lower sections of the post, preserving standardized sign geometries and mounting heights required by transportation regulations.
-</p>
+    <div class="notes-grid">
+      <div class="notes-card">
+        <h3 class="notes-title">Current Progress</h3>
+        <ul class="list">
+          <li>System architecture and load path defined</li>
+          <li>Breakaway pin stress model developed</li>
+          <li>Torsional spring sizing completed</li>
+          <li>Preliminary FEA completed for pin stress trends and peak stress locations</li>
+        </ul>
+      </div>
 
-<p class="project-status">
-<strong>Status:</strong> In Progress — Current work focuses on structural validation, prototype fabrication, and breakaway pin testing.
-</p>
+      <div class="notes-card">
+        <h3 class="notes-title">Next Steps</h3>
+        <ul class="list">
+          <li>Prototype fabrication and assembly</li>
+          <li>Destructive testing of candidate pin geometries</li>
+          <li>Validation of analytical and simulation predictions</li>
+          <li>Refinement of final manufacturable design</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-</section>
+  <!-- OVERVIEW -->
+  <section class="card">
+    <h2>System Overview</h2>
 
-<section class="project-images">
+    <p class="muted">
+      Conventional roadside signs are rigidly mounted, which means aerodynamic loads from
+      extreme wind events are transmitted directly into the signpost and foundation. Under
+      hurricane-level loading, this often leads to permanent deformation or failure of
+      the supporting infrastructure. The goal of this project is to create a
+      <strong>mechanical retrofit system</strong> that redirects damaging loads into
+      replaceable components rather than the structural post itself.  [oai_citation:2‡Critical Design Review Report.pdf](sediment://file_00000000db8471fdbfca198b55b8ec85)
+    </p>
 
-<h2>System Architecture</h2>
+    <p class="muted">
+      The mechanism is designed as an inline retrofit inserted between upper and lower
+      sections of an existing signpost. Under moderate wind loading, the sign can rotate
+      slightly into the wind to reduce drag. Under extreme loading, a sacrificial pin
+      fractures in a controlled way, allowing the sign to fold downward rather than
+      transferring the full load into the post and foundation.  [oai_citation:3‡Critical Design Review Report.pdf](sediment://file_00000000db8471fdbfca198b55b8ec85)
+    </p>
 
-<img src="/assets/projects/reactive-roadsign/rr_system_overview.png" alt="Reactive Road Sign Assembly">
+    <p class="muted">
+      All structural calculations assume a standard <strong>30-inch octagonal stop sign</strong>
+      mounted with the <strong>bottom of the sign approximately 7 ft above ground</strong>.
+      These assumptions define both the projected wind-loading area and the moment arm used
+      to convert aerodynamic force into bending moment at the mechanism.
+    </p>
 
-<p class="caption">
-Overall mechanical architecture of the retrofit device showing the torsional spring subsystem and U-joint breakaway mechanism integrated within the signpost load path.
-</p>
+    <div class="photo-grid one-row">
+      <figure class="photo">
+        <img src="images/roadsign_render_installed.png" alt="Installed render of the reactive road sign system">
+        <figcaption>
+          Installed concept rendering of the retrofit mechanism integrated into a standard roadside signpost.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
 
-</section>
+  <!-- HOW IT WORKS -->
+  <section class="card">
+    <h2>How the Mechanism Works</h2>
 
-<section class="project-section">
+    <div class="notes-grid">
+      <div class="notes-card">
+        <h3 class="notes-title">1. Torsional Spring Response</h3>
+        <p class="muted">
+          At moderate wind loads, the sign is allowed to rotate about the post axis through
+          a torsional spring subsystem located in the lower coupler. Rotational stops limit
+          this motion to ±15°, reducing projected area while maintaining sign visibility.
+          When the load drops, the spring returns the sign to its original orientation.  [oai_citation:4‡Critical Design Review Report.pdf](sediment://file_00000000db8471fdbfca198b55b8ec85)
+        </p>
+      </div>
 
-<h2>Mechanical Design</h2>
+      <div class="notes-card">
+        <h3 class="notes-title">2. Sacrificial Breakaway Response</h3>
+        <p class="muted">
+          Under extreme wind loading, the breakaway pin reaches its failure threshold and
+          fractures, releasing the U-joint constraint. This allows the sign to fold downward
+          in a predictable manner, preventing excessive loads from being transmitted into the
+          post or foundation.  [oai_citation:5‡Critical Design Review Report.pdf](sediment://file_00000000db8471fdbfca198b55b8ec85)
+        </p>
+      </div>
+    </div>
 
-<p>
-The mechanism contains two primary subsystems that govern the sign’s response to increasing wind loads.
-</p>
+    <div class="photo-grid">
+      <figure class="photo">
+        <img src="images/roadsign_exploded.png" alt="Exploded view of reactive road sign mechanism">
+        <figcaption>
+          Exploded system view showing the couplers, yokes, center block, spring region, and sacrificial pin.
+        </figcaption>
+      </figure>
 
-<h3>Torsional Spring Subsystem</h3>
+      <figure class="photo">
+        <img src="images/roadsign_assembly.png" alt="Assembled CAD view of reactive road sign mechanism">
+        <figcaption>
+          Assembled CAD model showing the continuous load path through the retrofit mechanism.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
 
-<p>
-A torsional spring located within the base coupler allows limited rotational motion about the signpost axis. When wind forces exceed a defined trigger load, the sign rotates up to 15° in either direction. This motion reduces the effective projected area of the sign and decreases aerodynamic loading on the structure.
-</p>
+  <!-- MY ROLE -->
+  <section class="card">
+    <h2>My Role</h2>
 
-<h3>Breakaway U-Joint Subsystem</h3>
+    <p class="muted">
+      This project is being completed as part of a <strong>two-person senior design team</strong>.
+      My primary contributions focus on the analytical and engineering decision-making side of
+      the project, including structural modeling, force calculations, spring sizing, materials
+      selection, and project documentation, while collaborating closely with my teammate on
+      iterative design development.  [oai_citation:6‡Critical Design Review Report.pdf](sediment://file_00000000db8471fdbfca198b55b8ec85)
+    </p>
 
-<p>
-Above the spring subsystem, a universal joint connects the upper and lower portions of the signpost. Under normal conditions, the joint is constrained by a sacrificial breakaway pin. When wind forces exceed the ultimate design load, the pin fractures, releasing the constraint and allowing the sign to fold downward into a protected configuration.
-</p>
+    <ul class="list">
+      <li>Developed analytical wind-load and moment models for the mechanism</li>
+      <li>Derived the combined bending and shear stress framework used to evaluate breakaway pin loading</li>
+      <li>Performed torsional spring sizing for the partial-rotation trigger condition</li>
+      <li>Led materials and component selection for prototype and final system planning</li>
+      <li>Prepared major portions of the design reports and supporting documentation</li>
+      <li>Contributed to design iteration, tolerancing decisions, and prototype planning</li>
+    </ul>
+  </section>
 
-</section>
+  <!-- ENGINEERING ANALYSIS -->
+  <section class="card">
+    <h2>Engineering Analysis</h2>
 
-<section class="project-section">
+    <p class="muted">
+      Analytical modeling was used to convert wind loading on the sign face into internal
+      stresses within the breakaway mechanism. The wind force acting at the sign centroid
+      creates a moment about the joint, which is then converted into an equivalent transverse
+      force in the breakaway pin. The pin is modeled as a short circular beam subjected to
+      combined bending and shear.  [oai_citation:7‡Critical Design Review Report.pdf](sediment://file_00000000db8471fdbfca198b55b8ec85)
+    </p>
 
-<h2>Engineering Analysis</h2>
+    <div class="equation-grid">
+      <div class="equation-card">
+        <h3 class="equation-title">Wind Moment</h3>
+        <div class="equation-block">
+          <span class="eq">M<sub>wind</sub> = F<sub>wind</sub> h</span>
+        </div>
+        <p class="muted">
+          Wind loading on the sign face is converted into an equivalent moment about the mechanism.
+        </p>
+      </div>
 
-<p>
-Analytical modeling was used to relate wind loading on the sign face to internal stresses within the breakaway pin. Wind pressure was converted into a resultant force acting at the centroid of the sign panel, producing a moment about the joint.
-</p>
+      <div class="equation-card">
+        <h3 class="equation-title">Equivalent Pin Force</h3>
+        <div class="equation-block">
+          <span class="eq">F<sub>pin</sub> = <span class="frac"><span>F<sub>wind</sub> h</span><span>L<sub>eff</sub></span></span></span>
+        </div>
+        <p class="muted">
+          The global wind moment is translated into a localized transverse force in the pin.
+        </p>
+      </div>
 
-<p>
-This moment was translated into an equivalent transverse force acting on the breakaway pin. The pin was modeled as a short beam subjected to combined bending and shear loading, allowing stresses to be estimated using classical beam theory.
-</p>
+      <div class="equation-card">
+        <h3 class="equation-title">Bending Stress</h3>
+        <div class="equation-block">
+          <span class="eq">σ<sub>b</sub> = <span class="frac"><span>32 α F<sub>wind</sub> h</span><span>π d<sup>3</sup></span></span></span>
+        </div>
+        <p class="muted">
+          A bounded internal moment fraction α is used to estimate bending stress in the pin.
+        </p>
+      </div>
 
-<img src="/assets/projects/reactive-roadsign/rr_pin_equations.png" alt="Breakaway pin stress equations">
+      <div class="equation-card">
+        <h3 class="equation-title">Maximum Shear Stress</h3>
+        <div class="equation-block">
+          <span class="eq">τ<sub>max</sub> = <span class="frac"><span>16 F<sub>wind</sub> h</span><span>3 π d<sup>2</sup> L<sub>eff</sub></span></span></span>
+        </div>
+        <p class="muted">
+          Transverse shear is included because the pin behaves as a short beam rather than a slender one.
+        </p>
+      </div>
 
-<p class="caption">
-Analytical model relating wind force on the sign face to bending and shear stresses within the sacrificial pin.
-</p>
+      <div class="equation-card equation-card-wide">
+        <h3 class="equation-title">Combined Stress Criterion</h3>
+        <div class="equation-block">
+          <span class="eq">
+            σ<sub>1</sub> =
+            √&nbsp;[
+            (<span class="frac"><span>16 α F<sub>wind</sub> h</span><span>π d<sup>3</sup></span></span>)<sup>2</sup>
+            +
+            (<span class="frac"><span>16 F<sub>wind</sub> h</span><span>3 π d<sup>2</sup> L<sub>eff</sub></span></span>)<sup>2</sup>
+            ]
+          </span>
+        </div>
+        <p class="muted">
+          Maximum principal stress was used to combine bending and shear effects for candidate pin geometries.  [oai_citation:8‡Critical Design Review Report.pdf](sediment://file_00000000db8471fdbfca198b55b8ec85)
+        </p>
+      </div>
+    </div>
+  </section>
 
-</section>
+  <!-- SPRING SIZING -->
+  <section class="card">
+    <h2>Torsional Spring Sizing</h2>
 
-<section class="project-section">
+    <p class="muted">
+      The torsional spring was sized independently from the breakaway pin. The spring governs the
+      partial-rotation trigger condition, where the sign begins to reorient under moderate wind loading.
+      The model treats the spring as linear over the small angular range of interest and uses a trigger
+      angle of 3° with a maximum stop angle of 15°.  [oai_citation:9‡Critical Design Review Report.pdf](sediment://file_00000000db8471fdbfca198b55b8ec85)
+    </p>
 
-<h2>Finite Element Analysis</h2>
+    <div class="equation-grid spring-grid">
+      <div class="equation-card">
+        <h3 class="equation-title">Yaw Moment</h3>
+        <div class="equation-block">
+          <span class="eq">M<sub>yaw</sub> = F<sub>trig</sub> r<sub>yaw</sub></span>
+        </div>
+      </div>
 
-<p>
-Finite element analysis was conducted using COMSOL Multiphysics to evaluate stress distributions within the breakaway pin under ultimate wind loading conditions. The objective of the simulation was not to fully model fracture mechanics but rather to identify peak stress locations and validate the analytical predictions of bending-dominated loading behavior.
-</p>
+      <div class="equation-card">
+        <h3 class="equation-title">Spring Torque</h3>
+        <div class="equation-block">
+          <span class="eq">T<sub>spring</sub> = k<sub>θ</sub> θ</span>
+        </div>
+      </div>
 
-<p>
-The simulations applied equivalent wind loads derived from aerodynamic calculations to the joint assembly. Stress distributions within the pin were evaluated across multiple pin diameters to determine a geometry that would fail predictably at the target load threshold while keeping surrounding components below their failure limits.
-</p>
+      <div class="equation-card">
+        <h3 class="equation-title">Required Spring Rate</h3>
+        <div class="equation-block">
+          <span class="eq">k<sub>θ</sub> = <span class="frac"><span>F<sub>trig</sub> r<sub>yaw</sub></span><span>θ<sub>trig</sub></span></span></span>
+        </div>
+      </div>
+    </div>
 
-<img src="/assets/projects/reactive-roadsign/rr_fea_results.png" alt="FEA stress distribution">
+    <p class="muted">
+      Using the nominal aerodynamic offset case, the selected spring constant was approximately
+      <strong>2.43 × 10<sup>4</sup> lb·in/rad</strong>, which balanced stability below the trigger
+      condition with reasonable torque at the rotational stop.  [oai_citation:10‡Critical Design Review Report.pdf](sediment://file_00000000db8471fdbfca198b55b8ec85)
+    </p>
+  </section>
 
-<p class="caption">
-FEA results showing stress concentrations within the sacrificial breakaway pin used to guide pin sizing and material selection.
-</p>
+  <!-- FEA -->
+  <section class="card">
+    <h2>Finite Element Analysis</h2>
 
-</section>
+    <p class="muted">
+      Finite element analysis was conducted to evaluate <strong>stress distributions within the
+      breakaway pin and surrounding joint components under ultimate wind loading</strong>. The main goal
+      was to identify peak stress regions, compare those trends against the analytical model, and use the
+      results to guide breakaway pin diameter selection. The simulations were treated as comparative,
+      upper-bound stress estimates rather than a full fracture-mechanics model.  [oai_citation:11‡Critical Design Review Report.pdf](sediment://file_00000000db8471fdbfca198b55b8ec85)
+    </p>
 
-<section class="project-section">
+    <div class="photo-grid">
+      <figure class="photo">
+        <img src="images/roadsign_fea_rigid.png" alt="Rigid block FEA results for breakaway pin">
+        <figcaption>
+          FEA results for the rigid center-block case, used to evaluate peak stress concentration locations along the pin.
+        </figcaption>
+      </figure>
 
-<h2>Prototype Development</h2>
+      <figure class="photo">
+        <img src="images/roadsign_fea_nonrigid.png" alt="Non-rigid block FEA results for breakaway pin">
+        <figcaption>
+          FEA results for the non-rigid center-block case, used to compare alternative rotation modes and pin stress behavior.
+        </figcaption>
+      </figure>
+    </div>
 
-<p>
-A physical proof-of-concept prototype was fabricated to validate the mechanical behavior of the joint mechanism. The prototype demonstrated that the universal joint system can successfully constrain motion under normal conditions while allowing controlled release once the breakaway pin is removed.
-</p>
+    <p class="muted">
+      Across the simulation study, exponential fits suggested optimal pin diameters of approximately
+      <strong>1.31 in</strong> for the rigid configuration and <strong>1.17 in</strong> for the
+      non-rigid configuration when matched to the selected 17-4 PH stainless steel pin material. These
+      values were used as upper-bound estimates to guide prototype testing.  [oai_citation:12‡Critical Design Review Report.pdf](sediment://file_00000000db8471fdbfca198b55b8ec85)
+    </p>
+  </section>
 
-<img src="/assets/projects/reactive-roadsign/rr_prototype.png" alt="3D printed prototype">
+  <!-- PROTOTYPE -->
+  <section class="card">
+    <h2>Prototype Development</h2>
 
-<p class="caption">
-Early prototype used to validate joint motion and mechanical feasibility of the breakaway mechanism.
-</p>
+    <p class="muted">
+      A physical prototype was developed during the design process to evaluate assembly behavior,
+      joint motion, and the feasibility of the constrained U-joint concept. At the current stage,
+      the prototype serves as a proof-of-concept and fabrication reference for future testing.
+      The next phase is destructive testing of candidate breakaway pins against the analytical and
+      simulation predictions.  [oai_citation:13‡SDR Report - Team 249.docx](sediment://file_00000000529871fdbbc05cb10f70fa24)
+    </p>
 
-</section>
+    <div class="photo-grid one-row">
+      <figure class="photo">
+        <img src="images/roadsign_prototype.png" alt="Reactive road sign prototype components">
+        <figcaption>
+          Current prototype components used to evaluate mechanism geometry, assembly behavior, and future testing setup.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
 
-<section class="project-section">
+  <!-- MATERIALS -->
+  <section class="card">
+    <h2>Materials & Design Constraints</h2>
 
-<h2>My Contributions</h2>
+    <div class="notes-grid">
+      <div class="notes-card">
+        <h3 class="notes-title">Material Strategy</h3>
+        <p class="muted">
+          The final design uses stainless steel alloys to balance strength, corrosion resistance,
+          and manufacturability. The breakaway pin was selected as <strong>17-4 PH stainless steel</strong>,
+          while major structural components were selected as <strong>420 stainless steel</strong>.  [oai_citation:14‡Critical Design Review Report.pdf](sediment://file_00000000db8471fdbfca198b55b8ec85)  [oai_citation:15‡SDR Report - Team 249.docx](sediment://file_00000000529871fdbbc05cb10f70fa24)
+        </p>
+      </div>
 
-<ul>
-<li>Developed analytical force models relating wind loading to internal pin stresses</li>
-<li>Performed structural calculations for breakaway pin sizing</li>
-<li>Conducted engineering analysis for torsional spring sizing</li>
-<li>Supported design iteration and tolerance selection</li>
-<li>Led development of technical documentation and design reports</li>
-</ul>
+      <div class="notes-card">
+        <h3 class="notes-title">Key Constraints</h3>
+        <p class="muted">
+          The design had to remain compatible with standard roadside infrastructure, preserve mounting
+          height requirements, survive high-salt outdoor environments, and remain practical to fabricate
+          and test within the senior design timeline.  [oai_citation:16‡Critical Design Review Report.pdf](sediment://file_00000000db8471fdbfca198b55b8ec85)
+        </p>
+      </div>
+    </div>
+  </section>
 
-</section>
+  <!-- OUTCOME -->
+  <section class="card">
+    <h2>Expected Impact</h2>
+
+    <p class="muted">
+      If validated experimentally, this system could reduce damage to signposts and foundations during
+      severe storms by shifting failure into a low-cost replaceable component. More broadly, the project
+      explores how passive mechanical design can improve infrastructure resilience without requiring full
+      replacement of existing roadside systems.
+    </p>
+  </section>
+
+  <div class="project-footer">
+    <a class="btn btn-ghost" href="projects.html">← Back to Projects</a>
+  </div>
+
+</div>
