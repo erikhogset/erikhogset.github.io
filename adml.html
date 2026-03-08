@@ -53,15 +53,15 @@ title: Compact Fishing Kit Prototype
 
     <p class="muted">
       The final system combined <strong>product design, CNC machining strategy, robotic handling, pallet routing,
-      intermediate inventory, and automated assembly planning</strong>. Rather than treating manufacturing as a separate
-      step after design, this project required the product geometry, machining workflow, and ADML routing logic to be
-      developed together as one integrated system.
+      intermediate inventory, and cell-level supervisory control</strong> to coordinate the full manufacturing workflow.
+      The automation logic was implemented using BU’s BUMES manufacturing control software, but the broader challenge
+      was designing the overall system behavior so that machining, transport, handling, and assembly all occurred in the proper sequence.
     </p>
 
     <p class="muted">
       Much of the detailed implementation work was carried out by me and my teammate Ranely. I took a leading role in
       turning the project into a manufacturable and automatable system, with primary responsibility for machining paths,
-      BUMES programming, robot integration support, and later-stage debugging and refinement.
+      automation logic integration, robot integration support, and later-stage debugging and refinement.
     </p>
   </section>
 
@@ -98,7 +98,7 @@ title: Compact Fishing Kit Prototype
     <ul class="list">
       <li>Developed the machining toolpaths and process planning for the body and lid components.</li>
       <li>Helped define robot waypoints and contributed to robot programs used within the ADML workflow.</li>
-      <li>Created the final <strong>BUMES code</strong> coordinating routing, machine sequence, and overall cell behavior.</li>
+      <li>Developed the final <strong>cell-level control logic</strong> coordinating machining operations, robot motion, and routing within the ADML system, implemented using BU’s BUMES manufacturing control software.</li>
       <li>Supported design refinement through tolerance adjustments, hole sizing decisions, and manufacturability improvements.</li>
       <li>Led much of the later-stage integration, debugging, and testing required to make the system operate reliably.</li>
     </ul>
@@ -195,7 +195,7 @@ title: Compact Fishing Kit Prototype
 
     <p class="muted">
       This phase required successful integration between machining paths, robot motions, routing logic,
-      and BUMES control so that the product could progress through the full cell in the correct sequence.
+      and automation control software so that the product could progress through the full cell in the correct sequence.
     </p>
 
     <div class="video-frame">
@@ -226,7 +226,7 @@ title: Compact Fishing Kit Prototype
         <h3 class="notes-title">Automation & Integration</h3>
         <p class="muted">
           Another key challenge was turning separate operations into one coordinated workflow. Machining plans,
-          robot waypoints, routing logic, and BUMES code all had to align so the system could function as a reliable
+          robot waypoints, routing logic, and cell-level control software all had to align so the system could function as a reliable
           manufacturing cell rather than as isolated tasks.
         </p>
       </div>
@@ -243,7 +243,7 @@ title: Compact Fishing Kit Prototype
 
     <p class="muted">
       This project strengthened my experience in CNC process planning, manufacturing strategy, tolerancing,
-      robot integration, BUMES programming, and system-level automation thinking.
+      robot integration, automation logic development, and system-level automation thinking.
     </p>
   </section>
 
