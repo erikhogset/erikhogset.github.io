@@ -574,7 +574,23 @@ hr {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+/* top about page images */
+.about-top-figure img {
+  width: 100% !important;
+  height: 260px !important;
+  object-fit: cover !important;
+  object-position: center !important;
 
+  border-radius: 14px !important;   /* rounded corners */
+  display: block !important;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* EPIC snake image positioning */
+.about-top-figure img.snake {
+  object-position: center 30%;
+}
 
 /* =========================================================
    6. ACADEMIC FOCUS PAGE
