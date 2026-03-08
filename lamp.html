@@ -30,8 +30,8 @@ layout: default
   <div class="project-header">
     <h1>Smart Desk Lamp</h1>
     <p class="project-subtitle">
-      A sensor-driven desk lamp prototype designed to improve accessibility, adjust brightness automatically,
-      and reduce blue-light exposure over the course of the day.
+      A smart lighting prototype designed to improve accessibility and user comfort through
+      sensor-based interaction, adaptive brightness control, and time-based blue-light reduction.
     </p>
 
     <div class="project-meta">
@@ -42,7 +42,7 @@ layout: default
     </div>
   </div>
 
-  <!-- Hero Demo -->
+  <!-- HERO -->
   <div class="card lamp-hero-card">
     <h2>Prototype Demonstration</h2>
 
@@ -56,147 +56,222 @@ layout: default
 
       <div class="lamp-hero-text">
         <p class="muted">
-          This prototype was developed as a <strong>smart desk lamp</strong> that adapts to both
-          the user and the surrounding environment.
+          This project explored how a desk lamp could become more accessible and responsive by combining
+          <strong>mechanical product design</strong> with <strong>sensing and control logic</strong>.
         </p>
 
         <ul class="list lamp-feature-list">
-          <li><strong>Ultrasonic sensor:</strong> detects a hand wave and cycles through the lamp’s operating modes.</li>
-          <li><strong>Five modes:</strong> dim, normal, bright, automatic brightness, and off.</li>
-          <li><strong>Ambient light sensor:</strong> adjusts output automatically in auto mode based on room brightness.</li>
-          <li><strong>Real-time clock:</strong> reduces blue-light output over the course of the day for warmer evening lighting.</li>
-          <li><strong>Adjustable head:</strong> allows the lamp to be repositioned manually with low effort.</li>
+          <li><strong>Gesture input:</strong> an ultrasonic sensor detects a hand wave to cycle between operating modes.</li>
+          <li><strong>Five operating modes:</strong> dim, normal, bright, automatic brightness, and off.</li>
+          <li><strong>Adaptive lighting:</strong> an ambient light sensor adjusts output automatically in changing room conditions.</li>
+          <li><strong>Blue-light reduction:</strong> a real-time clock changes lighting behavior over the course of the day.</li>
+          <li><strong>Mechanical adjustability:</strong> the lamp head can be repositioned manually with low effort.</li>
         </ul>
 
         <p class="muted lamp-hero-note">
-          The final system combines physical product design with sensing and control logic to create a more
-          accessible and adaptive lighting experience.
+          The final prototype demonstrates a complete physical system rather than only an electronics proof of concept.
         </p>
       </div>
     </div>
   </div>
 
-  <!-- Overview -->
+  <!-- PROBLEM -->
   <div class="card">
-    <h2>Project Overview</h2>
-
+    <h2>Problem</h2>
     <p class="muted">
-      The goal of this project was to design a desk lamp that was easier to use and better suited to a user’s
-      environment than a standard manually operated lamp. Instead of relying only on switches or fixed brightness
-      settings, the lamp uses sensing and control logic to respond dynamically to user input, room brightness,
-      and time of day.
+      Standard desk lamps often rely on small manual switches and fixed brightness settings, which can make
+      them less convenient for users with limited dexterity and less responsive to changing lighting conditions.
+      They also do little to account for visual comfort throughout the day.
     </p>
-
     <p class="muted">
-      The design focused on improving accessibility for users with limited dexterity, providing automatic
-      brightness adjustment, and reducing blue-light exposure later in the day. These goals shaped both the
-      physical design of the lamp and the logic used to control its output.
+      This project was developed to explore a more user-centered lighting system that could respond to
+      gesture input, room brightness, and time of day while still functioning as a stable and adjustable
+      physical product.
     </p>
   </div>
 
-  <!-- What it does -->
+  <!-- GOALS -->
   <div class="card">
-    <h2>What the Lamp Does</h2>
-
+    <h2>Design Goals</h2>
     <div class="grid-2">
       <div>
-        <h3 class="h3">User Interaction</h3>
+        <h3 class="h3">User Experience Goals</h3>
         <ul class="list">
-          <li>Waving a hand over the sensor changes lamp mode</li>
-          <li>Modes cycle through dim, normal, bright, automatic, and off</li>
-          <li>Designed to reduce reliance on small manual controls</li>
-          <li>Lamp head can be repositioned with minimal force</li>
+          <li>Reduce reliance on small manual controls</li>
+          <li>Allow simple mode changes through gesture input</li>
+          <li>Improve accessibility for users with limited dexterity</li>
+          <li>Provide lighting modes suitable for different desk tasks</li>
         </ul>
       </div>
 
       <div>
-        <h3 class="h3">Adaptive Lighting</h3>
+        <h3 class="h3">Engineering Goals</h3>
         <ul class="list">
-          <li>Ambient light sensor adjusts output automatically in auto mode</li>
-          <li>Brightness levels correspond to dim, normal, and bright desk lighting targets</li>
-          <li>Real-time clock gradually lowers blue-light percentage later in the day</li>
-          <li>System balances usability, visibility, and comfort</li>
+          <li>Integrate sensing, control, and mechanical adjustment into one system</li>
+          <li>Create a stable lamp base and adjustable upper assembly</li>
+          <li>Use sensor feedback to automatically adapt brightness</li>
+          <li>Incorporate time-based control logic to reduce blue-light output later in the day</li>
         </ul>
       </div>
     </div>
   </div>
 
-  <!-- Final product -->
+  <!-- MY ROLE -->
   <div class="card">
-    <h2>Final Product</h2>
+    <h2>My Role</h2>
     <p class="muted">
-      This image shows the completed smart lamp prototype, including the final housing, adjustable head,
-      and integrated sensing system.
+      I developed this project as a combined product design and sensing prototype, focusing on both the
+      physical lamp architecture and the way the system interacts with the user and surrounding environment.
+    </p>
+
+    <ul class="list">
+      <li>Designed the lamp as a complete physical product rather than only an electronics demonstration</li>
+      <li>Integrated sensing features for gesture input and ambient-light response</li>
+      <li>Developed the functional concept for multiple operating modes and time-based lighting adjustment</li>
+      <li>Created CAD models and assembly layouts for the base, upper structure, and lamp head</li>
+      <li>Built and refined prototype iterations to validate form, interaction style, and lighting behavior</li>
+    </ul>
+  </div>
+
+  <!-- SYSTEM DESIGN -->
+  <div class="card">
+    <h2>System Design</h2>
+
+    <div class="grid-2">
+      <div>
+        <h3 class="h3">Interaction & Control</h3>
+        <ul class="list">
+          <li>Ultrasonic sensor detects a hand wave to change operating mode</li>
+          <li>Ambient light sensor supports automatic brightness adjustment</li>
+          <li>Real-time clock enables time-based blue-light reduction behavior</li>
+          <li>Microcontroller coordinates sensor input and lamp output logic</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="h3">Mechanical Product Design</h3>
+        <ul class="list">
+          <li>Stable base supports the electronics and lower housing</li>
+          <li>Vertical support structure connects the base to the adjustable head</li>
+          <li>Upper hinge / joint allows manual repositioning of the lamp head</li>
+          <li>Form factor was designed to house hardware while maintaining a clean desk-lamp profile</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- FINAL PRODUCT -->
+  <div class="card">
+    <h2>Final Prototype</h2>
+    <p class="muted">
+      The final prototype integrated the physical lamp structure, adjustable head, and embedded sensing system
+      into a single functional assembly.
     </p>
 
     <div class="photo-grid one-row">
       <figure class="tech-figure">
         <img src="images/lamp_design.jpeg" alt="Final smart lamp prototype" class="tech-img">
-        <figcaption>Final assembled smart lamp prototype showing the completed form and adjustable head.</figcaption>
+        <figcaption>Final assembled smart lamp prototype showing the completed housing, base, and adjustable head.</figcaption>
       </figure>
 
       <figure class="tech-figure">
         <img src="images/lamp_design_2.png" alt="Final lamp CAD assembly" class="tech-img">
-        <figcaption>Final CAD assembly of smart lamp prototype.</figcaption>
+        <figcaption>CAD assembly of the final lamp design showing the integrated product layout.</figcaption>
       </figure>
-  
     </div>
   </div>
 
-  <!-- Prototype development -->
+  <!-- ENGINEERING CHALLENGES -->
+  <div class="card">
+    <h2>Engineering Challenges</h2>
+    <div class="grid-2">
+      <div>
+        <h3 class="h3">Physical Integration</h3>
+        <ul class="list">
+          <li>Packaging sensors and control hardware into a compact desk-lamp form</li>
+          <li>Balancing a stable base with an adjustable upper assembly</li>
+          <li>Maintaining a design that felt like a usable product rather than a bench-top prototype</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="h3">Functional Behavior</h3>
+        <ul class="list">
+          <li>Creating a mode system that was simple and intuitive for the user</li>
+          <li>Combining manual control, automatic brightness adjustment, and time-based behavior</li>
+          <li>Ensuring the sensing features meaningfully improved usability rather than adding unnecessary complexity</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROTOTYPE DEVELOPMENT -->
   <div class="card">
     <h2>Prototype Development</h2>
     <p class="muted">
-      Earlier iterations focused on validating the lamp concept, sensor response, and overall interaction
-      before arriving at the final integrated design.
+      Earlier iterations were used to validate the concept, test user interaction, and evaluate lighting
+      performance before the final integrated design was completed.
     </p>
 
     <div class="photo-grid">
       <figure class="photo">
         <img src="images/lamp_proto.png" alt="Earlier lamp prototype">
-        <figcaption>Early prototype iteration used to test the physical concept and interaction style.</figcaption>
+        <figcaption>Early prototype iteration used to test the overall concept, interaction style, and physical layout.</figcaption>
       </figure>
 
-<figure class="tech-figure">
-  <img src="images/lamp_sensor_test.png" alt="Lamp light intensity test graph" class="tech-img">
-  <figcaption>Measured light intensity versus distance from the LED during prototype testing.</figcaption>
-</figure>
+      <figure class="tech-figure">
+        <img src="images/lamp_sensor_test.png" alt="Lamp light intensity test graph" class="tech-img">
+        <figcaption>Light intensity testing used to evaluate lamp output as a function of distance from the LED source.</figcaption>
+      </figure>
     </div>
   </div>
 
-  <!-- CAD and design -->
+  <!-- CAD -->
   <div class="card">
-    <h2>Mechanical & Product Design</h2>
+    <h2>CAD & Mechanical Design</h2>
     <p class="muted">
-      The lamp was developed as a functional product rather than only an electronics demonstration.
-      The design integrated a stable base, vertical support structure, adjustable head, and internal
-      space for sensing and control hardware.
+      CAD development focused on turning the concept into a manufacturable and physically coherent product,
+      with separate attention given to the overall assembly, head design, base layout, and upper support structure.
     </p>
 
     <div class="photo-grid">
       <figure class="photo">
         <img src="images/lamp_cad_1.png" alt="Overall lamp CAD drawing">
-        <figcaption>Overall lamp drawing showing the product form, overall dimensions, and assembled geometry.</figcaption>
+        <figcaption>Overall CAD drawing showing the lamp form, key dimensions, and assembled geometry.</figcaption>
       </figure>
 
       <figure class="photo">
         <img src="images/lamp_cad_2.png" alt="Lamp head CAD drawing">
-        <figcaption>Lamp head assembly drawing showing the shade, LED, heat sink, and lens configuration.</figcaption>
+        <figcaption>Lamp head assembly showing the shade, LED, heat sink, and lens configuration.</figcaption>
       </figure>
 
       <figure class="photo">
         <img src="images/lamp_cad_3.png" alt="Lamp base CAD drawing">
-        <figcaption>Base assembly drawing showing integration of the motion sensor, electronics, and lower housing.</figcaption>
+        <figcaption>Base assembly showing packaging of the motion sensor, electronics, and lower housing.</figcaption>
       </figure>
 
       <figure class="photo">
         <img src="images/lamp_cad_4.png" alt="Lamp hinge and upper assembly CAD drawing">
-        <figcaption>Upper assembly drawing showing the hinge, support tubes, and adjustable head connection.</figcaption>
+        <figcaption>Upper assembly showing the support members, hinge geometry, and adjustable head connection.</figcaption>
       </figure>
     </div>
   </div>
 
-  <!-- Technical summary -->
+  <!-- OUTCOME -->
+  <div class="card">
+    <h2>Outcome</h2>
+    <p class="muted">
+      This project resulted in a working smart lamp prototype that combined mechanical design, embedded sensing,
+      and user-focused functionality in a single system. More broadly, it was an exercise in designing a product
+      that had to succeed both as a physical object and as an interactive device.
+    </p>
+    <p class="muted">
+      The project strengthened my experience in product design, CAD development, prototype refinement,
+      and integrating hardware with sensor-driven control logic.
+    </p>
+  </div>
+
+  <!-- TECHNICAL SUMMARY -->
   <div class="card">
     <h2>Technical Summary</h2>
 
@@ -214,19 +289,20 @@ layout: default
       </div>
 
       <div>
-        <h3 class="h3">Design Goals</h3>
+        <h3 class="h3">Key Skills Demonstrated</h3>
         <ul class="list">
-          <li>Improve usability for people with limited dexterity</li>
-          <li>Provide multiple brightness settings</li>
-          <li>Adapt automatically to room brightness</li>
-          <li>Reduce blue-light exposure later in the day</li>
-          <li>Maintain a stable, adjustable physical form</li>
+          <li>Product design</li>
+          <li>Mechanical layout and CAD</li>
+          <li>Prototype development</li>
+          <li>Sensor integration</li>
+          <li>Human-centered design</li>
+          <li>System-level engineering thinking</li>
         </ul>
       </div>
     </div>
   </div>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <div class="project-footer">
     <a class="btn btn-ghost" href="projects.html">← Back to Projects</a>
   </div>
