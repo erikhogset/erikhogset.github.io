@@ -20,25 +20,41 @@ layout: default
 <hr />
 
 <div class="project-wrapper additive-page">
- <p class="proj-breadcrumb">
-      <a href="projects.html">Projects</a>
-      <span class="dot">•</span>
-      Additive Manufacturing
-    </p>
-  
+  <p class="proj-breadcrumb">
+    <a href="projects.html">Projects</a>
+    <span class="dot">•</span>
+    Additive Manufacturing
+  </p>
+
   <!-- Page Header -->
   <div class="project-header">
     <h1>Additive Manufacturing Projects</h1>
     <p class="project-subtitle">
-      FFF and SLA prints exploring print strategy, tolerancing, and design for printing.
+      FFF and SLA projects exploring print strategy, tolerancing, structural performance, and design for additive manufacturing.
     </p>
 
     <div class="project-meta">
       <span class="pill">FFF</span>
-      <span class="pill">Assembly</span>
+      <span class="pill">SLA</span>
       <span class="pill">Print Tuning</span>
       <span class="pill">ME557</span>
     </div>
+  </div>
+
+  <!-- OVERVIEW -->
+  <div class="card">
+    <h2>Overview</h2>
+
+    <p class="muted">
+      These projects were completed as part of <strong>ME557 Additive Manufacturing</strong> at Boston University.
+      Together they explore different additive manufacturing methods and design strategies, including articulated FFF prints,
+      SLA geometry, generative design, and functional printed mechanisms.
+    </p>
+
+    <p class="muted">
+      Across these builds I focused on print orientation, tolerancing, support strategy, post-processing,
+      and designing parts that take advantage of the capabilities of additive manufacturing rather than conventional fabrication.
+    </p>
   </div>
 
   <!-- ===================== -->
@@ -48,14 +64,14 @@ layout: default
     <h2>Flying Sea Turtle — FFF Print & Assembly</h2>
 
     <p class="muted">
-      Multi-part print produced on a Creality Ender-3 FFF printer, focusing on print setup,
-      tolerancing, and post-print assembly rather than original part design.
+      Multi-part print produced on a Creality Ender-3 FFF printer, focusing on printer calibration,
+      articulation tolerances, and post-print assembly rather than original part design.
     </p>
 
     <p class="muted">
       <strong>Design credit:</strong>
       <a href="https://amaochan.work/" target="_blank" rel="noopener">amaochan.work</a>
-      — original STL design. My contribution focused on fabrication, printer tuning, and successful operation.
+      — original STL design. My contribution focused on fabrication, print tuning, and successful operation.
     </p>
 
     <div class="turtle-media">
@@ -64,18 +80,18 @@ layout: default
           <source src="images/additive_1.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <p class="media-caption muted">Motion demo (assembled articulation).</p>
+        <p class="media-caption muted">Motion demo showing assembled articulation.</p>
       </div>
 
       <div class="turtle-stack">
         <figure class="mini-fig">
-          <img src="images/additive_1print.jpg" alt="Flying sea turtle FFF print (assembled)" />
+          <img src="images/additive_1print.jpg" alt="Flying sea turtle FFF print assembled" />
           <figcaption>Assembled print</figcaption>
         </figure>
 
         <figure class="mini-fig">
           <img src="images/additive_1printing.jpeg" alt="Flying sea turtle printing on Ender-3 FFF printer" />
-          <figcaption>Printing (Ender-3)</figcaption>
+          <figcaption>Printing on Ender-3</figcaption>
         </figure>
 
         <figure class="mini-fig">
@@ -87,13 +103,13 @@ layout: default
 
     <div class="notes-block">
       <div class="notes-header">
-        <h3 class="h3">Technical notes</h3>
-        <p class="muted">What I tuned on the Ender + what changed print-to-print.</p>
+        <h3 class="h3">Technical Notes</h3>
+        <p class="muted">What I tuned on the printer and what changed print-to-print.</p>
       </div>
 
       <div class="notes-grid">
         <div class="notes-card">
-          <h4 class="notes-title">What I focused on</h4>
+          <h4 class="notes-title">What I Focused On</h4>
           <ul class="list">
             <li>Print orientation and layer direction for joint strength</li>
             <li>Support strategy and surface finish tradeoffs</li>
@@ -125,14 +141,15 @@ layout: default
     <h2>Klein Bottle — SLA Design & Print</h2>
 
     <p class="muted">
-      SLA-printed Klein bottle designed to fit within size constraint of 40x40x40 mm and highlight an internal geometry
-      not possible with subtractive manufacturing. Printed in <strong>Formlabs Draft Grey Resin</strong>.
+      SLA-printed Klein bottle designed to fit within a 40 × 40 × 40 mm size constraint and demonstrate a continuous
+      internal channel impossible to machine using conventional subtractive manufacturing. Printed in
+      <strong>Formlabs Draft Grey Resin</strong>.
     </p>
 
     <div class="klein-media">
       <figure class="klein-hero">
         <img src="images/additive_2printb.jpeg" alt="Klein bottle print with backlight revealing internal channel" />
-        <figcaption>Backlit photo to reveal the internal channel.</figcaption>
+        <figcaption>Backlit photo revealing the internal channel geometry.</figcaption>
       </figure>
 
       <div class="klein-stack">
@@ -149,30 +166,30 @@ layout: default
         <figure class="klein-tile rounded">
           <img src="images/additive_2printa.jpeg" alt="Printed Klein bottle in standard lighting" />
           <figcaption>Print — standard lighting</figcaption>
-          </figure>
+        </figure>
       </div>
     </div>
 
     <div class="notes-block">
       <div class="notes-header">
-        <h3 class="h3">Technical notes</h3>
+        <h3 class="h3">Technical Notes</h3>
         <p class="muted">Design intent, print strategy, and post-processing decisions.</p>
       </div>
 
       <div class="notes-grid">
         <div class="notes-card">
-          <h4 class="notes-title">What I focused on</h4>
+          <h4 class="notes-title">What I Focused On</h4>
           <ul class="list">
-<li>CAD modeling of the internal feature within the printed geometry</li>
-<li>Print orientation and support reduction to limit support marks</li>
-<li>Sanding and post-processing to improve finish, with minor surface scarring</li>
+            <li>CAD modeling of the internal feature within the printed geometry</li>
+            <li>Print orientation and support reduction to limit support marks</li>
+            <li>Sanding and post-processing to improve finish, with minor surface scarring</li>
           </ul>
         </div>
 
         <div class="notes-card">
           <h4 class="notes-title">Outcome</h4>
           <p>
-            Successful SLA print with the internal channel clearly visible using backlighting, plus a solid exterior finish
+            Successful SLA print with the internal channel clearly visible using backlighting, along with a solid exterior finish
             after cleanup and post-cure.
           </p>
 
@@ -186,156 +203,163 @@ layout: default
     </div>
   </div>
 
-<!-- ===================== -->
-<!-- Project 3: Mass–Performance Structure (Fusion Generative Design) -->
-<!-- ===================== -->
-<div class="card media-card">
-  <h2>Mass–Performance Structure — Fusion Generative Design, FFF Print & Compression Test</h2>
+  <!-- ===================== -->
+  <!-- Project 3: Mass–Performance Structure -->
+  <!-- ===================== -->
+  <div class="card media-card">
+    <h2>Mass–Performance Structure — Fusion Generative Design, FFF Print & Compression Test</h2>
 
-  <p class="muted">
-    Compression structure developed by defining a full allowable <em>design space</em> between constrained faces,
-    then using <strong>Autodesk Fusion 360 Generative Design</strong> to remove material while preserving load paths.
-    The resulting geometry was manufactured via FFF in <strong>PETG</strong> and validated under compressive loading,
-    successfully withstanding <strong>2000&nbsp;N</strong>.
-  </p>
-
- <!-- Media layout: final print + generative workflow -->
-<div class="gen-media">
-  <!-- Left: final printed part -->
-  <div class="gen-main">
-    <img
-      src="images/additive_3print.jpeg"
-      alt="Final PETG structure printed from Fusion Generative Design result"
-    />
-    <p class="media-caption muted">
-      Final print produced from Fusion Generative Design.
+    <p class="muted">
+      Compression structure developed by defining a full allowable <em>design space</em> between constrained faces,
+      then using <strong>Autodesk Fusion 360 Generative Design</strong> to remove material while preserving load paths.
+      The resulting geometry was manufactured via FFF in <strong>PETG</strong> and validated under compressive loading,
+      successfully withstanding a <strong>2000 N compressive load</strong>.
     </p>
-  </div>
 
-  <!-- Right: 2×2 generative process grid -->
-  <div class="gen-grid">
-    <!-- A -->
-    <figure>
-      <img src="images/additive_3cada.png" alt="Starting design space – (top)" />
-      <figcaption>Starting design space — (top)</figcaption>
-    </figure>
-
-    <!-- B -->
-    <figure>
-      <img src="images/additive_3cadb.png" alt="Starting design space – (bottom)" />
-      <figcaption>Starting design space — (bottom)</figcaption>
-    </figure>
-
-    <!-- C -->
-    <figure>
-      <img src="images/additive_3cadc.png" alt="Generative result – (top)" />
-      <figcaption>Generative result — (top)</figcaption>
-    </figure>
-
-    <!-- D -->
-    <figure>
-      <img src="images/additive_3cadd.png" alt="Generative result – (bottom)" />
-      <figcaption>Generative result — (bottom)</figcaption>
-    </figure>
-  </div>
-</div>
-
-  <!-- Notes -->
-      <div class="notes-grid">
-        <div class="notes-card">
-        <h4 class="notes-title">What I focused on</h4>
-          <ul class="list">
-        <li>Defining an appropriate design space spanning the constrained faces</li>
-        <li>Applying compression loads and boundary conditions in Fusion Generative</li>
-        <li>Orienting print layers to support compressive load paths</li>
-      </ul>
-    </div>
-
-        <div class="notes-card">
-        <h4 class="notes-title">Outcome</h3>
-      <p>
-        The generative design process produced a lightweight structure that preserved
-        primary load paths while eliminating nonessential material. The final PETG print
-        met the compression requirement and successfully sustained a 2&nbsp;kN load
-        without structural failure.
-      </p>
-    </div>
-  </div>
-</div>
-
-<!-- ===================== -->
-<!-- Project 4: Anemometer + Weather Vane (FFF) -->
-<!-- ===================== -->
-<div class="card media-card additive-anemometer">
-
-  <h2>Anemometer + Weather Vane — FFF Design & Print</h2>
-
-  <p class="muted">
-    Functional anemometer and vane assembly printed in <strong>PLA</strong>.
-    Design emphasizes bearing integration, press-fit tolerances, and stable rotation
-    for low-speed airflow response.
-  </p>
-
-<!-- Media -->
-<div class="anemo-media-vertical">
-
-  <!-- Video -->
-  <div class="anemo-video">
-    <video controls playsinline preload="metadata">
-      <source src="images/additive_4.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-    <p class="media-caption muted">
-      Wind tunnel test demonstrating vane alignment and rotor response under airflow.
-    </p>
-  </div>
-
-  <!-- Images below video -->
-  <div class="anemo-image-row">
-    <figure>
-      <img src="images/additive_4print.jpeg" alt="Assembled anemometer and vane" />
-      <figcaption>Assembled print — full mechanism</figcaption>
-    </figure>
-
-    <figure>
-      <img src="images/additive_4cad.png" alt="Anemometer CAD assembly" />
-      <figcaption>CAD assembly — bearing and shaft layout</figcaption>
-    </figure>
-
-    <figure>
-      <img src="images/additive_4rotor.png" alt="Rotor press-fit bearing detail" />
-      <figcaption>
-        Rotor detail — press-fit bearing seated between stacked rotors
-      </figcaption>
-    </figure>
-  </div>
-
-</div>
-
-  <!-- Notes -->
-  <div class="notes-block">
-    <div class="notes-grid">
-      <div class="notes-card">
-        <h3 class="notes-title">What I focused on</h3>
-        <ul class="list">
-          <li>Press-fit tolerances for bearing integration</li>
-          <li>Low-friction rotation and shaft alignment</li>
-          <li>Balancing rotating mass for smooth response</li>
-        </ul>
-      </div>
-
-      <div class="notes-card">
-        <h3 class="notes-title">Outcome</h3>
-        <p>
-          Fully functional anemometer and weather vane. The vane reliably aligns with
-          incoming airflow, and the rotor assembly spins smoothly under wind tunnel
-          testing with minimal friction.
+    <div class="gen-media">
+      <div class="gen-main">
+        <img
+          src="images/additive_3print.jpeg"
+          alt="Final PETG structure printed from Fusion Generative Design result"
+        />
+        <p class="media-caption muted">
+          Final PETG print produced from the Fusion generative design result.
         </p>
       </div>
+
+      <div class="gen-grid">
+        <figure>
+          <img src="images/additive_3cada.png" alt="Starting design space top view" />
+          <figcaption>Starting design space — top</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/additive_3cadb.png" alt="Starting design space bottom view" />
+          <figcaption>Starting design space — bottom</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/additive_3cadc.png" alt="Generative result top view" />
+          <figcaption>Generative result — top</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/additive_3cadd.png" alt="Generative result bottom view" />
+          <figcaption>Generative result — bottom</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="notes-block">
+      <div class="notes-header">
+        <h3 class="h3">Technical Notes</h3>
+        <p class="muted">Design space definition, loading setup, and print strategy.</p>
+      </div>
+
+      <div class="notes-grid">
+        <div class="notes-card">
+          <h4 class="notes-title">What I Focused On</h4>
+          <ul class="list">
+            <li>Defining an appropriate design space spanning the constrained faces</li>
+            <li>Applying compression loads and boundary conditions in Fusion Generative Design</li>
+            <li>Orienting print layers to support compressive load paths</li>
+          </ul>
+        </div>
+
+        <div class="notes-card">
+          <h4 class="notes-title">Outcome</h4>
+          <p>
+            The generative design process produced a lightweight structure that preserved
+            primary load paths while eliminating nonessential material. The final PETG print
+            met the compression requirement and successfully sustained a 2 kN load
+            without structural failure.
+          </p>
+
+          <div class="badge-row">
+            <span class="additive-badge">Generative design</span>
+            <span class="additive-badge">PETG</span>
+            <span class="additive-badge">Compression test</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-</div>
+
+  <!-- ===================== -->
+  <!-- Project 4: Anemometer + Weather Vane -->
+  <!-- ===================== -->
+  <div class="card media-card additive-anemometer">
+    <h2>Anemometer + Weather Vane — FFF Design & Print</h2>
+
+    <p class="muted">
+      Functional anemometer and vane assembly printed in <strong>PLA</strong>.
+      The design emphasizes bearing integration, press-fit tolerances, low-friction rotation,
+      and stable vane alignment under low-speed airflow.
+    </p>
+
+    <div class="anemo-media-vertical">
+      <div class="anemo-video">
+        <video controls playsinline preload="metadata">
+          <source src="images/additive_4.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <p class="media-caption muted">
+          Wind tunnel test demonstrating vane alignment and rotor response under airflow.
+        </p>
+      </div>
+
+      <div class="anemo-image-row">
+        <figure>
+          <img src="images/additive_4print.jpeg" alt="Assembled anemometer and weather vane" />
+          <figcaption>Assembled print — full mechanism</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/additive_4cad.png" alt="Anemometer CAD assembly" />
+          <figcaption>CAD assembly — bearing and shaft layout</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/additive_4rotor.png" alt="Rotor press-fit bearing detail" />
+          <figcaption>Rotor detail — press-fit bearing seated between stacked rotors</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="notes-block">
+      <div class="notes-header">
+        <h3 class="h3">Technical Notes</h3>
+        <p class="muted">Bearing fit, shaft alignment, and airflow-driven rotation.</p>
+      </div>
+
+      <div class="notes-grid">
+        <div class="notes-card">
+          <h4 class="notes-title">What I Focused On</h4>
+          <ul class="list">
+            <li>Press-fit tolerances for bearing integration</li>
+            <li>Low-friction rotation and shaft alignment</li>
+            <li>Balancing rotating mass for smooth response</li>
+          </ul>
+        </div>
+
+        <div class="notes-card">
+          <h4 class="notes-title">Outcome</h4>
+          <p>
+            Fully functional anemometer and weather vane. The vane reliably aligns with
+            incoming airflow, and the rotor assembly spins smoothly under wind tunnel
+            testing with minimal friction.
+          </p>
+
+          <div class="badge-row">
+            <span class="additive-badge">PLA</span>
+            <span class="additive-badge">Bearing fit</span>
+            <span class="additive-badge">Functional mechanism</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Footer CTA -->
   <div class="project-footer">
     <a class="btn btn-ghost" href="projects.html">← Back to Projects</a>
