@@ -1,8 +1,8 @@
 ---
 layout: default
+title: Reactive Road Sign System
 ---
 
-<!-- TOPBAR -->
 <div class="topbar">
   <div class="topbar-left">
     <a class="brand" href="./">Erik Hogset</a>
@@ -19,212 +19,281 @@ layout: default
 
 <hr />
 
-<div class="proj-wrapper">
+<div class="project-wrapper roadsign-page">
 
-  <!-- HERO -->
-  <section class="proj-hero">
-    <div class="proj-hero-left">
-      <div class="proj-breadcrumb">
-        <a href="projects.html">Projects</a>
-        <span class="dot">•</span>
-        <span>Reactive Road Sign System</span>
-      </div>
+<div class="project-header">
 
-      <h1 class="proj-title">Reactive Road Sign System</h1>
+<p class="proj-breadcrumb">
+<a href="projects.html">Projects</a>
+<span class="dot">•</span>
+Senior Design / Mechanical Systems
+</p>
 
-      <p class="proj-subtitle">
-        Senior Design capstone exploring a retrofit mechanism for roadside U-channel signs to deflect under extreme winds
-        and return to a safe, readable position.
-      </p>
+<h1>Reactive Road Sign System</h1>
 
-      <div class="proj-tags">
-        <span class="tag">Mechanism design</span>
-        <span class="tag">Wind loads</span>
-        <span class="tag">Manufacturability</span>
-        <span class="tag">Testing plans</span>
-        <span class="tag">CAD</span>
-      </div>
+<p class="project-subtitle">
+A hurricane-resilient retrofit mechanism designed to protect roadside signposts by
+allowing controlled aerodynamic rotation and sacrificial breakaway under extreme wind loads.
+</p>
 
-      <div class="proj-meta">
-        <div><span class="k">Role:</span> Mechanical design + prototyping</div>
-        <div><span class="k">Tools:</span> CAD (SolidWorks/Fusion), basic FEA/hand calcs, shop prototyping</div>
-        <div><span class="k">Team:</span> Team 249 (Senior Design)</div>
-      </div>
-    </div>
+<div class="project-meta">
+<span class="pill">Senior Design</span>
+<span class="pill">Structural Analysis</span>
+<span class="pill">Mechanism Design</span>
+<span class="pill">FEA</span>
+<span class="pill">Retrofit System</span>
+</div>
 
-    <div class="proj-hero-right">
-      <!-- Clickable hero media; on hover: assembled -> exploded -->
-      <a class="proj-media proj-media--cad" href="images/roadsignsystem_assembled.png" aria-label="Open image">
-        <img class="img-default" src="images/roadsignsystem_assembled.png" alt="Reactive Road Sign System CAD (assembled)" />
-        <img class="img-hover" src="images/roadsignsystem_exploded.png" alt="Reactive Road Sign System CAD (exploded)" />
-      </a>
-      <div class="proj-media-caption">Hover to view exploded assembly</div>
-    </div>
-  </section>
+</div>
 
-  <hr />
+<section class="card">
+<h2>Project Status</h2>
 
-  <!-- QUICK OVERVIEW -->
-  <section class="proj-section">
-    <h2>Overview</h2>
-    <div class="proj-grid-2">
-      <div class="proj-card">
-        <h3>Problem</h3>
-        <p>
-          Standard roadside signs can fail under extreme winds. The goal was to explore a retrofit concept that allows controlled
-          deflection under high loading while maintaining durability and restoring the sign to a readable orientation.
-        </p>
-      </div>
+<p class="muted">
+This project is currently <strong>in progress</strong> as part of Boston University's
+Mechanical Engineering Senior Design program. The system has completed the
+<strong>Critical Design Review stage</strong>, where analytical modeling,
+component selection, and simulation work were finalized.
+</p>
 
-      <div class="proj-card">
-        <h3>Approach</h3>
-        <p>
-          We iterated on joint concepts and load paths, prioritized manufacturability, and built a test-driven plan (risk-first)
-          to validate the most failure-prone elements before over-investing in full prototypes.
-        </p>
-      </div>
-    </div>
-  </section>
+<div class="notes-grid">
 
-  <!-- DESIGN REQUIREMENTS -->
-  <section class="proj-section">
-    <h2>Design requirements</h2>
-    <div class="proj-card">
-      <ul class="proj-bullets">
-        <li><strong>Retrofit:</strong> compatible with common U-channel signposts without replacing the entire system</li>
-        <li><strong>Controlled deflection:</strong> reduce peak loads by allowing motion rather than rigid failure</li>
-        <li><strong>Recoverability:</strong> return to a safe “readable” position after loading event</li>
-        <li><strong>Serviceability:</strong> realistic maintenance/inspection for DOT-style operations</li>
-        <li><strong>Manufacturable:</strong> parts that can be cut, machined, and assembled with typical shop processes</li>
-      </ul>
-    </div>
-  </section>
+<div class="notes-card">
+<h3 class="notes-title">Current Progress</h3>
+<ul class="list">
+<li>System geometry and architecture finalized</li>
+<li>Wind load calculations and structural modeling completed</li>
+<li>FEA validation of normal-load structural behavior</li>
+<li>Breakaway mechanism concept analytically derived</li>
+</ul>
+</div>
 
-  <!-- CONCEPTS -->
-  <section class="proj-section">
-    <h2>Concept development</h2>
-    <div class="proj-card">
-      <p>
-        We explored multiple mechanical approaches for allowing motion while maintaining alignment and robustness.
-        Key decision factors were load path clarity, corrosion tolerance, part count, and failure modes (pin shear, bending,
-        bearing wear, and fastener loosening).
-      </p>
+<div class="notes-card">
+<h3 class="notes-title">Next Steps</h3>
+<ul class="list">
+<li>Prototype fabrication and assembly</li>
+<li>Experimental breakaway testing</li>
+<li>Validation of predicted failure loads</li>
+<li>Refinement of manufacturability and durability</li>
+</ul>
+</div>
 
-      <div class="proj-grid-2">
-        <div>
-          <h3>What we favored</h3>
-          <ul class="proj-bullets">
-            <li>Simple joints with predictable failure modes</li>
-            <li>Replaceable sacrificial elements (e.g., shear pins)</li>
-            <li>Geometry that minimizes unintentional binding</li>
-          </ul>
-        </div>
-        <div>
-          <h3>What we avoided</h3>
-          <ul class="proj-bullets">
-            <li>Over-complex resets requiring tight tolerances</li>
-            <li>Hard-to-inspect internal mechanisms</li>
-            <li>Concepts that shift loads into brittle fasteners</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+</div>
+</section>
 
-  <!-- ANALYSIS + TEST PLAN -->
-  <section class="proj-section">
-    <h2>Analysis and testing plan</h2>
-    <div class="proj-card">
-      <p>
-        The validation strategy focused on de-risking the most uncertain elements first. Instead of “build everything and hope,”
-        we targeted specific failure modes with small, measurable tests.
-      </p>
+<section class="card">
+<h2>System Overview</h2>
 
-      <div class="proj-grid-2">
-        <div class="proj-mini">
-          <h3>Key risks</h3>
-          <ul class="proj-bullets">
-            <li>Pin shear / bearing deformation</li>
-            <li>Joint binding under off-axis loads</li>
-            <li>Wear + looseness over repeated cycles</li>
-            <li>Corrosion and outdoor durability</li>
-          </ul>
-        </div>
+<p class="muted">
+Conventional roadside signs are rigidly mounted to steel posts, which means
+extreme wind loads during storms are transferred directly into the supporting
+structure and foundation. This often results in bent posts, damaged foundations,
+and costly infrastructure replacement after severe weather events.
+</p>
 
-        <div class="proj-mini">
-          <h3>Planned tests</h3>
-          <ul class="proj-bullets">
-            <li>Static overload to identify first-yield component</li>
-            <li>Cycle testing for looseness / wear progression</li>
-            <li>Simple environmental exposure screening</li>
-            <li>Repeatable “reset” validation</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+<p class="muted">
+The goal of this project is to develop a <strong>retrofit mechanical system</strong>
+that protects roadside infrastructure by redirecting extreme loads into
+replaceable mechanical components rather than the structural post itself.
+</p>
 
-  <!-- MANUFACTURING -->
-  <section class="proj-section">
-    <h2>Manufacturing considerations</h2>
-    <div class="proj-card">
-      <p>
-        The concept was developed with shop realities in mind: cuttable profiles, machinable bores, accessible fasteners,
-        and modular subassemblies. The goal was to make iteration fast and reduce tolerance stack-up issues.
-      </p>
+<p class="muted">
+The mechanism integrates two behaviors:
+</p>
 
-      <div class="proj-grid-2">
-        <div class="proj-mini">
-          <h3>Processes</h3>
-          <ul class="proj-bullets">
-            <li>Waterjet/laser cut plates</li>
-            <li>Drilled/reamed pin holes</li>
-            <li>Off-the-shelf fasteners + bushings where possible</li>
-          </ul>
-        </div>
-        <div class="proj-mini">
-          <h3>Design for assembly</h3>
-          <ul class="proj-bullets">
-            <li>Minimize unique hardware</li>
-            <li>Access for tools in-field</li>
-            <li>Replaceable wear components</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+<ul class="list">
+<li><strong>Aerodynamic rotation:</strong> under moderate wind loads, the sign can rotate slightly into the wind to reduce drag.</li>
+<li><strong>Sacrificial breakaway:</strong> under extreme loading, a designed breakaway pin fractures to allow the sign to fold down safely.</li>
+</ul>
 
-  <!-- RESULTS / STATUS -->
-  <section class="proj-section">
-    <h2>Current status</h2>
-    <div class="proj-card">
-      <ul class="proj-bullets">
-        <li><strong>CAD:</strong> assembled + exploded layouts completed</li>
-        <li><strong>Validation:</strong> test plan established to de-risk key failure modes</li>
-        <li><strong>Next:</strong> finalize a single “best” joint geometry, build a minimal test article, and run overload + cycle tests</li>
-      </ul>
-    </div>
-  </section>
+<div class="photo-grid one-row">
+<figure class="photo">
+<img src="images/roadsign_render_installed.png" alt="Installed render of reactive road sign system">
+<figcaption>
+Concept render of the retrofit mechanism installed on a standard roadside signpost.
+</figcaption>
+</figure>
+</div>
 
-  <!-- GALLERY -->
-  <section class="proj-section">
-    <h2>Gallery</h2>
-    <div class="proj-gallery">
-      <a class="proj-gallery-item" href="images/roadsignsystem_assembled.png">
-        <img src="images/roadsignsystem_assembled.png" alt="Assembled CAD" />
-        <div class="cap">Assembled CAD</div>
-      </a>
+</section>
 
-      <a class="proj-gallery-item" href="images/roadsignsystem_exploded.png">
-        <img src="images/roadsignsystem_exploded.png" alt="Exploded CAD" />
-        <div class="cap">Exploded CAD</div>
-      </a>
-    </div>
-  </section>
+<section class="card">
+<h2>How the Mechanism Works</h2>
 
-  <!-- Footer CTA -->
-  <div class="project-footer">
-    <a class="btn btn-ghost" href="projects.html">← Back to Projects</a>
-  </div>
+<div class="notes-grid">
+
+<div class="notes-card">
+<h3 class="notes-title">Torsional Spring Response</h3>
+
+<p class="muted">
+At moderate wind speeds, a torsional spring allows the sign to rotate
+approximately ±15° about the post axis. This reduces the projected
+aerodynamic area while maintaining visibility for drivers.
+</p>
+
+<p class="muted">
+When wind speeds decrease, the spring returns the sign to its original
+front-facing orientation.
+</p>
+
+</div>
+
+<div class="notes-card">
+<h3 class="notes-title">Controlled Breakaway</h3>
+
+<p class="muted">
+At extreme wind loads, a sacrificial breakaway pin fractures in a controlled
+manner. Once the pin fails, the sign folds downward instead of transferring
+the full load into the post or foundation.
+</p>
+
+<p class="muted">
+This limits permanent infrastructure damage while allowing the system
+to be repaired by replacing a low-cost component.
+</p>
+
+</div>
+
+</div>
+
+<div class="photo-grid">
+
+<figure class="photo">
+<img src="images/roadsign_exploded.png" alt="Exploded view of reactive road sign mechanism">
+<figcaption>
+Exploded view showing the couplers, torsional spring, breakaway pin,
+and U-joint components of the mechanism.
+</figcaption>
+</figure>
+
+<figure class="photo">
+<img src="images/roadsign_mechanism.png" alt="Mechanism CAD view">
+<figcaption>
+Internal mechanism showing the torsional spring and breakaway joint assembly.
+</figcaption>
+</figure>
+
+</div>
+
+</section>
+
+<section class="card">
+<h2>My Role</h2>
+
+<p class="muted">
+This project is being completed as part of a <strong>two-person senior design team</strong>.
+My primary contributions focus on the analytical and engineering decision-making side of
+the project, including structural modeling, component sizing, and design documentation,
+while collaborating closely with my teammate on iterative design development.
+</p>
+
+<ul class="list">
+<li>Developed analytical wind-load models used to size the torsional spring and breakaway mechanism.</li>
+<li>Derived the combined bending and shear stress framework used to estimate breakaway pin loading.</li>
+<li>Led materials selection and component sourcing for the prototype system.</li>
+<li>Prepared major portions of the written design reports and engineering documentation.</li>
+<li>Contributed to design iteration, manufacturability considerations, and prototype planning.</li>
+</ul>
+
+</section>
+
+<section class="card">
+<h2>Engineering Analysis</h2>
+
+<p class="muted">
+Analytical modeling was used to determine the forces acting on the sign under
+hurricane-level wind conditions. These loads were then used to size both the
+torsional spring system and the sacrificial breakaway pin.
+</p>
+
+<div class="photo-grid one-row">
+
+<figure class="photo">
+<img src="images/roadsign_force_model.png" alt="Wind force model diagram">
+<figcaption>
+Force model used to determine drag loading and breakaway thresholds.
+</figcaption>
+</figure>
+
+</div>
+
+</section>
+
+<section class="card">
+<h2>Simulation & Validation</h2>
+
+<p class="muted">
+Finite Element Analysis (FEA) was used to verify that the structure
+remains within allowable stress limits under normal operating loads.
+The analysis confirmed that the design would survive moderate winds
+while concentrating extreme loads in the breakaway pin.
+</p>
+
+<div class="photo-grid">
+
+<figure class="photo">
+<img src="images/roadsign_fea.png" alt="FEA stress simulation">
+<figcaption>
+Finite element simulation verifying structural behavior under wind loading.
+</figcaption>
+</figure>
+
+<figure class="photo">
+<img src="images/roadsign_rotation.png" alt="Rotation simulation">
+<figcaption>
+Simulation of the ±15° rotational response under moderate wind loads.
+</figcaption>
+</figure>
+
+</div>
+
+</section>
+
+<section class="card">
+<h2>Design Challenges</h2>
+
+<div class="notes-grid">
+
+<div class="notes-card">
+<h3 class="notes-title">Balancing Rotation and Visibility</h3>
+<p class="muted">
+Allowing aerodynamic rotation reduces wind loading, but the rotation angle
+must remain small enough that the sign remains readable to drivers.
+</p>
+</div>
+
+<div class="notes-card">
+<h3 class="notes-title">Controlled Structural Failure</h3>
+<p class="muted">
+The breakaway pin must fail predictably at a specific load range,
+while avoiding premature failure under normal conditions.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="card">
+<h2>Expected Impact</h2>
+
+<p class="muted">
+If implemented at scale, this system could significantly reduce
+infrastructure damage during hurricanes and severe storms by
+preventing roadside signposts from bending or failing under
+extreme aerodynamic loading.
+</p>
+
+<p class="muted">
+By redirecting extreme loads into replaceable mechanical components,
+the design could reduce repair costs and speed up post-storm recovery
+for transportation infrastructure.
+</p>
+
+</section>
+
+<div class="project-footer">
+<a class="btn btn-ghost" href="projects.html">← Back to Projects</a>
+</div>
 
 </div>
