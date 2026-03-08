@@ -1760,3 +1760,80 @@ figure.photo figcaption {
     max-height: 420px !important;
   }
 }
+.roadsign-page {
+  .equation-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+  }
+
+  .equation-card {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 18px;
+    padding: 1.1rem 1.15rem;
+    background: #fff;
+  }
+
+  .equation-card-wide {
+    grid-column: 1 / -1;
+  }
+
+  .equation-title {
+    margin: 0 0 0.7rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .equation-block {
+    overflow-x: auto;
+    padding: 0.85rem 0.95rem;
+    margin-bottom: 0.75rem;
+    border-radius: 14px;
+    background: #f7f7f8;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+  }
+
+  .eq {
+    display: inline-block;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    white-space: nowrap;
+  }
+
+  .frac {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    line-height: 1.15;
+  }
+
+  .frac > span:first-child {
+    padding: 0 0.28rem 0.12rem;
+    border-bottom: 1px solid currentColor;
+  }
+
+  .frac > span:last-child {
+    padding-top: 0.08rem;
+  }
+
+  .spring-grid {
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: 860px) {
+    .equation-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .equation-card-wide {
+      grid-column: auto;
+    }
+
+    .eq {
+      font-size: 1.05rem;
+    }
+  }
+}
