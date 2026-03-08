@@ -469,20 +469,56 @@ hr {
 
 .about-photos-top {
   display: grid;
-  gap: 20px;
+  gap: 22px;
+  align-content: start;
 }
 
+/* top photo figures */
+.about-top-figure {
+  margin: 0;
+}
+
+.about-top-figure img {
+  width: 100% !important;
+  height: 260px !important;
+  display: block !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+  border-radius: 12px !important;
+  background: #fff !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* special EPIC snake crop */
+.about-top-figure img.snake {
+  object-fit: cover !important;
+  object-position: center 30% !important;
+}
+
+/* captions */
+.about-top-figure figcaption {
+  margin-top: 10px;
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: #666;
+}
+
+/* old generic photo-frame rules overridden so captions are not clipped */
 .photo-frame {
   width: 100%;
-  height: 260px;
-  border-radius: 12px;
+  height: auto;
+  border-radius: 0;
   overflow: visible;
+  box-shadow: none;
   background: transparent;
 }
 
 .photo-frame img {
   width: 100% !important;
-  height: 100% !important;
+  height: auto !important;
   display: block !important;
   object-fit: cover !important;
   padding: 0 !important;
@@ -492,12 +528,7 @@ hr {
   border-radius: 0 !important;
 }
 
-.photo-frame img.snake {
-  transform: scale(1.12);
-  transform-origin: center;
-  object-position: 50% 40%;
-}
-
+/* collage */
 .about-collage {
   margin-top: 80px;
   display: grid;
@@ -516,6 +547,34 @@ hr {
 .about-collage img:hover {
   transform: scale(1.04);
 }
+
+/* responsive */
+@media (max-width: 980px) {
+  .about-intro {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .about-photos-top {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+}
+
+@media (max-width: 700px) {
+  .about-photos-top {
+    grid-template-columns: 1fr;
+  }
+
+  .about-top-figure img {
+    height: 240px !important;
+  }
+
+  .about-collage {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 
 /* =========================================================
    6. ACADEMIC FOCUS PAGE
