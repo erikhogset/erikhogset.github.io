@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<!-- TOPBAR (same as your other pages) -->
+<!-- TOPBAR -->
 <div class="topbar">
   <div class="topbar-left">
     <a class="brand" href="./">Erik Hogset</a>
@@ -20,164 +20,270 @@ layout: default
 <hr />
 
 <div class="project-wrapper">
+
 <p class="proj-breadcrumb">
   <a href="projects.html">Projects</a>
   <span class="dot">•</span>
   Electromechanical Design
 </p>
-  <!-- Header -->
-  <div class="project-header">
-    <h1>Automated Electromechanical Ouija Board</h1>
-    <p class="project-subtitle">Voice-controlled, AI-driven physical interface</p>
 
-    <div class="project-meta">
-      <span class="pill">Mechatronics</span>
-      <span class="pill">Controls</span>
-      <span class="pill">Fabrication</span>
-      <span class="pill">AI Integration</span>
-    </div>
+<!-- HEADER -->
+<div class="project-header">
+  <h1>Automated Electromechanical Ouija Board</h1>
+  <p class="project-subtitle">
+    A mechatronic system that converts voice prompts and AI-generated text into physical motion across a laser-engraved board.
+  </p>
+
+  <div class="project-meta">
+    <span class="pill">Mechatronics</span>
+    <span class="pill">Motion Control</span>
+    <span class="pill">Fabrication</span>
+    <span class="pill">AI Integration</span>
   </div>
-  
-<!-- Hero Video -->
+</div>
+
+
+<!-- DEMO -->
 <div class="card media-card">
   <h2>Demo</h2>
+
   <p class="muted">
-    The system moves a planchette across a laser-engraved board in response to voice-driven prompts.
+    The system captures a spoken prompt, generates a response, maps characters to board coordinates,
+    and moves a planchette to spell the response across the board using an X–Y gantry.
   </p>
 
   <div class="video-frame">
-    <video
-      controls
-      playsinline
-      preload="metadata"
-      poster="images/ouija-cover.png"
-    >
-      <source src="images/ouija.mp4" type="video/mp4" />
+    <video controls playsinline preload="metadata" poster="images/ouija-cover.png">
+      <source src="images/ouija.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
 </div>
 
-  <!-- Quick Overview -->
+
+<!-- PROBLEM -->
+<div class="card">
+  <h2>Problem</h2>
+
+  <p class="muted">
+    The goal of this project was to create a physical interface that could translate digital responses into visible mechanical motion.
+    Instead of displaying text on a screen, the system uses a motion platform to physically spell responses across a Ouija-style board.
+  </p>
+
+  <p class="muted">
+    This required integrating voice input, AI text generation, coordinate mapping, and motion control into a single electromechanical system.
+  </p>
+</div>
+
+
+<!-- DESIGN GOALS -->
+<div class="card">
+  <h2>Design Goals</h2>
+
   <div class="grid-2">
-    <div class="card">
-      <h2>What it does</h2>
+    <div>
+      <h3 class="h3">System Goals</h3>
       <ul class="list">
-        <li>Captures a spoken prompt (voice input)</li>
-        <li>Generates a response (AI)</li>
-        <li>Maps characters to board coordinates</li>
-        <li>Moves the planchette to spell out the answer</li>
+        <li>Convert spoken prompts into physical output</li>
+        <li>Translate text responses into board coordinates</li>
+        <li>Maintain accurate planar motion across the board</li>
+        <li>Integrate electronics and motion hardware inside an enclosure</li>
       </ul>
     </div>
 
-    <div class="card">
-      <h2>My role</h2>
+    <div>
+      <h3 class="h3">User Experience Goals</h3>
       <ul class="list">
-        <li>Mechanical design of the X–Y motion system</li>
-        <li>Laser-cut enclosure + engraved board/planchette</li>
-        <li>Hardware integration (motors, controller, wiring)</li>
-        <li>Software pipeline from text → motion</li>
+        <li>Create a theatrical and engaging interaction</li>
+        <li>Preserve the recognizable format of a Ouija board</li>
+        <li>Make the system visually polished rather than purely experimental</li>
+        <li>Ensure motion appears smooth and intentional</li>
       </ul>
     </div>
   </div>
+</div>
 
-  <!-- Photos (Hero + Fabrication) -->
-  <div class="card">
-    <h2>Build Photos</h2>
 
-    <div class="photo-grid">
-      <figure class="photo">
-        <img src="images/ouija_2.jpeg" alt="Ouija board hero shot" />
-        <figcaption>Laser-engraved board + planchette (final look).</figcaption>
-      </figure>
+<!-- MY ROLE -->
+<div class="card">
+  <h2>My Role</h2>
 
-      <figure class="photo">
-        <img src="images/ouija_5.jpeg" alt="Laser cutter cutting the board" />
-        <figcaption>Laser cutting & engraving (Epilog Fusion Edge).</figcaption>
-      </figure>
+  <p class="muted">
+    I led the design and development of the system, building the mechanical platform,
+    writing the control software, and iterating on the overall system behavior.
+    While teammates assisted with some supporting components, I was responsible for the
+    core architecture and integration of the project.
+  </p>
 
-      <figure class="photo">
-        <img src="images/ouija_6.jpeg" alt="Wide shot of laser cutter setup" />
-        <figcaption>Disassembled gantry and wiring.</figcaption>
-      </figure>
+  <ul class="list">
+    <li>Designed and implemented the complete motion-control software pipeline.</li>
+    <li>Developed the system logic for converting AI-generated text into motion paths.</li>
+    <li>Designed and fabricated the laser-cut board, enclosure, and planchette.</li>
+    <li>Built and integrated the X–Y gantry motion system and motor control hardware.</li>
+    <li>Iterated on system calibration, testing, and reliability.</li>
+    <li>Collaborated with teammates who produced several 3D-printed structural connectors used in the gantry frame.</li>
+  </ul>
+</div>
 
-      <figure class="photo">
-        <img src="images/ouija_3.jpeg" alt="Selfie in lab with laser cutter" />
-        <figcaption>In-lab fabrication & iteration.</figcaption>
-      </figure>
-    </div>
+
+<!-- BUILD PHOTOS -->
+<div class="card">
+  <h2>Build Photos</h2>
+
+  <div class="photo-grid">
+
+    <figure class="photo">
+      <img src="images/ouija_2.jpeg" alt="Ouija board hero shot">
+      <figcaption>Final laser-engraved board and planchette.</figcaption>
+    </figure>
+
+    <figure class="photo">
+      <img src="images/ouija_5.jpeg" alt="Laser cutter cutting the board">
+      <figcaption>Laser engraving the board graphics using an Epilog Fusion Edge.</figcaption>
+    </figure>
+
+    <figure class="photo">
+      <img src="images/ouija_6.jpeg" alt="Wide shot of laser cutter setup">
+      <figcaption>Fabrication and assembly of system components.</figcaption>
+    </figure>
+
+    <figure class="photo">
+      <img src="images/ouija_3.jpeg" alt="Selfie in lab with laser cutter">
+      <figcaption>In-lab fabrication and iteration.</figcaption>
+    </figure>
+
+  </div>
+</div>
+
+
+<!-- MECHANICAL SYSTEM -->
+<div class="card media-card">
+  <h2>Mechanical System</h2>
+
+  <p class="muted">
+    The motion platform uses a belt-driven X–Y gantry to translate digital commands into planar motion.
+    Stepper motors drive the gantry along orthogonal axes, allowing the planchette to move precisely
+    across the board.
+  </p>
+
+  <div class="media-frame">
+    <video controls playsinline preload="metadata">
+      <source src="images/ouija_open.mp4" type="video/mp4">
+    </video>
   </div>
 
-  <!-- Mechanical System -->
-  <div class="card media-card">
-    <h2>Mechanical System (Internal)</h2>
-    <p class="muted">
-      Inside the enclosure is an X–Y gantry that translates commands into planar motion.
-    </p>
+  <div class="photo-grid one-row">
 
-    <div class="media-frame">
-      <video controls playsinline preload="metadata">
-        <source src="images/ouija_open.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+    <figure class="photo">
+      <img src="images/ouija_open.jpeg" alt="Inside enclosure showing gantry">
+      <figcaption>Internal gantry system and electronics layout.</figcaption>
+    </figure>
+
+    <figure class="photo">
+      <img src="images/ouija_1.jpeg" alt="Top view of board and planchette">
+      <figcaption>Top view of the board and planchette scale.</figcaption>
+    </figure>
+
+  </div>
+</div>
+
+
+<!-- LASER CUT PROCESS -->
+<div class="card media-card">
+  <h2>Fabrication Process</h2>
+
+  <p class="muted">
+    The board graphics and enclosure panels were produced using laser cutting and engraving.
+    This allowed precise board markings and rapid iteration of enclosure components.
+  </p>
+
+  <div class="media-frame">
+    <video controls playsinline preload="metadata">
+      <source src="images/ouija_lasercut.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+
+
+<!-- ENGINEERING CHALLENGES -->
+<div class="card">
+  <h2>Engineering Challenges</h2>
+
+  <div class="grid-2">
+
+    <div>
+      <h3 class="h3">Motion Control</h3>
+      <ul class="list">
+        <li>Translating text characters into board coordinates</li>
+        <li>Ensuring smooth motion between letters</li>
+        <li>Maintaining consistent motion speed and accuracy</li>
+      </ul>
     </div>
 
-    <div class="photo-grid one-row">
-      <figure class="photo">
-        <img src="images/ouija_open.jpeg" alt="Inside of enclosure showing gantry and electronics" />
-        <figcaption>Gantry + electronics layout inside the enclosure.</figcaption>
-      </figure>
-
-      <figure class="photo">
-        <img src="images/ouija_1.jpeg" alt="Flat lay of board with planchette" />
-        <figcaption>Top-side board layout and planchette scale.</figcaption>
-      </figure>
+    <div>
+      <h3 class="h3">System Integration</h3>
+      <ul class="list">
+        <li>Coordinating voice input, AI output, and motion control</li>
+        <li>Packaging electronics and mechanical components in a compact enclosure</li>
+        <li>Calibrating the board geometry to match coordinate mapping</li>
+      </ul>
     </div>
+
   </div>
+</div>
 
-  <!-- Laser-cut process video -->
-  <div class="card media-card">
-    <h2>Laser Cutting Process</h2>
-    <p class="media-caption muted">
-      Board graphics and enclosure parts were produced using laser cutting/engraving.
-    </p>
 
-    <div class="media-frame">
-      <video controls playsinline preload="metadata">
-        <source src="images/ouija_lasercut.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+<!-- OUTCOME -->
+<div class="card">
+  <h2>Outcome</h2>
+
+  <p class="muted">
+    The final system successfully demonstrated an electromechanical interface that converts
+    digital responses into visible physical motion. The project combined motion control,
+    fabrication, and software integration to create an interactive system that bridges
+    digital AI responses and physical mechanical output.
+  </p>
+
+  <p class="muted">
+    This project strengthened my experience in mechatronics, motion systems,
+    fabrication, and system-level engineering.
+  </p>
+</div>
+
+
+<!-- TECHNICAL SUMMARY -->
+<div class="card">
+  <h2>Technical Summary</h2>
+
+  <div class="grid-2">
+
+    <div>
+      <h3 class="h3">Hardware</h3>
+      <ul class="list">
+        <li>X–Y belt-driven gantry system</li>
+        <li>Stepper motors and motion controller</li>
+        <li>Laser-cut enclosure and board</li>
+        <li>Custom planchette</li>
+      </ul>
     </div>
-  </div>
 
-  <!-- Technical Summary -->
-  <div class="card">
-    <h2>Technical Summary</h2>
-    <div class="grid-2">
-      <div>
-        <h3 class="h3">Hardware</h3>
-        <ul class="list">
-          <li>X–Y planar motion system (belt-driven gantry)</li>
-          <li>Stepper motors + motion controller</li>
-          <li>Laser-cut enclosure (MDF/plywood)</li>
-          <li>Laser-engraved board + planchette</li>
-        </ul>
-      </div>
-      <div>
-        <h3 class="h3">Software</h3>
-        <ul class="list">
-          <li>Voice prompt → text</li>
-          <li>AI response generation</li>
-          <li>Character mapping to coordinate targets</li>
-          <li>Motion commands to trace spelling path</li>
-        </ul>
-      </div>
+    <div>
+      <h3 class="h3">Software</h3>
+      <ul class="list">
+        <li>Voice prompt → text processing</li>
+        <li>AI response generation</li>
+        <li>Character-to-coordinate mapping</li>
+        <li>Motion command generation</li>
+      </ul>
     </div>
-  </div>
 
-  <!-- Footer CTA -->
-  <div class="project-footer">
-    <a class="btn btn-ghost" href="projects.html">← Back to Projects</a>
   </div>
+</div>
+
+
+<!-- FOOTER -->
+<div class="project-footer">
+  <a class="btn btn-ghost" href="projects.html">← Back to Projects</a>
+</div>
 
 </div>
