@@ -630,6 +630,21 @@ hr {
   }
 }
 
+.applied a {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(185,28,28,0.08);
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-right: 6px;
+}
+
+.applied a:hover {
+  background: rgba(185,28,28,0.15);
+}
+
 /* =========================================================
    7. PROJECTS INDEX PAGE
    ========================================================= */
