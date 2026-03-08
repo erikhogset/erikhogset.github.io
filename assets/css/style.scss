@@ -1761,6 +1761,64 @@ figure.photo figcaption {
   }
 }
 .roadsign-page {
+  .card {
+    margin: 20px 0;
+  }
+
+  .notes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 14px;
+  }
+
+  .notes-card {
+    padding: 14px;
+    background: #fafafa;
+    border-radius: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+  }
+
+  .notes-title {
+    margin: 0 0 8px 0;
+    font-size: 0.95rem;
+    font-weight: 800;
+  }
+
+  .roadsign-hero-card h2 {
+    margin-bottom: 1rem;
+  }
+
+  .roadsign-hero-layout {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    align-items: start;
+  }
+
+  .roadsign-hero-figure {
+    margin: 0;
+  }
+
+  .roadsign-hero-figure img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 12px;
+  }
+
+  .roadsign-hero-figure figcaption {
+    margin-top: 8px;
+    color: #6e6e6e;
+    font-size: 0.92rem;
+    line-height: 1.45;
+  }
+
   .equation-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1782,7 +1840,7 @@ figure.photo figcaption {
   .equation-title {
     margin: 0 0 0.7rem 0;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 700;
   }
 
   .equation-block {
@@ -1797,7 +1855,7 @@ figure.photo figcaption {
   .eq {
     display: inline-block;
     font-family: "Times New Roman", Times, serif;
-    font-size: 1.2rem;
+    font-size: 1.18rem;
     line-height: 1.7;
     white-space: nowrap;
   }
@@ -1823,7 +1881,24 @@ figure.photo figcaption {
     margin-bottom: 1rem;
   }
 
-  @media (max-width: 860px) {
+  .photo-grid {
+    margin-top: 14px;
+  }
+
+  .photo-grid.one-row {
+    grid-template-columns: 1fr;
+  }
+
+  .photo-grid figure.photo img {
+    background: #fff;
+    object-fit: contain;
+    aspect-ratio: 16 / 10;
+    padding: 10px;
+  }
+
+  @media (max-width: 900px) {
+    .notes-grid,
+    .roadsign-hero-layout,
     .equation-grid {
       grid-template-columns: 1fr;
     }
@@ -1832,8 +1907,14 @@ figure.photo figcaption {
       grid-column: auto;
     }
 
+    .roadsign-hero-figure img {
+      aspect-ratio: 4 / 5;
+    }
+  }
+
+  @media (max-width: 700px) {
     .eq {
-      font-size: 1.05rem;
+      font-size: 1.02rem;
     }
   }
 }
