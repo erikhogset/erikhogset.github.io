@@ -680,6 +680,15 @@ hr {
 .applied a:hover {
   text-decoration: underline;
 }
+.applied-label {
+  margin-top: 14px;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #444;
+  padding-left: 8px;
+  border-left: 3px solid var(--accent);
+}
 
 @media (max-width: 1150px) {
   .coursework-grid {
