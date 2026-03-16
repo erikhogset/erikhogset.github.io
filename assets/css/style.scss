@@ -2009,6 +2009,83 @@ figure.photo figcaption {
     }
   }
 }
+
+/* =========================================================
+   Road Sign page render layout
+   ========================================================= */
+.roadsign-hero-layout-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 18px;
+  align-items: start;
+}
+
+.roadsign-hero-figure img {
+  width: 100%;
+  border-radius: 14px;
+  display: block;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+}
+
+/* Give the rendered installed view a slightly tighter crop */
+.roadsign-render-figure img {
+  height: 430px;
+  object-fit: cover;
+  object-position: center 42%;
+}
+
+/* Keep the CAD views fully visible */
+.roadsign-hero-figure:not(.roadsign-render-figure) img {
+  height: 430px;
+  object-fit: contain;
+  padding: 8px;
+}
+
+.roadsign-hero-figure figcaption {
+  margin-top: 8px;
+  color: #6e6e6e;
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 1100px) {
+  .roadsign-hero-layout-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .roadsign-render-figure img,
+  .roadsign-hero-figure:not(.roadsign-render-figure) img {
+    height: auto;
+    max-height: 520px;
+  }
+}
+
+/* =========================================================
+   Road Sign Prototype Image Fix
+   ========================================================= */
+
+.roadsign-page .photo-grid.one-row {
+  grid-template-columns: 1fr;
+}
+
+.roadsign-page .photo-grid.one-row .photo img {
+  width: 100%;
+  height: auto;
+  max-height: 520px;
+  object-fit: contain;
+  background: #fff;
+  padding: 8px;
+  border-radius: 12px;
+}
+
+.roadsign-page .photo-grid.one-row .photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 /* =========================================================
    EPIC page
    ========================================================= */
