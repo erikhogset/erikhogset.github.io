@@ -53,16 +53,27 @@ title: Reactive Road Sign System
     </div>
   </div>
 
-  <section class="card">
-    <h2>Project Status</h2>
+  <section class="card roadsign-intro-card">
+    <div class="roadsign-intro-grid">
+      <div class="roadsign-intro-text">
+        <h2>Project Status</h2>
 
-    <p class="muted">
-      This project is currently <strong>in progress</strong> and is at the
-      <strong>Critical Design Review</strong> stage. The current design includes the full
-      system architecture, analytical modeling, component selection, CAD development,
-      and preliminary finite element analysis. Prototype fabrication and experimental
-      validation are the next major steps.
-    </p>
+        <p class="muted">
+          This project is currently <strong>in progress</strong> and is at the
+          <strong>Critical Design Review</strong> stage. The current design includes the full
+          system architecture, analytical modeling, component selection, CAD development,
+          and preliminary finite element analysis. Prototype fabrication and experimental
+          validation are the next major steps.
+        </p>
+      </div>
+
+      <figure class="roadsign-cover-figure">
+        <img src="images/roadsign_render_installed.png" alt="Rendered concept installed on a stop sign post">
+        <figcaption>
+          Installed concept render showing the retrofit mechanism integrated into a standard roadside stop-sign assembly.
+        </figcaption>
+      </figure>
+    </div>
 
     <div class="notes-grid">
       <div class="notes-card">
@@ -112,34 +123,37 @@ title: Reactive Road Sign System
     </p>
   </section>
 
- <section class="card roadsign-hero-card">
-  <h2>Current Design</h2>
+  <section class="card roadsign-design-card">
+    <h2>Current Design</h2>
 
-  <div class="roadsign-hero-layout roadsign-hero-layout-3">
+    <p class="muted">
+      The current concept is an inline retrofit mechanism inserted directly into the signpost load path.
+      The CAD views below show the present mechanical configuration and internal component breakdown.
+    </p>
 
-    <figure class="roadsign-hero-figure roadsign-render-figure">
-      <img src="images/roadsign_render_installed.png" alt="Rendered prototype installed on a stop sign post">
-      <figcaption>
-        Rendered concept showing the retrofit mechanism installed inline on a standard stop sign post.
-      </figcaption>
-    </figure>
+    <div class="roadsign-design-grid">
+      <figure class="design-figure cad">
+        <img src="images/roadsign_vertical_assembly.png" alt="Reactive Road Sign System assembled vertical CAD">
+        <figcaption>
+          Assembled CAD model showing the current inline coupler and joint configuration.
+        </figcaption>
+      </figure>
 
-    <figure class="roadsign-hero-figure">
-      <img src="images/roadsign_vertical_assembly.png" alt="Reactive Road Sign System assembled vertical CAD">
-      <figcaption>
-        Current assembled CAD view of the retrofit mechanism within the signpost load path.
-      </figcaption>
-    </figure>
+      <figure class="design-figure cad">
+        <img src="images/roadsign_vertical_exploded.png" alt="Reactive Road Sign System exploded vertical CAD">
+        <figcaption>
+          Exploded CAD view showing the couplers, yokes, center block, spring region, and sacrificial pin.
+        </figcaption>
+      </figure>
 
-    <figure class="roadsign-hero-figure">
-      <img src="images/roadsign_vertical_exploded.png" alt="Reactive Road Sign System exploded vertical CAD">
-      <figcaption>
-        Exploded CAD view showing the couplers, yokes, center block, spring region, and sacrificial pin.
-      </figcaption>
-    </figure>
-
-  </div>
-</section>
+      <figure class="design-figure cad">
+        <img src="images/roadsign_vertical_assembly.png" alt="Reactive Road Sign System assembled view emphasizing full load path">
+        <figcaption>
+          Vertical assembly view emphasizing how the mechanism sits within the full signpost load path.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
 
   <section class="card">
     <h2>How the Mechanism Works</h2>
@@ -309,7 +323,7 @@ title: Reactive Road Sign System
       compare those trends against the analytical model to guide pin diameter selection.
     </p>
 
-    <div class="photo-grid">
+    <div class="photo-grid roadsign-fea-grid">
       <figure class="photo">
         <img src="images/roadsign_fea_rigid.png" alt="Rigid block FEA results for breakaway pin">
         <figcaption>
@@ -343,11 +357,11 @@ title: Reactive Road Sign System
       model while full destructive pin testing is still forthcoming.
     </p>
 
-    <div class="photo-grid one-row">
-      <figure class="photo">
+    <div class="prototype-wrapper">
+      <figure class="prototype-figure">
         <img src="images/roadsign_3d_print.jpeg" alt="Reactive road sign 3D printed prototype">
         <figcaption>
-          Current prototype components used to evaluate mechanism geometry, assembly behavior, and future testing setup.
+          3D-printed proof-of-concept prototype used to evaluate mechanism geometry, joint articulation, and assembly feasibility.
         </figcaption>
       </figure>
     </div>
