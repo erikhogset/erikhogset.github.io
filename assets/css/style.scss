@@ -1851,11 +1851,51 @@ figure.photo figcaption {
     max-height: 420px !important;
   }
 }
+/* =========================================================
+   Road Sign Page
+   ========================================================= */
 .roadsign-page {
+
   .card {
     margin: 20px 0;
   }
 
+  /* -------------------------
+     Intro / status
+     ------------------------- */
+  .roadsign-intro-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 22px;
+    align-items: start;
+    margin-bottom: 16px;
+  }
+
+  .roadsign-cover-figure {
+    margin: 0;
+  }
+
+  .roadsign-cover-figure img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    object-position: center 38%;
+    display: block;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    background: #fff;
+  }
+
+  .roadsign-cover-figure figcaption {
+    margin-top: 8px;
+    color: #6e6e6e;
+    font-size: 0.92rem;
+    line-height: 1.45;
+  }
+
+  /* -------------------------
+     Shared note cards
+     ------------------------- */
   .notes-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1876,40 +1916,45 @@ figure.photo figcaption {
     font-weight: 800;
   }
 
-  .roadsign-hero-card h2 {
-    margin-bottom: 1rem;
-  }
-
-  .roadsign-hero-layout {
+  /* -------------------------
+     Current design section
+     ------------------------- */
+  .roadsign-design-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 18px;
     align-items: start;
+    margin-top: 16px;
   }
 
-  .roadsign-hero-figure {
+  .design-figure {
     margin: 0;
   }
 
-  .roadsign-hero-figure img {
+  .design-figure img {
     width: 100%;
-    aspect-ratio: 3 / 5;
-    object-fit: contain;
-    object-position: center;
+    height: 430px;
     display: block;
-    background: #fff;
+    border-radius: 14px;
     border: 1px solid #e5e7eb;
-    border-radius: 12px;
-    padding: 12px;
+    background: #fff;
   }
 
-  .roadsign-hero-figure figcaption {
+  .design-figure.cad img {
+    object-fit: contain;
+    padding: 8px;
+  }
+
+  .design-figure figcaption {
     margin-top: 8px;
     color: #6e6e6e;
     font-size: 0.92rem;
     line-height: 1.45;
   }
 
+  /* -------------------------
+     Equations
+     ------------------------- */
   .equation-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1972,34 +2017,75 @@ figure.photo figcaption {
     margin-bottom: 1rem;
   }
 
-  .photo-grid {
+  /* -------------------------
+     FEA section
+     ------------------------- */
+  .roadsign-fea-grid {
     margin-top: 14px;
   }
 
-  .photo-grid.one-row {
-    grid-template-columns: 1fr;
-  }
-
-  .photo-grid figure.photo img {
+  .roadsign-fea-grid figure.photo img {
     background: #fff;
     object-fit: contain;
     aspect-ratio: 16 / 10;
     padding: 10px;
   }
 
+  /* -------------------------
+     Prototype section
+     ------------------------- */
+  .prototype-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  .prototype-figure {
+    max-width: 720px;
+    margin: 0;
+  }
+
+  .prototype-figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    background: #fff;
+  }
+
+  .prototype-figure figcaption {
+    margin-top: 10px;
+    color: #6e6e6e;
+    font-size: 0.92rem;
+    line-height: 1.45;
+    text-align: center;
+  }
+
+  /* -------------------------
+     Responsive
+     ------------------------- */
+  @media (max-width: 1100px) {
+    .roadsign-intro-grid,
+    .roadsign-design-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .roadsign-cover-figure img,
+    .design-figure img {
+      height: auto;
+      max-height: 540px;
+    }
+  }
+
   @media (max-width: 900px) {
     .notes-grid,
-    .roadsign-hero-layout,
     .equation-grid {
       grid-template-columns: 1fr;
     }
 
     .equation-card-wide {
       grid-column: auto;
-    }
-
-    .roadsign-hero-figure img {
-      aspect-ratio: 5 / 6;
     }
   }
 
@@ -2008,81 +2094,6 @@ figure.photo figcaption {
       font-size: 1.02rem;
     }
   }
-}
-
-/* =========================================================
-   Road Sign page render layout
-   ========================================================= */
-.roadsign-hero-layout-3 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 18px;
-  align-items: start;
-}
-
-.roadsign-hero-figure img {
-  width: 100%;
-  border-radius: 14px;
-  display: block;
-  border: 1px solid #e5e7eb;
-  background: #fff;
-}
-
-/* Give the rendered installed view a slightly tighter crop */
-.roadsign-render-figure img {
-  height: 430px;
-  object-fit: cover;
-  object-position: center 42%;
-}
-
-/* Keep the CAD views fully visible */
-.roadsign-hero-figure:not(.roadsign-render-figure) img {
-  height: 430px;
-  object-fit: contain;
-  padding: 8px;
-}
-
-.roadsign-hero-figure figcaption {
-  margin-top: 8px;
-  color: #6e6e6e;
-  font-size: 0.92rem;
-  line-height: 1.45;
-}
-
-@media (max-width: 1100px) {
-  .roadsign-hero-layout-3 {
-    grid-template-columns: 1fr;
-  }
-
-  .roadsign-render-figure img,
-  .roadsign-hero-figure:not(.roadsign-render-figure) img {
-    height: auto;
-    max-height: 520px;
-  }
-}
-
-/* =========================================================
-   Road Sign Prototype Image Fix
-   ========================================================= */
-
-.roadsign-page .photo-grid.one-row {
-  grid-template-columns: 1fr;
-}
-
-.roadsign-page .photo-grid.one-row .photo img {
-  width: 100%;
-  height: auto;
-  max-height: 520px;
-  object-fit: contain;
-  background: #fff;
-  padding: 8px;
-  border-radius: 12px;
-}
-
-.roadsign-page .photo-grid.one-row .photo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 
