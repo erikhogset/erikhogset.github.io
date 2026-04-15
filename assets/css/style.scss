@@ -1987,7 +1987,10 @@ figure.photo figcaption {
     background: #f7f7f8;
     border: 1px solid rgba(0, 0, 0, 0.06);
   }
-
+   
+   .equation-card-wide {
+     grid-column: span 2;
+   }
   .eq {
     display: inline-block;
     font-family: "Times New Roman", Times, serif;
