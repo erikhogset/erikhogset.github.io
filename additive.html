@@ -117,23 +117,19 @@ layout: default
         <p class="muted">What I tuned on the printer and what changed print-to-print.</p>
       </div>
 
-      <div class="notes-grid">
         <div class="notes-card">
-          <h4 class="notes-title">What I Focused On</h4>
-          <ul class="list">
-            <li>Print orientation and layer direction for joint strength</li>
-            <li>Support strategy and surface finish tradeoffs</li>
-            <li>Tolerance behavior of moving printed joints</li>
-          </ul>
-        </div>
-
-        <div class="notes-card">
-          <h4 class="notes-title">Outcome</h4>
+          <h4 class="notes-title">Technical Notes</h4>
           <p>
-            Successfully printed and assembled the mechanism with smooth motion, demonstrating reliable
-            articulation on a consumer-grade FFF printer without redesigning the STL.
+            This print focused on calibration and process control rather than geometry design.
+            Print orientation was selected to place layer lines along the primary joint axes,
+            improving articulation durability and reducing the likelihood of layer separation during motion.
           </p>
-
+          <p>
+            Support structures were minimized around the joint regions to prevent binding after removal.
+            Printer tuning included adjusting extrusion flow, temperature, and retraction to achieve
+            consistent joint clearances and smooth articulation without modifying the original STL.
+          </p>
+        
           <div class="badge-row">
             <span class="additive-badge">Ender FFF</span>
             <span class="additive-badge">Assembly</span>
@@ -195,14 +191,21 @@ layout: default
             <li>Sanding and post-processing to improve finish, with minor surface scarring</li>
           </ul>
         </div>
-
         <div class="notes-card">
-          <h4 class="notes-title">Outcome</h4>
+          <h4 class="notes-title">Technical Notes</h4>
           <p>
-            Successful SLA print with the internal channel clearly visible using backlighting, along with a solid exterior finish
-            after cleanup and post-cure.
+            The Klein bottle geometry was modeled to maintain a continuous internal channel while
+            remaining within the 40 × 40 × 40 mm build volume constraint. Print orientation was
+            selected to minimize supports within the interior passage and reduce surface artifacts
+            on the exterior curvature.
           </p>
-
+          <p>
+            After printing, the part underwent washing, UV curing, and light sanding to remove
+            support marks and improve surface finish. Backlighting was used to visually confirm
+            the continuity of the internal channel, demonstrating a geometry that cannot be
+            produced using conventional subtractive methods.
+          </p>
+        
           <div class="badge-row">
             <span class="additive-badge">SLA</span>
             <span class="additive-badge">Draft Grey</span>
@@ -277,14 +280,20 @@ layout: default
         </div>
 
         <div class="notes-card">
-          <h4 class="notes-title">Outcome</h4>
+          <h4 class="notes-title">Technical Notes</h4>
           <p>
-            The generative design process produced a lightweight structure that preserved
-            primary load paths while eliminating nonessential material. The final PETG print
-            met the compression requirement and successfully sustained a 2 kN load
-            without structural failure.
+            A design space was defined between two constrained faces representing the load
+            application surfaces. Compressive loading conditions and fixed boundary constraints
+            were applied in Fusion 360 Generative Design to identify material layouts capable of
+            sustaining the required load.
           </p>
-
+          <p>
+            The resulting geometry was printed in PETG with layer orientation aligned with the
+            primary compressive load direction to reduce the risk of layer separation. The final
+            structure successfully sustained a 2 kN compressive load during testing without
+            structural failure.
+          </p>
+        
           <div class="badge-row">
             <span class="additive-badge">Generative design</span>
             <span class="additive-badge">PETG</span>
@@ -351,15 +360,21 @@ layout: default
             <li>Balancing rotating mass for smooth response</li>
           </ul>
         </div>
-
+        
         <div class="notes-card">
-          <h4 class="notes-title">Outcome</h4>
+          <h4 class="notes-title">Technical Notes</h4>
           <p>
-            Fully functional anemometer and weather vane. The vane reliably aligns with
-            incoming airflow, and the rotor assembly spins smoothly under wind tunnel
-            testing with minimal friction.
+            The rotor assembly was designed around press-fit bearings to allow low-friction
+            rotation without additional fastening hardware. Shaft alignment and bearing tolerances
+            were tuned to ensure smooth rotation while maintaining sufficient interference to
+            prevent bearing movement during operation.
           </p>
-
+          <p>
+            Mass distribution across the rotor arms was balanced to reduce vibration and improve
+            responsiveness under low airflow conditions. During wind tunnel testing the vane
+            reliably aligned with the flow direction and the rotor rotated smoothly with minimal friction.
+          </p>
+        
           <div class="badge-row">
             <span class="additive-badge">PLA</span>
             <span class="additive-badge">Bearing fit</span>
