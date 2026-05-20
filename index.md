@@ -54,7 +54,7 @@
     </div>
 
     <div class="contact-line">
-      <a href="mailto:erikh@bu.edu">erikh@bu.edu</a>
+      <a href="mailto:erikrh@bu.edu">erikrh@bu.edu</a>
       &nbsp;•&nbsp;
       <a href="https://linkedin.com/in/erikhogset">LinkedIn</a>
     </div>
