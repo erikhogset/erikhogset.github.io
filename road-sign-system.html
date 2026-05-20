@@ -40,15 +40,16 @@ title: Reactive Road Sign System
   <div class="project-header">
     <h1>Reactive Road Sign System</h1>
     <p class="project-subtitle">
-      An in-progress senior design project developing a retrofit mechanism that reduces wind-induced damage to 
-      roadside sign infrastructure through controlled rotation and a sacrificial breakaway system.
+      Senior design retrofit mechanism developed to reduce wind-induced damage to roadside sign infrastructure
+      through controlled rotation and a sacrificial breakaway system.
     </p>
 
     <div class="project-meta">
       <span class="pill">Senior Design</span>
+      <span class="pill">Mechanical Systems</span>
       <span class="pill">Structural Analysis</span>
-      <span class="pill">Mechanism Design</span>
       <span class="pill">FEA</span>
+      <span class="pill">Experimental Testing</span>
       <span class="pill">Retrofit System</span>
     </div>
   </div>
@@ -56,42 +57,48 @@ title: Reactive Road Sign System
   <section class="card roadsign-intro-card">
     <div class="roadsign-intro-grid">
       <div class="roadsign-intro-text">
-        <h2>Project Status</h2>
+        <h2>Final Design Status</h2>
 
         <p class="muted">
-          The current design includes the full system architecture, analytical modeling, 
-          component selection, CAD development, and preliminary finite element analysis. 
-          Prototype fabrication and experimental validation are the next major steps.
+          The final design, named <strong>PostSure</strong>, is an inline retrofit mechanism designed
+          for existing roadway signposts. The system combines a torsional spring for controlled yaw
+          rotation under moderate wind loading with a sacrificial breakaway pin that releases the
+          mechanism under extreme wind loading.
+        </p>
+
+        <p class="muted">
+          The project was completed through analytical modeling, finite element analysis, prototype
+          fabrication, and scaled experimental testing of candidate breakaway pin geometries.
         </p>
       </div>
 
       <figure class="roadsign-cover-figure">
-        <img src="images/roadsign_render_installed.png" alt="Rendered concept installed on a stop sign post">
+        <img src="images/roadsign_fig01_install_render.jpg" alt="Rendered installation of PostSure retrofit system on roadway signpost">
         <figcaption>
-          Installed concept render showing the retrofit mechanism integrated into a standard roadside stop-sign assembly.
+          Final rendered installation of the PostSure retrofit mechanism integrated into a standard roadway signpost.
         </figcaption>
       </figure>
     </div>
 
     <div class="notes-grid">
       <div class="notes-card">
-        <h3 class="notes-title">Current Progress</h3>
+        <h3 class="notes-title">Final Deliverables</h3>
         <ul class="list">
-          <li>System architecture and load path defined</li>
-          <li>Breakaway pin stress model developed</li>
-          <li>Torsional spring sizing completed</li>
-          <li>Preliminary FEA completed for pin stress trends and peak stress locations</li>
+          <li>Fully developed inline retrofit mechanism compatible with common signpost geometries</li>
+          <li>Analytical wind-load and breakaway pin stress model</li>
+          <li>COMSOL FEA study of pin stress trends and peak stress locations</li>
+          <li>Functional prototype and custom steel test fixture</li>
+          <li>Experimental pin-sizing relationship based on destructive testing</li>
         </ul>
       </div>
 
       <div class="notes-card">
-        <h3 class="notes-title">Next Steps</h3>
-        <ul class="list">
-          <li>Prototype fabrication and assembly</li>
-          <li>Destructive testing of candidate pin geometries</li>
-          <li>Validation of analytical and simulation predictions</li>
-          <li>Refinement of final manufacturable design</li>
-        </ul>
+        <h3 class="notes-title">Key Result</h3>
+        <p class="muted">
+          Experimental testing showed a strong nonlinear relationship between groove diameter and
+          failure moment. The final power-law model estimated a required groove diameter of
+          <strong>0.783 ± 0.12 in</strong> for the governing wind-loading case.
+        </p>
       </div>
     </div>
   </section>
@@ -102,15 +109,15 @@ title: Reactive Road Sign System
     <p class="muted">
       Conventional roadside signs are rigidly mounted, which means aerodynamic loads from
       extreme wind events are transmitted directly into the signpost and foundation. Under
-      hurricane-level loading, this can lead to permanent deformation or failure of the
-      supporting infrastructure.
+      hurricane-level loading, this can lead to permanent deformation, structural failure, or
+      uprooting of the supporting infrastructure.
     </p>
 
     <p class="muted">
-      The goal of this project is to develop a <strong>mechanical retrofit system</strong>
+      The goal of this project was to develop a <strong>mechanical retrofit system</strong>
       that redirects damaging loads into replaceable components rather than the structural
       post itself. The mechanism is installed inline within the signpost load path and is
-      designed to respond differently at moderate and extreme wind conditions.
+      designed to respond differently under low-wind, triggered, and failure conditions.
     </p>
 
     <p class="muted">
@@ -122,33 +129,29 @@ title: Reactive Road Sign System
   </section>
 
   <section class="card roadsign-design-card">
-    <h2>Current Design</h2>
+    <h2>Final Design</h2>
 
     <p class="muted">
-      The current concept is an inline retrofit mechanism inserted directly into the signpost load path.
-      The CAD views below show the present mechanical configuration and internal component breakdown.
+      The final PostSure design consists of an inline U-joint assembly installed directly in the
+      signpost load path. The system is divided into two main mechanisms: a rotational unit that
+      allows limited yaw motion under moderate wind loading, and a restricted joint assembly that
+      releases through sacrificial pin failure under extreme loading.
     </p>
 
     <div class="roadsign-design-grid">
       <figure class="design-figure cad">
-        <img src="images/roadsign_vertical_assembly.png" alt="Reactive Road Sign System assembled vertical CAD">
-        <figcaption>
-          Assembled CAD model showing the current inline coupler and joint configuration.
-        </figcaption>
+        <img src="images/roadsign_fig01_install_render.jpg" alt="Rendered installation of PostSure on roadway signpost">
+        <figcaption>Rendered installation of the final PostSure retrofit system on a standard signpost.</figcaption>
       </figure>
 
       <figure class="design-figure cad">
-        <img src="images/roadsign_vertical_exploded.png" alt="Reactive Road Sign System exploded vertical CAD">
-        <figcaption>
-          Exploded CAD view showing the couplers, yokes, center block, spring region, and sacrificial pin.
-        </figcaption>
+        <img src="images/roadsign_fig06_operating_conditions.jpg" alt="Operating conditions with and without PostSure">
+        <figcaption>Operating states: rigid, triggered rotation, and breakaway collapse.</figcaption>
       </figure>
 
       <figure class="design-figure cad">
-        <img src="images/roadsign_render_installed.png" alt="Reactive Road Sign System assembled view emphasizing full load path">
-        <figcaption>
-          Vertical assembly view emphasizing how the mechanism sits within the full signpost load path.
-        </figcaption>
+        <img src="images/roadsign_fig28_top_yoke_photo.jpg" alt="Final PostSure prototype assembly">
+        <figcaption>Final prototype assembly showing the upper signpost interface and restricted joint.</figcaption>
       </figure>
     </div>
   </section>
@@ -158,24 +161,105 @@ title: Reactive Road Sign System
 
     <div class="notes-grid">
       <div class="notes-card">
-        <h3 class="notes-title">1. Torsional Spring Response</h3>
+        <h3 class="notes-title">1. Rigid State</h3>
         <p class="muted">
-          At moderate wind loads, the sign is allowed to rotate about the post axis through
-          a torsional spring subsystem located in the lower coupler. Rotational stops limit
-          this motion to ±15°, reducing projected area while maintaining sign visibility.
-          When the load drops, the spring returns the sign to its original orientation.
+          Under normal and low-wind conditions, the mechanism behaves like a conventional rigid
+          signpost. The sacrificial pin remains intact, the U-joint is constrained, and the sign
+          remains upright and readable.
         </p>
       </div>
 
       <div class="notes-card">
-        <h3 class="notes-title">2. Sacrificial Breakaway Response</h3>
+        <h3 class="notes-title">2. Triggered Rotation</h3>
         <p class="muted">
-          Under extreme wind loading, the breakaway pin reaches its failure threshold and
-          fractures, releasing the U-joint constraint. This allows the sign to fold downward
-          in a predictable manner, preventing excessive loads from being transmitted into the
-          post or foundation.
+          Under moderate hurricane-force wind loading, the torsional spring allows the sign to yaw
+          up to ±15° about the post axis. This reduces the projected area normal to the wind direction
+          while maintaining sign visibility.
         </p>
       </div>
+
+      <div class="notes-card">
+        <h3 class="notes-title">3. Breakaway Failure</h3>
+        <p class="muted">
+          Under extreme wind loading, the sacrificial pin fractures at a predetermined threshold,
+          releasing the constrained U-joint. The sign can then rotate downward into a lower-stress
+          configuration until the storm passes and the pin is replaced.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Center Block and Restricted Joint</h2>
+
+    <p class="muted">
+      The center block forms the core of the restricted U-joint assembly. It defines the two rotational axes
+      used after breakaway failure, while the central through-hole allows the sacrificial pin to constrain
+      motion before failure.
+    </p>
+
+    <div class="road-gallery road-gallery-3">
+      <figure>
+        <img src="images/roadsign_fig19_center_block_sleeve.jpg" alt="Center block sleeve detail">
+        <figcaption>Figure 19 — sleeve detail</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/roadsign_fig20_center_block_top.jpg" alt="Center block top view">
+        <figcaption>Figure 20 — top view</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/roadsign_fig21_center_block_assembly.jpg" alt="Center block assembly">
+        <figcaption>Figure 21 — center block assembly</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/roadsign_fig22_center_block_in_yoke.jpg" alt="Center block installed in yoke">
+        <figcaption>Figure 22 — installed in yoke</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/roadsign_fig23_center_block_section.jpg" alt="Center block section view">
+        <figcaption>Figure 23 — section view</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/roadsign_fig24_center_block_photo.jpg" alt="Center block prototype photo">
+        <figcaption>Figure 24 — prototype assembly</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Top Yoke and Signpost Interface</h2>
+
+    <p class="muted">
+      The top yoke connects the upper signpost section to the restricted joint. Its square pocket and
+      through-hole pattern allow compatibility with common signpost geometries while keeping the
+      sacrificial pin concentric with the rest of the assembly.
+    </p>
+
+    <div class="road-gallery road-gallery-2">
+      <figure>
+        <img src="images/roadsign_fig25_top_yoke_front.jpg" alt="Top yoke front CAD view">
+        <figcaption>Figure 25 — top yoke front view</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/roadsign_fig26_top_yoke_bottom.jpg" alt="Top yoke bottom CAD view">
+        <figcaption>Figure 26 — signpost pocket view</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/roadsign_fig27_top_yoke_assembly.jpg" alt="Top yoke installed in assembly">
+        <figcaption>Figure 27 — installed CAD assembly</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/roadsign_fig28_top_yoke_photo.jpg" alt="Top yoke prototype photo">
+        <figcaption>Figure 28 — prototype photo</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -183,20 +267,21 @@ title: Reactive Road Sign System
     <h2>My Role</h2>
 
     <p class="muted">
-      This project is being completed as part of a <strong>two-person senior design team</strong>.
-      My primary contributions focus on the analytical and engineering decision-making side of
+      This project was completed as part of a <strong>two-person senior design team</strong>.
+      My primary contributions focused on the analytical and engineering decision-making side of
       the project, including structural modeling, force calculations, spring sizing, materials
-      selection, and project documentation, while collaborating closely with my teammate on
-      iterative design development.
+      selection, testing analysis, and project documentation, while collaborating closely with my
+      teammate on iterative design development.
     </p>
 
     <ul class="list">
       <li>Developed analytical wind-load and moment models for the mechanism</li>
       <li>Derived the combined bending and shear stress framework used to evaluate breakaway pin loading</li>
       <li>Performed torsional spring sizing for the partial-rotation trigger condition</li>
-      <li>Led materials and component selection for prototype and final system planning</li>
-      <li>Prepared major portions of the design reports and supporting documentation</li>
-      <li>Contributed to design iteration, tolerancing decisions, and prototype planning</li>
+      <li>Supported COMSOL FEA interpretation for breakaway pin stress trends and peak stress locations</li>
+      <li>Contributed to prototype planning, tolerancing decisions, and test fixture development</li>
+      <li>Processed experimental data to relate groove diameter to failure moment for pin sizing</li>
+      <li>Prepared major portions of the final design report and supporting documentation</li>
     </ul>
   </section>
 
@@ -211,15 +296,15 @@ title: Reactive Road Sign System
       combined bending and shear.
     </p>
 
-<p class="muted">
-  <strong>Variable definitions:</strong>
-  <strong>F<sub>wind</sub></strong> = aerodynamic force on the sign face,
-  <strong>h</strong> = distance from the sign centroid to the mechanism joint,
-  <strong>d</strong> = breakaway pin diameter, L<sub>eff</sub> = effective pin span,
-  <strong>α</strong> = internal moment fraction used to bound bending stress.
-</p>
+    <p class="muted">
+      <strong>Variable definitions:</strong>
+      <strong>F<sub>wind</sub></strong> = aerodynamic force on the sign face,
+      <strong>h</strong> = distance from the sign centroid to the mechanism joint,
+      <strong>d</strong> = breakaway pin diameter,
+      <strong>L<sub>eff</sub></strong> = effective pin span,
+      <strong>α</strong> = internal moment fraction used to bound bending stress.
+    </p>
 
-  <div class="equation-grid">
     <div class="equation-grid">
       <div class="equation-card">
         <h3 class="equation-title">Wind Moment</h3>
@@ -324,54 +409,166 @@ title: Reactive Road Sign System
     <h2>Finite Element Analysis</h2>
 
     <p class="muted">
-      Finite element analysis was conducted to evaluate <strong>stress distributions within the
-      breakaway pin and surrounding joint components under ultimate wind loading</strong>. The primary
-      goal was to identify peak stress regions, verify where the largest stress concentrations occur, 
-      and compare those trends against the analytical model to guide pin diameter selection.
+      Finite element analysis was used to compare stress distributions in representative rigid and
+      non-rigid center-block configurations under ultimate wind loading. The simulations were treated as
+      comparative stress estimates used to verify stress locations and guide breakaway pin sizing.
     </p>
 
-    <div class="photo-grid roadsign-fea-grid">
-      <figure class="photo">
-        <img src="images/roadsign_fea_rigid.png" alt="Rigid block FEA results for breakaway pin">
-        <figcaption>
-          FEA results for the rigid center-block case, showing peak stress concentration in the exposed pin region.
-        </figcaption>
+    <div class="road-gallery road-gallery-3">
+      <figure>
+        <img src="images/roadsign_fig45_fea_rigid.jpg" alt="Rigid center block FEA stress distribution">
+        <figcaption>Figure 45 — rigid center-block stress distribution</figcaption>
       </figure>
 
-      <figure class="photo">
-        <img src="images/roadsign_fea_nonrigid.png" alt="Non-rigid block FEA results for breakaway pin">
-        <figcaption>
-          FEA results for the non-rigid center-block case, used to compare alternate rotation modes and stress locations.
-        </figcaption>
+      <figure>
+        <img src="images/roadsign_fig46_fea_nonrigid.jpg" alt="Non-rigid center block FEA stress distribution">
+        <figcaption>Figure 46 — non-rigid center-block stress distribution</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/roadsign_fig48_fea_diameter_fit.jpg" alt="FEA diameter fit plot">
+        <figcaption>Figure 48 — peak stress versus pin diameter</figcaption>
       </figure>
     </div>
-
-    <p class="muted">
-      Across the simulation study, exponential fits suggested optimal pin diameters of approximately
-      <strong>1.31 in</strong> for the rigid configuration and <strong>1.17 in</strong> for the
-      non-rigid configuration when matched to the selected 17-4 PH stainless steel pin material.
-      These values were treated as upper-bound estimates for prototype testing.
-    </p>
   </section>
 
   <section class="card">
-    <h2>Prototype Development</h2>
+    <h2>Pin Sleeve and Sacrificial Pin Design</h2>
 
     <p class="muted">
-      A physical proof-of-concept prototype was developed during the design process to evaluate
-      assembly behavior, joint motion, and the feasibility of the constrained U-joint concept.
-      At the current stage, the prototype serves as a fabrication reference and proof-of-concept
-      model while destructive pin testing is still forthcoming.
+      Pin sleeves were used to position the sacrificial pin, maintain groove alignment, and transfer load
+      through the restricted joint. The sacrificial pin was grooved so that failure occurred at a controlled
+      cross-section during destructive testing.
     </p>
 
-    <div class="prototype-wrapper">
-      <figure class="prototype-figure">
-        <img src="images/roadsign_3d_print.jpeg" alt="Reactive road sign 3D printed prototype">
-        <figcaption>
-          3D-printed proof-of-concept prototype used to evaluate mechanism geometry, joint articulation, and assembly feasibility.
-        </figcaption>
+    <div class="road-gallery road-gallery-3">
+      <figure>
+        <img src="images/roadsign_fig29_pin_sleeve_large.jpg" alt="Large pin sleeve CAD">
+        <figcaption>Figure 29 — large sleeve CAD</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/roadsign_fig30_pin_sleeve_small.jpg" alt="Small pin sleeve CAD">
+        <figcaption>Figure 30 — small sleeve CAD</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/roadsign_fig31_aluminum_sleeves.jpg" alt="Machined aluminum sleeves">
+        <figcaption>Figure 31 — aluminum sleeves</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/roadsign_fig32_steel_sleeves.jpg" alt="Machined steel sleeves">
+        <figcaption>Figure 32 — steel sleeves</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/roadsign_fig33_sleeves_installed.jpg" alt="Sleeves installed in assembly">
+        <figcaption>Figure 33 — sleeves installed</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/roadsign_fig34_sleeve_section.jpg" alt="Sleeve section view">
+        <figcaption>Figure 34 — sleeve section view</figcaption>
       </figure>
     </div>
+
+    <div class="road-gallery road-gallery-3">
+      <figure>
+        <img src="images/roadsign_fig35_pin_cad.jpg" alt="Sacrificial pin CAD">
+        <figcaption>Figure 35 — sacrificial pin CAD</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/roadsign_fig36_pin_installed.jpg" alt="Sacrificial pin installed">
+        <figcaption>Figure 36 — pin installed</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/roadsign_fig37_pin_section.jpg" alt="Sacrificial pin section view">
+        <figcaption>Figure 37 — pin section view</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Experimental Validation</h2>
+
+    <p class="muted">
+      Scaled destructive testing was conducted to characterize the relationship between sacrificial pin
+      groove diameter and failure moment. A custom steel fixture constrained the signpost while a hanging
+      load was applied until fracture occurred at the pin groove.
+    </p>
+
+    <div class="road-gallery road-gallery-2">
+      <figure>
+        <img src="images/roadsign_fig49_fixture_bracket.jpg" alt="Custom steel fixture bracket">
+        <figcaption>Figure 49 — fixture bracket</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/roadsign_fig50_fixture_plate.jpg" alt="Custom steel fixture plate">
+        <figcaption>Figure 50 — fixture plate</figcaption>
+      </figure>
+    </div>
+
+    <div class="road-gallery road-gallery-3">
+      <figure>
+        <img src="images/roadsign_fig51_rectangular_peg.jpg" alt="Rectangular test peg">
+        <figcaption>Figure 51 — rectangular peg</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/roadsign_fig52_cylindrical_peg.jpg" alt="Cylindrical test peg">
+        <figcaption>Figure 52 — cylindrical peg</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/roadsign_fig53_pegs_in_fixture.jpg" alt="Pegs installed in fixture">
+        <figcaption>Figure 53 — pegs installed in fixture</figcaption>
+      </figure>
+    </div>
+
+    <div class="road-gallery road-gallery-2">
+      <figure>
+        <img src="images/roadsign_fig54_test_setup.jpg" alt="Experimental breakaway test setup">
+        <figcaption>Figure 54 — test setup</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/roadsign_fig55_load_application.jpg" alt="Bucket and garnet load application">
+        <figcaption>Figure 55 — bucket and garnet load application</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Test Results</h2>
+
+    <p class="muted">
+      Failure moment increased nonlinearly with measured groove diameter. A power-law fit captured the
+      experimental trend with <strong>R² = 0.947</strong>, supporting the bending-dominated failure model.
+      The fitted relationship was then used to extrapolate a preliminary design groove diameter for the
+      final wind-loading condition.
+    </p>
+
+    <div class="road-gallery road-gallery-2">
+      <figure>
+        <img src="images/roadsign_fig56_failure_moment_fit.jpg" alt="Failure moment versus measured groove diameter">
+        <figcaption>Figure 56 — failure moment versus groove diameter</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/roadsign_fig57_required_pin_diameter.jpg" alt="Required groove diameter extrapolation">
+        <figcaption>Figure 57 — required groove diameter extrapolation</figcaption>
+      </figure>
+    </div>
+
+    <p class="muted">
+      The final estimate was <strong>0.783 ± 0.12 in</strong>. Because this diameter lies outside the
+      directly tested range, it was interpreted as a first-order sizing estimate and a target for future
+      full-scale validation rather than a fully validated final pin size.
+    </p>
   </section>
 
   <section class="card">
@@ -381,18 +578,19 @@ title: Reactive Road Sign System
       <div class="notes-card">
         <h3 class="notes-title">Material Strategy</h3>
         <p class="muted">
-          The final design uses stainless steel alloys to balance strength, corrosion resistance,
-          and manufacturability. The breakaway pin was specified as <strong>17-4 PH stainless steel</strong>,
-          while major structural components were specified as <strong>420 stainless steel</strong>.
+          The design uses corrosion-resistant materials and standard mechanical fasteners to support
+          outdoor serviceability. Experimental pins were machined from available steel rod stock for
+          testing, while the intended full-scale design uses a replaceable sacrificial pin sized to fail
+          before permanent signpost damage occurs.
         </p>
       </div>
 
       <div class="notes-card">
         <h3 class="notes-title">Key Constraints</h3>
         <p class="muted">
-          The design had to remain compatible with standard roadside infrastructure, preserve mounting
-          height requirements, survive high-salt outdoor environments, and remain practical to fabricate
-          and test within the senior design timeline.
+          The design had to remain compatible with standard square tube and U-channel signpost
+          infrastructure, preserve roadway mounting requirements, survive high-corrosion outdoor
+          environments, and remain practical to fabricate, test, reset, and service.
         </p>
       </div>
     </div>
@@ -402,10 +600,11 @@ title: Reactive Road Sign System
     <h2>Expected Impact</h2>
 
     <p class="muted">
-      If validated experimentally, this system could reduce damage to signposts and foundations during
-      severe storms by shifting failure into a low-cost replaceable component. More broadly, the project
-      explores how passive mechanical design can improve infrastructure resilience without requiring full
-      replacement of existing roadside systems.
+      The final PostSure design demonstrates a feasible approach for improving roadway sign resilience
+      by shifting extreme wind failure into a low-cost replaceable component rather than the signpost or
+      foundation. The project produced a validated foundation for future full-scale testing and shows how
+      passive mechanical design can improve infrastructure resilience without requiring full replacement
+      of existing roadside systems.
     </p>
   </section>
 
