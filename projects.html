@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Projects
 ---
 
 <!-- Google tag (gtag.js) -->
@@ -18,178 +19,259 @@ layout: default
     <a class="brand" href="./">Erik Hogset</a>
     <span class="brand-sub">Mechanical Engineering • Boston University</span>
   </div>
+
   <div class="topbar-right">
     <a class="toplink" href="projects.html">Projects</a>
     <a class="toplink" href="coursework.html">Academic Focus</a>
     <a class="toplink" href="about.html">About</a>
-    <a class="toplink" href="resume.pdf" target="_blank" rel="noopener">Resume</a>  </div>
+    <a class="toplink" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+  </div>
 </div>
 
 <hr />
+
+<div class="project-wrapper">
+
+  <div class="project-header">
+    <h1>Projects</h1>
+
+    <p class="project-subtitle">
+      Selected mechanical engineering projects spanning sustainable design,
+      manufacturing automation, electromechanical systems, structural analysis,
+      and rapid prototyping.
+    </p>
+  </div>
+
   <div class="projects-grid">
 
-<!-- Project 1: Road Sign -->
-<article class="project-card">
-  <a class="project-card-link" href="road-sign-system.html">
-
-    <div class="project-media project-media--cover">
-      <img class="img-default"
-           src="images/roadsign_card_assembled.png"
-           alt="Reactive Road Sign System assembled CAD" />
-
-      <img class="img-hover"
-           src="images/roadsign_card_exploded.png"
-           alt="Reactive Road Sign System exploded CAD" />
-    </div>
-
-    <div class="project-body">
-
-      <div class="project-topline">
-        <span class="project-tag">Senior Design</span>
-        <span class="project-meta">Wind loads • Mechanisms • Structural analysis</span>
-      </div>
-
-      <h3 class="project-title">Reactive Road Sign System</h3>
-
-      <p class="project-desc">
-        In-progress retrofit mechanism for roadside signs that reduces storm damage through controlled
-        rotation and sacrificial breakaway. Work includes wind-load modeling, pin and spring sizing,
-        FEA, and prototype development.
-      </p>
-
-      <div class="project-footer">
-        <span class="project-cta">View project →</span>
-      </div>
-
-    </div>
-  </a>
-</article>
-
-    <!-- Project 2: ADML fish kit -->
+    <!-- Project 1: Road Sign -->
     <article class="project-card">
-      <a class="project-card-link" href="adml.html">
+      <a class="project-card-link" href="road-sign-system.html">
+
         <div class="project-media project-media--cover">
-          <img class="img-default" src="images/fishkit_closed.jpg" alt="Compact kit (closed) with machined lid" />
-          <img class="img-hover" src="images/fishkit_open.jpg" alt="Compact kit opened showing internal compartments" />
+          <img class="img-default"
+               src="images/roadsign_card_assembled.png"
+               alt="Reactive Road Sign System assembled CAD" />
+
+          <img class="img-hover"
+               src="images/roadsign_card_exploded.png"
+               alt="Reactive Road Sign System exploded CAD" />
         </div>
 
         <div class="project-body">
+
           <div class="project-topline">
-            <span class="project-tag">ME345</span>
-            <span class="project-meta">CAD-to-CAM • CNC</span>
+            <span class="project-tag">Senior Design</span>
+            <span class="project-meta">Wind loads • Mechanisms • Structural analysis</span>
           </div>
 
-          <h3 class="project-title">Compact Kit Prototype (ADML)</h3>
+          <h3 class="project-title">Reactive Road Sign System</h3>
 
           <p class="project-desc">
-            Using a manufacturing cell with two CNC mills and three Universal Robots to develop an automated assembly line 
-            for consistent production of a product, focused on CAD-to-CAM workflows and robotic control. 
+            Retrofit roadway sign mechanism designed to reduce storm damage using
+            controlled rotation and sacrificial breakaway behavior. Includes wind-load
+            modeling, FEA, prototype development, and destructive pin testing.
           </p>
 
           <div class="project-footer">
             <span class="project-cta">View project →</span>
           </div>
+
         </div>
       </a>
     </article>
 
-  <!-- Project 3: Additive Manufacturing (ME557) -->
-  <article class="project-card">
-    <a class="project-card-link" href="additive.html">
-    <div class="project-media project-media--cover project-media--quad">
+    <!-- Project 2: ADML fish kit -->
+    <article class="project-card">
+      <a class="project-card-link" href="adml.html">
 
-  <div class="media-default">
-    <img src="images/additive_1print.jpg" alt="FFF print: Flying sea turtle" />
-    <img src="images/additive_4print.jpeg" alt="FFF print: anemometer + weather vane" />
-  </div>
+        <div class="project-media project-media--cover">
+          <img class="img-default"
+               src="images/fishkit_closed.jpg"
+               alt="Compact fishing kit closed" />
 
-  <div class="media-hover">
-    <img src="images/additive_2printb.jpeg" alt="SLA print: Klein bottle" />
-    <img src="images/additive_3print.jpeg" alt="Structural annulus test" />
-  </div>
-
-</div>
-
-      <div class="project-body">
-        <div class="project-topline">
-          <span class="project-tag">ME557</span>
-          <span class="project-meta">FFF + SLA • Design-for-print • Testing</span>
+          <img class="img-hover"
+               src="images/fishkit_open.jpg"
+               alt="Compact fishing kit opened" />
         </div>
 
-        <h3 class="project-title">Additive Manufacturing Projects</h3>
+        <div class="project-body">
 
-        <p class="project-desc">
-          Four additive manufacturing projects exploring FFF/SLA print strategy, functional assemblies, design for printing
-          and structural behavior through simple force testing.
-        </p>
+          <div class="project-topline">
+            <span class="project-tag">ME345</span>
+            <span class="project-meta">CAD-to-CAM • CNC • Automation</span>
+          </div>
 
-        <div class="project-footer">
-          <span class="project-cta">View project →</span>
+          <h3 class="project-title">Compact Fishing Kit Prototype</h3>
+
+          <p class="project-desc">
+            Automated manufacturing project integrating CNC machining, robot routing,
+            pallet transport, and BUMES cell-level control logic within BU’s ADML
+            manufacturing system.
+          </p>
+
+          <div class="project-footer">
+            <span class="project-cta">View project →</span>
+          </div>
+
         </div>
-      </div>
-    </a>
-  </article>
+      </a>
+    </article>
 
-  <!-- Project 4: Electromechanical Ouija Board -->
-  <article class="project-card">
-    <a class="project-card-link" href="ouija.html">
-      <div class="project-media project-media--cover">
-        <img class="img-default" src="images/ouija_1.jpeg" alt="Electromechanical Ouija board (closed)" />
-        <img class="img-hover" src="images/ouija_open.jpeg" alt="Electromechanical Ouija board (open / internal mechanism)" />
-      </div>
+    <!-- Project 3: Additive Manufacturing -->
+    <article class="project-card">
+      <a class="project-card-link" href="additive.html">
 
-      <div class="project-body">
-        <div class="project-topline">
-          <span class="project-tag">ME360</span>
-          <span class="project-meta">Mechatronics • Motion control</span>
+        <div class="project-media project-media--cover project-media--quad">
+
+          <div class="media-default">
+            <img src="images/additive_1print.jpg"
+                 alt="FFF print flying sea turtle" />
+
+            <img src="images/additive_4print.jpeg"
+                 alt="FFF printed anemometer and weather vane" />
+          </div>
+
+          <div class="media-hover">
+            <img src="images/additive_2printb.jpeg"
+                 alt="SLA printed Klein bottle" />
+
+            <img src="images/additive_3print.jpeg"
+                 alt="Structural annulus test print" />
+          </div>
+
         </div>
 
-        <h3 class="project-title">Automated Electromechanical Ouija Board</h3>
+        <div class="project-body">
 
-        <p class="project-desc">
-          Automated Electromechanical Ouija Board
-          Voice-controlled X–Y motion system translating AI responses into physical motion
-        </p>
+          <div class="project-topline">
+            <span class="project-tag">ME557</span>
+            <span class="project-meta">FFF + SLA • Design-for-print • Testing</span>
+          </div>
 
-        <div class="project-footer">
-          <span class="project-cta">View project →</span>
+          <h3 class="project-title">Additive Manufacturing Projects</h3>
+
+          <p class="project-desc">
+            Series of FFF and SLA additive manufacturing projects exploring print
+            strategy, functional assemblies, design-for-manufacture, and structural behavior.
+          </p>
+
+          <div class="project-footer">
+            <span class="project-cta">View project →</span>
+          </div>
+
         </div>
-      </div>
-    </a>
-  </article>
+      </a>
+    </article>
 
-<!-- Project 5: Smart Desk Lamp -->
-<article class="project-card">
-  <a class="project-card-link" href="lamp.html">
+    <!-- Project 4: Ouija -->
+    <article class="project-card">
+      <a class="project-card-link" href="ouija.html">
 
-    <div class="project-media project-media--cover">
-      <!-- Placeholder images -->
-      <img class="img-default" src="images/lamp_2.png" alt="Smart desk lamp prototype" />
-      <img class="img-hover" src="images/lamp_1.png" alt="Smart desk lamp internal components and hinge mechanism" />
-    </div>
+        <div class="project-media project-media--cover">
+          <img class="img-default"
+               src="images/ouija_1.jpeg"
+               alt="Electromechanical Ouija board closed" />
 
-    <div class="project-body">
-      <div class="project-topline">
-        <span class="project-tag">EK210</span>
-        <span class="project-meta">Embedded systems • Human-centered design</span>
-      </div>
+          <img class="img-hover"
+               src="images/ouija_open.jpeg"
+               alt="Electromechanical Ouija board internal mechanism" />
+        </div>
 
-      <h3 class="project-title">Smart Motion-Activated Desk Lamp</h3>
+        <div class="project-body">
 
-      <p class="project-desc">
-        Motion-activated desk lamp integrating an ambient light sensor, real-time clock,
-        and adjustable low-friction hinge to support users with limited mobility.
-        Automatically adapts brightness to room lighting and reduces blue-light output
-        later in the evening.
-      </p>
+          <div class="project-topline">
+            <span class="project-tag">ME360</span>
+            <span class="project-meta">Mechatronics • Motion control</span>
+          </div>
 
-      <div class="project-footer">
-        <span class="project-cta">View project →</span>
-      </div>
-    </div>
+          <h3 class="project-title">Automated Electromechanical Ouija Board</h3>
 
-  </a>
-</article>
-    </div>
+          <p class="project-desc">
+            Voice-controlled X–Y electromechanical motion system translating AI-generated
+            responses into physical planchette movement through automated gantry control.
+          </p>
+
+          <div class="project-footer">
+            <span class="project-cta">View project →</span>
+          </div>
+
+        </div>
+      </a>
+    </article>
+
+    <!-- Project 5: Lamp -->
+    <article class="project-card">
+      <a class="project-card-link" href="lamp.html">
+
+        <div class="project-media project-media--cover">
+          <img class="img-default"
+               src="images/lamp_2.png"
+               alt="Smart desk lamp prototype" />
+
+          <img class="img-hover"
+               src="images/lamp_1.png"
+               alt="Smart desk lamp internal hinge and electronics" />
+        </div>
+
+        <div class="project-body">
+
+          <div class="project-topline">
+            <span class="project-tag">EK210</span>
+            <span class="project-meta">Embedded systems • Product design</span>
+          </div>
+
+          <h3 class="project-title">Smart Motion-Activated Desk Lamp</h3>
+
+          <p class="project-desc">
+            Adaptive desk lamp integrating ambient light sensing, real-time scheduling,
+            and adjustable low-friction mechanical positioning for accessibility-focused use.
+          </p>
+
+          <div class="project-footer">
+            <span class="project-cta">View project →</span>
+          </div>
+
+        </div>
+      </a>
+    </article>
+
+    <!-- Project 6: Sustainable Blender -->
+    <article class="project-card">
+      <a class="project-card-link" href="blender.html">
+
+        <div class="project-media project-media--cover">
+          <img class="img-default"
+               src="images/blender_product.png"
+               alt="Countertop blender used for eco-audit study" />
+
+          <img class="img-hover"
+               src="images/blender_motor_comparison.png"
+               alt="BLDC motor redesign comparison" />
+        </div>
+
+        <div class="project-body">
+
+          <div class="project-topline">
+            <span class="project-tag">ME535</span>
+            <span class="project-meta">Eco-audit • Sustainable redesign</span>
+          </div>
+
+          <h3 class="project-title">Sustainable Blender Redesign</h3>
+
+          <p class="project-desc">
+            Lifecycle eco-audit and redesign of a countertop blender focused on reducing
+            use-phase energy demand, embodied carbon, and packaging impact through motor
+            and material improvements.
+          </p>
+
+          <div class="project-footer">
+            <span class="project-cta">View project →</span>
+          </div>
+
+        </div>
+      </a>
+    </article>
+
   </div>
 </div>
