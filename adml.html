@@ -2,7 +2,8 @@
 layout: default
 title: Compact Fishing Kit Prototype
 ---
- <!-- Google tag (gtag.js) -->
+
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-L9ET9WREFZ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -38,8 +39,8 @@ title: Compact Fishing Kit Prototype
     <h1>Compact Fishing Kit Prototype</h1>
 
     <p class="project-subtitle">
-      A compact two-part product developed for ME345 Automation & Manufacturing Methods, combining product design,
-      CNC process planning, ADML routing, and automated manufacturing system integration.
+      Compact two-part product developed for ME345 Automation & Manufacturing Methods, combining CNC process planning,
+      product design, robotic handling, and automated manufacturing cell integration.
     </p>
 
     <div class="project-meta">
@@ -53,33 +54,26 @@ title: Compact Fishing Kit Prototype
 
   <section class="card">
     <h2>System Overview</h2>
+
     <p class="muted">
-      This project was completed for <strong>ME345 Automation & Manufacturing Methods</strong> as part of a
-      <strong>6-person team</strong>. The goal was not only to design a functional product, but also to develop a complete
-      automated manufacturing plan for producing it within Boston University’s
-      <strong>Automated Design and Manufacturing Laboratory (ADML)</strong>.
+      This project was completed as part of a <strong>6-person team</strong> in Boston University’s
+      <strong>Automated Design and Manufacturing Laboratory (ADML)</strong>. The objective was to design a functional product
+      and develop an automated manufacturing workflow capable of producing it through CNC machining, robotic handling,
+      pallet routing, and final assembly.
     </p>
 
     <p class="muted">
-      The final system combined <strong>product design, CNC machining strategy, robotic handling, pallet routing,
-      intermediate inventory, and cell-level supervisory control</strong> to coordinate the full manufacturing workflow.
-      The automation logic was implemented using BU’s BUMES manufacturing control software, but the broader challenge
-      was designing the overall system behavior so that machining, transport, handling, and assembly all occurred in the proper sequence.
-    </p>
-
-    <p class="muted">
-      Much of the detailed implementation work was carried out by me and my teammate Ranely. I took a leading role in
-      turning the project into a manufacturable and automatable system, with primary responsibility for machining paths,
-      automation logic integration, robot integration support, and later-stage debugging and refinement.
+      The final workflow combined CAD design, CAM toolpaths, robot waypoints, intermediate inventory, and
+      <strong>BUMES</strong> cell-level control logic to coordinate the full ADML production sequence.
     </p>
   </section>
 
   <section class="card">
     <h2>Final Product</h2>
+
     <p class="muted">
-      The compact fishing kit was designed as a portable two-part product consisting of a machined body and lid.
-      The final design stores hooks, sinkers, and fishing line in a compact form while remaining easy to open,
-      close, and carry.
+      The compact fishing kit is a portable two-part product consisting of a machined body and lid. It stores hooks,
+      sinkers, and fishing line in a compact form while remaining easy to open, close, and carry.
     </p>
 
     <div class="fishing-hero-grid">
@@ -97,33 +91,29 @@ title: Compact Fishing Kit Prototype
 
   <section class="card">
     <h2>My Role</h2>
+
     <p class="muted">
-      This project was completed as part of a <strong>6-person team</strong>, with much of the detailed implementation work
-      carried out by me and my teammate Ranely. While the initial concept development was shared across the team, I took
-      a leading role in the manufacturing and automation side of the project, helping turn the design into a working
-      ADML production workflow.
+      My work focused on turning the product concept into a manufacturable and automatable system. I led much of the
+      machining strategy, automation logic integration, robot coordination support, and later-stage debugging with my
+      teammate Ranely.
     </p>
 
     <ul class="list">
-      <li>Developed the machining toolpaths and process planning for the body and lid components.</li>
-      <li>Helped define robot waypoints and contributed to robot programs used within the ADML workflow.</li>
-      <li>Developed the final <strong>cell-level control logic</strong> coordinating machining operations, robot motion, and routing within the ADML system, implemented using BU’s BUMES manufacturing control software.</li>
-      <li>Supported design refinement through tolerance adjustments, hole sizing decisions, and manufacturability improvements.</li>
-      <li>Led much of the later-stage integration, debugging, and testing required to make the system operate reliably.</li>
+      <li>Developed CNC toolpaths and process plans for the body and lid components.</li>
+      <li>Helped define robot waypoints and supported robot programming within the ADML workflow.</li>
+      <li>Created final cell-level control logic coordinating machining, robot motion, routing, and assembly using BUMES.</li>
+      <li>Supported tolerance adjustments, hole sizing decisions, and manufacturability improvements.</li>
+      <li>Led later-stage integration, debugging, and testing to improve system reliability.</li>
     </ul>
   </section>
 
   <section class="card">
     <h2>Product Design</h2>
-    <p class="muted">
-      The product was designed as a two-part assembly consisting of a main body and a lid. The body includes
-      dedicated storage features for hooks, sinkers, and fishing line, while the lid adds a machined engraved
-      fish graphic and alignment holes for assembly.
-    </p>
 
     <p class="muted">
-      Because the part had to be produced through an automated workflow, the design also had to account for
-      machining accessibility, tolerances, alignment, and compatibility with downstream handling and assembly steps.
+      The design consists of a main body with storage features for hooks, sinkers, and fishing line, plus a machined lid
+      with an engraved fish graphic and alignment holes for assembly. Because the part had to move through an automated
+      cell, design decisions also had to account for machining accessibility, tolerances, and downstream handling.
     </p>
 
     <div class="fishing-cad-grid">
@@ -134,33 +124,28 @@ title: Compact Fishing Kit Prototype
 
       <figure class="photo">
         <img src="images/ADML-cad1.png" alt="Front side CAD of fishing kit lid">
-        <figcaption>Lid front CAD showing the engraved fish design on the visible exterior face.</figcaption>
+        <figcaption>Lid front CAD showing the engraved fish design on the exterior face.</figcaption>
       </figure>
 
       <figure class="photo">
         <img src="images/ADML-cad2.png" alt="Back side CAD of fishing kit lid">
-        <figcaption>Lid back CAD showing the reverse-side geometry and hole pattern used in machining and assembly.</figcaption>
+        <figcaption>Lid back CAD showing reverse-side geometry and assembly hole pattern.</figcaption>
       </figure>
     </div>
   </section>
 
   <section class="card">
     <h2>Manufacturing Strategy</h2>
-    <p class="muted">
-      The body and lid were planned as separate machining workflows. The body emphasized pocketing,
-      contouring, and chamfering operations, while the lid required hole machining, chamfering,
-      and front-side engraving.
-    </p>
 
     <p class="muted">
-      Developing these strategies required balancing manufacturability, feature quality, and compatibility
-      with the automated production sequence used later in the ADML system.
+      The body and lid were planned as separate machining workflows. The body required pocketing, contouring, and
+      chamfering operations, while the lid required hole machining, chamfering, and front-side engraving.
     </p>
 
     <div class="fishing-manufacturing-grid">
       <figure class="photo strategy-figure">
         <img src="images/body-strategy.png" alt="Body manufacturing strategy" class="strategy-img">
-        <figcaption>Body manufacturing strategy showing the major machining operations and sequencing.</figcaption>
+        <figcaption>Body manufacturing strategy showing major machining operations and sequencing.</figcaption>
       </figure>
 
       <figure class="photo strategy-figure">
@@ -172,15 +157,11 @@ title: Compact Fishing Kit Prototype
 
   <section class="card">
     <h2>ADML Routing Plan</h2>
-    <p class="muted">
-      In addition to part design and machining strategy, this project required planning how the product would move
-      through the ADML system. The routing strategy coordinated machining, robotic handling, pallet transport,
-      intermediate inventory, and final assembly.
-    </p>
 
     <p class="muted">
-      This was a key systems-engineering portion of the project: the product had to be designed not only to function
-      as an object, but also to move successfully through a multi-step automated manufacturing environment.
+      The routing plan coordinated machining, robotic handling, pallet transport, intermediate inventory, and final
+      assembly. The product had to function not only as a physical object, but also as a part moving through a
+      multi-step automated manufacturing environment.
     </p>
 
     <figure class="photo routing-figure">
@@ -188,23 +169,18 @@ title: Compact Fishing Kit Prototype
            alt="ADML routing and manufacturing system layout"
            class="routing-img">
       <figcaption>
-        ADML system layout and routing plan used to coordinate machining,
-        robotic handling, pallet transport, and final assembly.
+        ADML system layout and routing plan used to coordinate machining, robotic handling, pallet transport, and assembly.
       </figcaption>
     </figure>
   </section>
 
   <section class="card">
     <h2>ADML Manufacturing & Assembly</h2>
-    <p class="muted">
-      The final stage of the project involved manufacturing and assembling the compact fishing kits within
-      Boston University’s Automated Design and Manufacturing Laboratory (ADML). The system integrates CNC machining,
-      robotic handling, pallet transport, and automated assembly into a coordinated workflow.
-    </p>
 
     <p class="muted">
-      This phase required successful integration between machining paths, robot motions, routing logic,
-      and automation control software so that the product could progress through the full cell in the correct sequence.
+      The final workflow integrated CNC machining, collaborative robot handling, pallet transport, and automated assembly
+      into a coordinated production sequence. This required aligning machining paths, robot motions, routing logic, and
+      BUMES control logic so the product could move through the cell reliably.
     </p>
 
     <div class="video-frame">
@@ -225,54 +201,42 @@ title: Compact Fishing Kit Prototype
       <div class="notes-card">
         <h3 class="notes-title">Manufacturing & Tolerancing</h3>
         <p class="muted">
-          A major challenge was ensuring that feature sizing, hole geometry, and tolerances worked both for machining
-          and for later handling and assembly. Design decisions had to support real production constraints rather than
-          only part appearance or function in CAD.
+          Feature sizing, hole geometry, and tolerances had to work for both machining and later handling/assembly.
+          Design decisions had to support real production constraints rather than only part appearance in CAD.
         </p>
       </div>
 
       <div class="notes-card">
         <h3 class="notes-title">Automation & Integration</h3>
         <p class="muted">
-          Another key challenge was turning separate operations into one coordinated workflow. Machining plans,
-          robot waypoints, routing logic, and cell-level control software all had to align so the system could function as a reliable
-          manufacturing cell rather than as isolated tasks.
+          Machining plans, robot waypoints, routing logic, and cell-level control software had to work together as one
+          coordinated manufacturing cell rather than as isolated operations.
         </p>
       </div>
     </div>
   </section>
 
   <section class="card">
-    <h2>Outcome</h2>
-    <p class="muted">
-      The project resulted in a completed compact fishing kit prototype along with a full automated manufacturing
-      strategy for producing it within the ADML environment. More broadly, it demonstrated how product design,
-      process planning, and manufacturing automation must be developed together when working in an integrated cell.
-    </p>
+    <h2>Outcome & Takeaways</h2>
 
     <p class="muted">
-      This project strengthened my experience in CNC process planning, manufacturing strategy, tolerancing,
-      robot integration, automation logic development, and system-level automation thinking.
+      The project resulted in a completed compact fishing kit prototype and a full automated manufacturing strategy for
+      producing it within the ADML environment. It strengthened my experience in CNC process planning, manufacturable
+      product design, tolerancing, robot integration, automation logic development, and system-level manufacturing planning.
     </p>
-  </section>
-
-  <section class="card">
-    <h2>Key Takeaways</h2>
 
     <div class="notes-grid">
       <div class="notes-card">
         <h3 class="notes-title">Design for Manufacturing</h3>
         <p class="muted">
-          This project strengthened my ability to design around both product function and manufacturing constraints,
-          especially when part geometry had to align with tooling, fixturing, and assembly requirements.
+          The project reinforced how part geometry must align with tooling, fixturing, tolerances, and assembly requirements.
         </p>
       </div>
 
       <div class="notes-card">
         <h3 class="notes-title">Automation Planning</h3>
         <p class="muted">
-          I gained experience translating a product concept into a complete manufacturing workflow involving CAM,
-          routing logic, machine allocation, robot coordination, and assembly planning within an automated lab environment.
+          The work connected product design to CAM, routing logic, robot coordination, and automated assembly sequencing.
         </p>
       </div>
     </div>
