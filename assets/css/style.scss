@@ -2268,3 +2268,65 @@ figure.photo figcaption {
 .external-link {
   font-weight: 600;
 }
+
+/* ================================
+   Sustainable Blender Redesign Page
+   ================================ */
+
+.blender-page .blender-product-figure,
+.blender-page .blender-figure {
+  margin: 1.25rem auto 0;
+  padding: 0.85rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  background: #fff;
+}
+
+.blender-page .blender-product-figure {
+  max-width: 520px;
+}
+
+.blender-page .blender-figure-wide {
+  max-width: 980px;
+}
+
+.blender-page .blender-product-figure img,
+.blender-page .blender-figure img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  display: block;
+  border-radius: 10px;
+}
+
+.blender-page .blender-product-figure figcaption,
+.blender-page .blender-figure figcaption {
+  margin-top: 0.65rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: var(--muted, #666);
+}
+
+/* Makes dark slide/table screenshots easier to read */
+.blender-page .blender-figure img {
+  background: #111;
+}
+
+/* Keeps the product image from becoming huge */
+.blender-page .blender-product-figure img {
+  max-height: 560px;
+}
+
+/* Mobile behavior */
+@media (max-width: 800px) {
+  .blender-page .blender-product-figure,
+  .blender-page .blender-figure-wide {
+    max-width: 100%;
+  }
+
+  .blender-page .blender-product-figure,
+  .blender-page .blender-figure {
+    padding: 0.55rem;
+  }
+}
