@@ -6,7 +6,7 @@
   gtag('js', new Date());
 
   gtag('config', 'G-L9ET9WREFZ');
-</script>
+</script> 
 
 <!-- TOPBAR -->
 <div class="topbar">
