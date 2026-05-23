@@ -2330,3 +2330,8 @@ figure.photo figcaption {
     padding: 0.55rem;
   }
 }
+.project-media--contain img {
+  object-fit: contain !important;
+  background: #fff;
+  padding: 1rem;
+}
