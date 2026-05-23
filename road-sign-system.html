@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Reactive Road Sign System
+title: Compact Fishing Kit Prototype
 ---
 
 <!-- Google tag (gtag.js) -->
@@ -18,7 +18,6 @@ title: Reactive Road Sign System
     <a class="brand" href="./">Erik Hogset</a>
     <span class="brand-sub">Mechanical Engineering • Boston University</span>
   </div>
-
   <div class="topbar-right">
     <a class="toplink" href="projects.html">Projects</a>
     <a class="toplink" href="coursework.html">Academic Focus</a>
@@ -29,211 +28,63 @@ title: Reactive Road Sign System
 
 <hr />
 
-<div class="project-wrapper roadsign-page">
-
-  <p class="proj-breadcrumb">
-    <a href="projects.html">Projects</a>
-    <span class="dot">•</span>
-    Senior Design / Mechanical Systems
-  </p>
-
+<div class="project-wrapper fishing-page">
   <div class="project-header">
-    <h1>Reactive Road Sign System</h1>
+    <p class="proj-breadcrumb">
+      <a href="projects.html">Projects</a>
+      <span class="dot">•</span>
+      Manufacturing / Automation
+    </p>
+
+    <h1>Compact Fishing Kit Prototype</h1>
+
     <p class="project-subtitle">
-      Senior design retrofit mechanism developed to reduce wind-induced damage to roadside sign infrastructure
-      through controlled rotation and a sacrificial breakaway system.
+      Compact two-part product developed for ME345 Automation & Manufacturing Methods, combining CNC process planning,
+      product design, robotic handling, and automated manufacturing cell integration.
     </p>
 
     <div class="project-meta">
-      <span class="pill">Senior Design</span>
-      <span class="pill">Mechanical Systems</span>
-      <span class="pill">Structural Analysis</span>
-      <span class="pill">FEA</span>
-      <span class="pill">Experimental Testing</span>
-      <span class="pill">Retrofit System</span>
+      <span class="pill">ME345</span>
+      <span class="pill">Automation & Manufacturing</span>
+      <span class="pill">CNC Machining</span>
+      <span class="pill">ADML</span>
+      <span class="pill">Product Design</span>
     </div>
   </div>
-
-  <section class="card roadsign-intro-card">
-    <div class="roadsign-intro-grid">
-      <div class="roadsign-intro-text">
-        <h2>Final Design Status</h2>
-
-        <p class="muted">
-          The final design, named <strong>PostSure</strong>, is an inline retrofit mechanism designed
-          for existing roadway signposts. The system combines a torsional spring for controlled rotation
-          about the post axis under moderate wind loading with a sacrificial breakaway pin that releases
-          the mechanism under extreme wind loading.
-        </p>
-
-        <p class="muted">
-          The project was completed through analytical modeling, finite element analysis, prototype
-          fabrication, and scaled experimental testing to determine the required breakaway pin geometry.
-        </p>
-      </div>
-
-      <figure class="roadsign-cover-figure">
-        <img src="images/roadsign_fig01_install_render.png" alt="Rendered installation of PostSure retrofit system on roadway signpost">
-        <figcaption>
-          Final rendered installation of the PostSure retrofit mechanism integrated into a standard roadway signpost.
-        </figcaption>
-      </figure>
-    </div>
-
-    <div class="notes-grid">
-      <div class="notes-card">
-        <h3 class="notes-title">Engineering Outcomes</h3>
-        <ul class="list">
-          <li>Designed a controlled breakaway joint for wind-responsive signpost protection</li>
-          <li>Developed analytical wind-load and pin stress models</li>
-          <li>Used COMSOL FEA to evaluate stress trends and peak stress locations</li>
-          <li>Built a functional prototype and custom steel test fixture</li>
-          <li>Validated a pin-sizing relationship through destructive testing</li>
-        </ul>
-      </div>
-
-      <div class="notes-card">
-        <h3 class="notes-title">Key Result</h3>
-        <p class="muted">
-          Experimental testing showed a strong nonlinear relationship between groove diameter and
-          failure moment. The final power-law model estimated a required groove diameter of
-          <strong>0.783 ± 0.12 in</strong> for the governing wind-loading case.
-        </p>
-      </div>
-    </div>
-  </section>
 
   <section class="card">
     <h2>System Overview</h2>
 
     <p class="muted">
-      Conventional roadside signs are rigidly mounted, which means aerodynamic loads from
-      extreme wind events are transmitted directly into the signpost and foundation. Under
-      hurricane-level loading, this can lead to permanent deformation, structural failure, or
-      uprooting of the supporting infrastructure.
+      This project was completed as part of a <strong>6-person team</strong> in Boston University’s
+      <strong>Automated Design and Manufacturing Laboratory (ADML)</strong>. The objective was to design a functional product
+      and develop an automated manufacturing workflow capable of producing it through CNC machining, robotic handling,
+      pallet routing, and final assembly.
     </p>
 
     <p class="muted">
-      The goal of this project was to develop a <strong>mechanical retrofit system</strong>
-      that redirects damaging loads into replaceable components rather than the structural
-      post itself. The mechanism is installed inline within the signpost load path and is
-      designed to respond differently under low-wind, triggered, and failure conditions.
+      The final workflow combined CAD design, CAM toolpaths, robot waypoints, intermediate inventory, and
+      <strong>BUMES</strong> cell-level control logic to coordinate the full ADML production sequence.
     </p>
-
-    <p class="muted">
-      All structural calculations assume a standard <strong>30-inch octagonal stop sign</strong>
-      mounted with the <strong>bottom of the sign approximately 7 ft above ground</strong>.
-      These assumptions define the projected wind-loading area and the moment arm used
-      in the analytical model.
-    </p>
-  </section>
-
-  <section class="card roadsign-design-card">
-    <h2>Final Design</h2>
-
-    <p class="muted">
-      The final PostSure design consists of an inline U-joint assembly installed directly in the
-      signpost load path. The system is divided into two main mechanisms: a rotational unit that
-      allows limited sign reorientation under moderate wind loading, and a restricted joint assembly
-      that releases through sacrificial pin failure under extreme loading.
-    </p>
-
-    <div class="roadsign-design-grid">
-      <figure class="design-figure cad">
-        <img src="images/roadsign_fig01_install_render.png" alt="Rendered installation of PostSure on roadway signpost">
-        <figcaption>Rendered installation of the final PostSure retrofit system on a standard signpost.</figcaption>
-      </figure>
-
-      <figure class="design-figure cad">
-        <img src="images/roadsign_fig06_operating_conditions.jpg" alt="Operating conditions with and without PostSure">
-        <figcaption>Operating states: rigid, triggered rotation, and breakaway collapse.</figcaption>
-      </figure>
-
-      <figure class="design-figure cad">
-        <img src="images/roadsign_fig28_top_yoke_photo1.jpg" alt="Final PostSure prototype assembly">
-        <figcaption>Final prototype assembly showing the upper signpost interface and restricted joint.</figcaption>
-      </figure>
-    </div>
   </section>
 
   <section class="card">
-    <h2>How the Mechanism Works</h2>
-
-    <div class="notes-grid">
-      <div class="notes-card">
-        <h3 class="notes-title">1. Rigid State</h3>
-        <p class="muted">
-          Under normal and low-wind conditions, the mechanism behaves like a conventional rigid
-          signpost. The sacrificial pin remains intact, the U-joint is constrained, and the sign
-          remains upright and readable.
-        </p>
-      </div>
-
-      <div class="notes-card">
-        <h3 class="notes-title">2. Triggered Rotation</h3>
-        <p class="muted">
-          Under moderate hurricane-force wind loading, the torsional spring allows the sign to rotate
-          up to ±15° about the post axis. This reduces the projected area normal to the wind direction
-          while maintaining sign visibility.
-        </p>
-      </div>
-
-      <div class="notes-card">
-        <h3 class="notes-title">3. Breakaway Failure</h3>
-        <p class="muted">
-          Under extreme wind loading, the sacrificial pin fractures at a predetermined threshold,
-          releasing the constrained U-joint. The sign can then rotate downward into a lower-stress
-          configuration until the storm passes and the pin is replaced.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="card">
-    <h2>Core Mechanical Assembly</h2>
+    <h2>Final Product</h2>
 
     <p class="muted">
-      The center block forms the core of the restricted U-joint assembly. It defines the two rotational
-      axes used after breakaway failure, while the central through-hole allows the sacrificial pin to
-      constrain motion before failure.
+      The compact fishing kit is a portable two-part product consisting of a machined body and lid. It stores hooks,
+      sinkers, and fishing line in a compact form while remaining easy to open, close, and carry.
     </p>
 
-    <div class="road-gallery road-gallery-3">
-      <figure>
-        <img src="images/roadsign_fig21_center_block_assembly.jpg" alt="Center block assembly">
-        <figcaption>Center block assembly</figcaption>
+    <div class="fishing-hero-grid">
+      <figure class="photo">
+        <img src="images/final-product-1.jpg" alt="Compact fishing kit closed">
+        <figcaption>Final assembled compact fishing kit with machined lid in place.</figcaption>
       </figure>
 
-      <figure>
-        <img src="images/roadsign_fig22_center_block_in_yoke.jpg" alt="Center block installed in yoke">
-        <figcaption>Center block installed in yoke</figcaption>
-      </figure>
-
-      <figure>
-        <img src="images/roadsign_fig24_center_block_photo.jpg" alt="Center block prototype photo">
-        <figcaption>Prototype assembly view</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <section class="card">
-    <h2>Top Yoke and Signpost Interface</h2>
-
-    <p class="muted">
-      The top yoke connects the upper signpost section to the restricted joint. Its square pocket and
-      through-hole pattern allow compatibility with common signpost geometries while keeping the
-      sacrificial pin concentric with the rest of the assembly.
-    </p>
-
-    <div class="road-gallery road-gallery-2">
-      <figure>
-        <img src="images/roadsign_fig27_top_yoke_assembly.jpg" alt="Top yoke installed in assembly">
-        <figcaption>Top yoke installed in CAD assembly</figcaption>
-      </figure>
-
-      <figure>
-        <img src="images/roadsign_fig28_top_yoke_photo1.jpg" alt="Top yoke prototype photo">
-        <figcaption>Top yoke prototype assembly</figcaption>
+      <figure class="photo">
+        <img src="images/final-product-2.jpg" alt="Compact fishing kit open">
+        <figcaption>Opened product showing hook storage, sinker storage, and compact line organization.</figcaption>
       </figure>
     </div>
   </section>
@@ -242,320 +93,156 @@ title: Reactive Road Sign System
     <h2>My Role</h2>
 
     <p class="muted">
-      This project was completed as part of a <strong>two-person senior design team</strong>.
-      My primary contributions focused on analytical modeling, spring sizing, materials selection,
-      prototype planning, test data analysis, and project documentation, while collaborating closely
-      with my teammate on iterative design development.
+      My work focused on turning the product concept into a manufacturable and automatable system. I led much of the
+      machining strategy, automation logic integration, robot coordination support, and later-stage debugging with my
+      teammate Ranely.
     </p>
 
     <ul class="list">
-      <li>Developed analytical wind-load and moment models for the mechanism</li>
-      <li>Derived the combined bending and shear stress framework used to evaluate breakaway pin loading</li>
-      <li>Performed torsional spring sizing for the partial-rotation trigger condition</li>
-      <li>Supported COMSOL FEA interpretation for breakaway pin stress trends and peak stress locations</li>
-      <li>Contributed to prototype planning, tolerancing decisions, and test fixture development</li>
-      <li>Processed experimental data to relate groove diameter to failure moment for pin sizing</li>
-      <li>Prepared major portions of the final design report and supporting documentation</li>
+      <li>Developed CNC toolpaths and process plans for the body and lid components.</li>
+      <li>Helped define robot waypoints and supported robot programming within the ADML workflow.</li>
+      <li>Created final cell-level control logic coordinating machining, robot motion, routing, and assembly using BUMES.</li>
+      <li>Supported tolerance adjustments, hole sizing decisions, and manufacturability improvements.</li>
+      <li>Led later-stage integration, debugging, and testing to improve system reliability.</li>
     </ul>
   </section>
 
   <section class="card">
-    <h2>Engineering Analysis</h2>
+    <h2>Product Design</h2>
 
     <p class="muted">
-      Analytical modeling was used to convert aerodynamic loading on the sign face into internal
-      stresses within the breakaway mechanism. The wind force acting at the sign centroid creates a
-      moment about the joint, which is then converted into an equivalent transverse force in the
-      breakaway pin. The pin is modeled as a short circular beam subjected to combined bending and shear.
+      The design consists of a main body with storage features for hooks, sinkers, and fishing line, plus a machined lid
+      with an engraved fish graphic and alignment holes for assembly. Because the part had to move through an automated
+      cell, design decisions also had to account for machining accessibility, tolerances, and downstream handling.
     </p>
 
-    <p class="muted">
-      <strong>Variable definitions:</strong>
-      <strong>F<sub>wind</sub></strong> = aerodynamic force on the sign face,
-      <strong>h</strong> = distance from the sign centroid to the mechanism joint,
-      <strong>d</strong> = breakaway pin diameter,
-      <strong>L<sub>eff</sub></strong> = effective pin span,
-      <strong>α</strong> = internal moment fraction used to bound bending stress.
-    </p>
-
-    <div class="equation-grid">
-      <div class="equation-card">
-        <h3 class="equation-title">Wind Moment</h3>
-        <div class="equation-block">
-          <span class="eq">M<sub>wind</sub> = F<sub>wind</sub>h</span>
-        </div>
-        <p class="muted">
-          Wind loading on the sign face is converted into a bending moment at the mechanism.
-        </p>
-      </div>
-
-      <div class="equation-card">
-        <h3 class="equation-title">Equivalent Pin Force</h3>
-        <div class="equation-block">
-          <span class="eq">F<sub>pin</sub> = <span class="frac"><span>F<sub>wind</sub>h</span><span>L<sub>eff</sub></span></span></span>
-        </div>
-        <p class="muted">
-          The joint moment is converted into an equivalent transverse force in the breakaway pin.
-        </p>
-      </div>
-
-      <div class="equation-card">
-        <h3 class="equation-title">Bending Stress</h3>
-        <div class="equation-block">
-          <span class="eq">σ<sub>b</sub> = <span class="frac"><span>32αF<sub>wind</sub>h</span><span>πd<sup>3</sup></span></span></span>
-        </div>
-        <p class="muted">
-          A bounded internal moment fraction α is used to estimate the bending stress in the pin.
-        </p>
-      </div>
-
-      <div class="equation-card">
-        <h3 class="equation-title">Maximum Shear Stress</h3>
-        <div class="equation-block">
-          <span class="eq">τ<sub>max</sub> = <span class="frac"><span>16F<sub>wind</sub>h</span><span>3πd<sup>2</sup>L<sub>eff</sub></span></span></span>
-        </div>
-        <p class="muted">
-          Shear stress is included because the pin behaves as a short beam under lateral loading.
-        </p>
-      </div>
-
-      <div class="equation-card equation-card-wide">
-        <h3 class="equation-title">Combined Stress Criterion</h3>
-        <div class="equation-block">
-          <span class="eq">
-            σ<sub>1</sub> =
-            √[
-            (<span class="frac"><span>16αF<sub>wind</sub>h</span><span>πd<sup>3</sup></span></span>)<sup>2</sup>
-            +
-            (<span class="frac"><span>16F<sub>wind</sub>h</span><span>3πd<sup>2</sup>L<sub>eff</sub></span></span>)<sup>2</sup>
-            ]
-          </span>
-        </div>
-        <p class="muted">
-          Maximum principal stress was used to combine bending and shear effects for candidate pin geometries.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="card">
-    <h2>Torsional Spring Sizing</h2>
-
-    <p class="muted">
-      The torsional spring was sized independently from the breakaway pin. The spring controls the
-      triggered rotation condition, where the sign begins to reorient under moderate wind loading.
-      The model treats the spring as linear over the small angular range of interest and uses a trigger
-      angle of 3° with a maximum stop angle of 15°.
-    </p>
-
-    <div class="equation-grid spring-grid">
-      <div class="equation-card">
-        <h3 class="equation-title">Rotational Moment</h3>
-        <div class="equation-block">
-          <span class="eq">M<sub>rot</sub> = F<sub>trig</sub>r<sub>offset</sub></span>
-        </div>
-      </div>
-
-      <div class="equation-card">
-        <h3 class="equation-title">Spring Torque</h3>
-        <div class="equation-block">
-          <span class="eq">T<sub>spring</sub> = k<sub>θ</sub>θ</span>
-        </div>
-      </div>
-
-      <div class="equation-card">
-        <h3 class="equation-title">Required Spring Rate</h3>
-        <div class="equation-block">
-          <span class="eq">k<sub>θ</sub> = <span class="frac"><span>F<sub>trig</sub>r<sub>offset</sub></span><span>θ<sub>trig</sub></span></span></span>
-        </div>
-      </div>
-    </div>
-
-    <p class="muted">
-      Using the nominal aerodynamic offset case, the selected spring constant was approximately
-      <strong>2.43 × 10<sup>4</sup> lb·in/rad</strong>, balancing stability below the trigger
-      condition with a manageable torque at the rotational stop.
-    </p>
-  </section>
-
-  <section class="card">
-    <h2>Finite Element Analysis</h2>
-
-    <p class="muted">
-      Finite element analysis was used to compare stress distributions in representative rigid and
-      non-rigid center-block configurations under ultimate wind loading. The simulations were treated as
-      comparative stress estimates used to verify stress locations and guide breakaway pin sizing.
-    </p>
-
-    <div class="road-gallery road-gallery-3">
-      <figure>
-        <img src="images/roadsign_fig45_fea_rigid.jpg" alt="Rigid center block FEA stress distribution">
-        <figcaption>Rigid center-block stress distribution</figcaption>
+    <div class="fishing-cad-grid">
+      <figure class="photo">
+        <img src="images/ADML-cad3.png" alt="Main body CAD of compact fishing kit">
+        <figcaption>Main body CAD showing the hook holder, sinker holder, line holder, and assist tab features.</figcaption>
       </figure>
 
-      <figure>
-        <img src="images/roadsign_fig46_fea_nonrigid.jpg" alt="Non-rigid center block FEA stress distribution">
-        <figcaption>Non-rigid center-block stress distribution</figcaption>
+      <figure class="photo">
+        <img src="images/ADML-cad1.png" alt="Front side CAD of fishing kit lid">
+        <figcaption>Lid front CAD showing the engraved fish design on the exterior face.</figcaption>
       </figure>
 
-      <figure>
-        <img src="images/roadsign_fig48_fea_diameter_fit.jpg" alt="FEA diameter fit plot">
-        <figcaption>Peak stress versus pin diameter</figcaption>
+      <figure class="photo">
+        <img src="images/ADML-cad2.png" alt="Back side CAD of fishing kit lid">
+        <figcaption>Lid back CAD showing reverse-side geometry and assembly hole pattern.</figcaption>
       </figure>
     </div>
   </section>
 
   <section class="card">
-    <h2>Prototype Fabrication</h2>
+    <h2>Manufacturing Strategy</h2>
 
     <p class="muted">
-      Prototype components were fabricated using a combination of additive manufacturing and shop-based
-      machining. PETG printed components were used to evaluate assembly geometry and joint motion, while
-      machined steel components were used for the destructive test fixture and sacrificial pin specimens.
-      This allowed the team to validate the overall mechanism while focusing the experimental work on
-      controlled pin failure behavior.
+      The body and lid were planned as separate machining workflows. The body required pocketing, contouring, and
+      chamfering operations, while the lid required hole machining, chamfering, and front-side engraving.
     </p>
 
-    <div class="road-gallery road-gallery-3">
-      <figure>
-        <img src="images/roadsign_fig33_sleeves_installed.jpg" alt="Sleeves installed in assembly">
-        <figcaption>Sleeves installed to locate the sacrificial pin</figcaption>
+    <div class="fishing-manufacturing-grid">
+      <figure class="photo strategy-figure">
+        <img src="images/body-strategy.png" alt="Body manufacturing strategy" class="strategy-img">
+        <figcaption>Body manufacturing strategy showing major machining operations and sequencing.</figcaption>
       </figure>
 
-      <figure>
-        <img src="images/roadsign_fig35_pin_cad.jpg" alt="Sacrificial pin CAD">
-        <figcaption>Sacrificial pin geometry</figcaption>
-      </figure>
-
-      <figure>
-        <img src="images/roadsign_fig37_pin_section.jpg" alt="Sacrificial pin section view">
-        <figcaption>Section view showing the controlled failure location</figcaption>
+      <figure class="photo strategy-figure">
+        <img src="images/lid-strategy.png" alt="Lid manufacturing strategy" class="strategy-img">
+        <figcaption>Lid manufacturing strategy showing back-side hole operations and front-side engraving.</figcaption>
       </figure>
     </div>
   </section>
 
   <section class="card">
-    <h2>Experimental Validation</h2>
+    <h2>ADML Routing Plan</h2>
 
     <p class="muted">
-      Scaled destructive testing was conducted to characterize the relationship between sacrificial pin
-      groove diameter and failure moment. A custom steel fixture constrained the signpost while a hanging
-      load was applied until fracture occurred at the pin groove.
+      The routing plan coordinated machining, robotic handling, pallet transport, intermediate inventory, and final
+      assembly. The product had to function not only as a physical object, but also as a part moving through a
+      multi-step automated manufacturing environment.
     </p>
 
-    <div class="road-gallery road-gallery-2">
-      <figure>
-        <img src="images/roadsign_fig48_fixture_bracket.jpg" alt="Custom steel fixture bracket">
-        <figcaption>Custom steel fixture bracket</figcaption>
-      </figure>
-
-      <figure>
-        <img src="images/roadsign_fig49_fixture_plate.jpg" alt="Custom steel fixture plate">
-        <figcaption>Custom steel fixture plate</figcaption>
-      </figure>
-    </div>
-
-    <div class="road-gallery road-gallery-2">
-      <figure>
-        <img src="images/roadsign_fig53_test_setup.jpg" alt="Experimental breakaway test setup">
-        <figcaption>Breakaway pin test setup</figcaption>
-      </figure>
-
-      <figure>
-        <img src="images/roadsign_fig54_load_application.jpg" alt="Bucket and garnet load application">
-        <figcaption>Load application using bucket and garnet</figcaption>
-      </figure>
-    </div>
+    <figure class="photo routing-figure">
+      <img src="images/ADML-layout.svg"
+           alt="ADML routing and manufacturing system layout"
+           class="routing-img">
+      <figcaption>
+        ADML system layout and routing plan used to coordinate machining, robotic handling, pallet transport, and assembly.
+      </figcaption>
+    </figure>
   </section>
 
   <section class="card">
-    <h2>Final Demonstration Video</h2>
+    <h2>ADML Manufacturing & Assembly</h2>
 
     <p class="muted">
-      The final project video summarizes the PostSure design intent, operating states, prototype
-      development, analytical modeling, and experimental validation process used to evaluate the
-      breakaway pin behavior.
+      The final workflow integrated CNC machining, collaborative robot handling, pallet transport, and automated assembly
+      into a coordinated production sequence. This required aligning machining paths, robot motions, routing logic, and
+      BUMES control logic so the product could move through the cell reliably.
     </p>
 
-    <div class="video-wrapper">
+    <div class="video-frame">
       <iframe
-        class="project-video"
-        src="https://www.youtube.com/embed/4Mkh-Uj_QpQ"
-        title="Reactive Road Sign System Final Video"
+        src="https://www.youtube.com/embed/Jm7UW1R1tGo"
+        title="ADML Manufacturing and Assembly"
         frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen>
       </iframe>
     </div>
   </section>
 
   <section class="card">
-    <h2>Test Results</h2>
-
-    <p class="muted">
-      Failure moment increased nonlinearly with measured groove diameter. A power-law fit captured the
-      experimental trend with <strong>R² = 0.947</strong>, supporting the bending-dominated failure model.
-      The fitted relationship was then used to extrapolate a preliminary design groove diameter for the
-      final wind-loading condition.
-    </p>
-
-<div class="road-gallery road-gallery-results">
-  <figure>
-        <img src="images/roadsign_fig561_failure_moment_fit.jpg" alt="Failure moment versus measured groove diameter">
-        <figcaption>Failure moment versus groove diameter</figcaption>
-      </figure>
-
-      <figure>
-        <img src="images/roadsign_fig571_required_pin_diameter.jpg" alt="Required groove diameter extrapolation">
-        <figcaption>Required groove diameter extrapolation</figcaption>
-      </figure>
-    </div>
-
-    <p class="muted">
-      The final estimate was <strong>0.783 ± 0.12 in</strong>. Because this diameter lies outside the
-      directly tested range, it was interpreted as a first-order sizing estimate and a target for future
-      full-scale validation rather than a fully validated final pin size.
-    </p>
-  </section>
-
-  <section class="card">
-    <h2>Materials & Design Constraints</h2>
+    <h2>Engineering Challenges</h2>
 
     <div class="notes-grid">
       <div class="notes-card">
-        <h3 class="notes-title">Material Strategy</h3>
+        <h3 class="notes-title">Manufacturing & Tolerancing</h3>
         <p class="muted">
-          The final product concept prioritizes corrosion resistance, serviceability, and predictable
-          replacement of the sacrificial pin. The prototype used available printed and machined components
-          to validate mechanism behavior and develop the experimental pin-sizing method.
+          Feature sizing, hole geometry, and tolerances had to work for both machining and later handling/assembly.
+          Design decisions had to support real production constraints rather than only part appearance in CAD.
         </p>
       </div>
 
       <div class="notes-card">
-        <h3 class="notes-title">Key Constraints</h3>
+        <h3 class="notes-title">Automation & Integration</h3>
         <p class="muted">
-          The design had to remain compatible with standard square tube and U-channel signpost
-          infrastructure, preserve roadway mounting requirements, survive high-corrosion outdoor
-          environments, and remain practical to fabricate, test, reset, and service.
+          Machining plans, robot waypoints, routing logic, and cell-level control software had to work together as one
+          coordinated manufacturing cell rather than as isolated operations.
         </p>
       </div>
     </div>
   </section>
 
   <section class="card">
-    <h2>Expected Impact</h2>
+    <h2>Outcome & Takeaways</h2>
 
     <p class="muted">
-      The final PostSure design demonstrates a feasible approach for improving roadway sign resilience
-      by shifting extreme wind failure into a low-cost replaceable component rather than the signpost or
-      foundation. The project produced a validated foundation for future full-scale testing and shows how
-      passive mechanical design can improve infrastructure resilience without requiring full replacement
-      of existing roadside systems.
+      The project resulted in a completed compact fishing kit prototype and a full automated manufacturing strategy for
+      producing it within the ADML environment. It strengthened my experience in CNC process planning, manufacturable
+      product design, tolerancing, robot integration, automation logic development, and system-level manufacturing planning.
     </p>
+
+    <div class="notes-grid">
+      <div class="notes-card">
+        <h3 class="notes-title">Design for Manufacturing</h3>
+        <p class="muted">
+          The project reinforced how part geometry must align with tooling, fixturing, tolerances, and assembly requirements.
+        </p>
+      </div>
+
+      <div class="notes-card">
+        <h3 class="notes-title">Automation Planning</h3>
+        <p class="muted">
+          The work connected product design to CAM, routing logic, robot coordination, and automated assembly sequencing.
+        </p>
+      </div>
+    </div>
   </section>
 
   <div class="project-footer">
     <a class="btn btn-ghost" href="projects.html">← Back to Projects</a>
   </div>
-
 </div>
